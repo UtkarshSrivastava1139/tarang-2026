@@ -81,7 +81,7 @@ export function Header() {
               {/* Responsive Subtitle: Clean on Mobile, Detailed on Desktop */}
               <h1 className="text-[10px] sm:text-xs font-semibold text-navy/85 uppercase tracking-wider leading-tight truncate">
                 <span className="sm:hidden">
-                  {isHindi ? 'श्री राधिका देवी शिक्षण संस्थान' : 'SRD College & Academy'}
+                  {isHindi ? 'श्रीमती राधिका देवी शिक्षण संस्थान' : 'Smt. Radhika Devi Institutions'}
                 </span>
                 <span className="hidden sm:inline">
                   {isHindi ? siteConfig.institutions.college.hi : siteConfig.institutions.college.en}

@@ -15,8 +15,8 @@ export function Hero() {
   return (
     <>
       <section className="relative overflow-hidden bg-[#FAF6EE] pt-8 pb-12 sm:pt-14 sm:pb-16 border-b border-gold/40">
-        {/* Auspicious Marigold & Brass Bells Toran Canopy across the top */}
-        <div className="absolute top-0 inset-x-0 h-8 sm:h-12 lg:h-14 pointer-events-none z-20 select-none overflow-hidden opacity-90">
+        {/* Auspicious Marigold & Brass Bells Toran Canopy (Desktop, mobile uses native artwork bells) */}
+        <div className="hidden sm:block absolute top-0 inset-x-0 h-10 sm:h-12 lg:h-14 pointer-events-none z-20 select-none overflow-hidden opacity-90">
           <Image
             src="/assets/tarang/generated/marigold-brass-bells-toran.png"
             alt=""
@@ -37,16 +37,17 @@ export function Hero() {
           />
         </div>
 
-        {/* Mobile Cultural Watercolor Heritage Background */}
+        {/* Mobile Cultural Watercolor Heritage Background Artwork */}
         <div className="block sm:hidden absolute inset-0 pointer-events-none select-none overflow-hidden">
           <Image
-            src="/assets/tarang/raster/backgrounds/02_heritage-watercolor-16x9.webp"
+            src="/assets/tarang/raster/backgrounds/mobile-hero-portrait.webp"
             alt=""
             fill
-            className="object-cover object-top opacity-35 mix-blend-multiply"
+            className="object-cover object-top opacity-70"
             priority
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#FAF6EE]/50 to-[#FAF6EE]" />
+          {/* Subtle gradient wash for high-contrast text legibility in central zone */}
+          <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#FAF6EE]/45 to-[#FAF6EE]/90" />
         </div>
 
         {/* Desktop Signature Canvas Texture */}
@@ -63,8 +64,8 @@ export function Hero() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 pt-2 sm:pt-0">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
             
-            {/* Left Column: Brand, Theme & Actions (7 cols) */}
-            <div className="lg:col-span-7 flex flex-col items-start text-left space-y-4 sm:space-y-5">
+            {/* Left Column: Brand, Theme & Actions (Centered on Mobile, Left-aligned on Desktop) */}
+            <div className="lg:col-span-7 flex flex-col items-center sm:items-start text-center sm:text-left space-y-4 sm:space-y-5">
               
               {/* Event Kicker Pill */}
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-parchment/80 border border-gold/50 text-navy text-[11px] sm:text-xs font-semibold shadow-2xs">
@@ -74,14 +75,14 @@ export function Hero() {
                 <span className="text-gold-dim font-bold">{siteConfig.event.shortDate}</span>
               </div>
 
-              {/* Official Tarang Wordmark - Large & Authoritative */}
-              <div className="relative w-full max-w-[340px] sm:max-w-[560px] lg:max-w-[620px] h-24 sm:h-36 lg:h-40">
+              {/* Official Tarang Wordmark - Centered on Mobile, Left on Desktop */}
+              <div className="relative w-full max-w-[320px] sm:max-w-[560px] lg:max-w-[620px] h-24 sm:h-36 lg:h-40 flex items-center justify-center sm:justify-start">
                 <Image
                   src={siteConfig.art.tarangLogo}
                   alt={siteConfig.edition}
                   fill
-                  sizes="(max-width: 640px) 340px, (max-width: 1024px) 560px, 620px"
-                  className="object-contain object-left"
+                  sizes="(max-width: 640px) 320px, (max-width: 1024px) 560px, 620px"
+                  className="object-contain object-center sm:object-left"
                   priority
                 />
               </div>
@@ -91,14 +92,14 @@ export function Hero() {
                 &ldquo;{siteConfig.tagline}&rdquo;
               </p>
 
-              {/* Authentic Hindi Theme Artwork */}
-              <div className="relative w-full max-w-[260px] sm:max-w-[360px] h-11 sm:h-14">
+              {/* Authentic Hindi Theme Artwork - Centered on Mobile, Left on Desktop */}
+              <div className="relative w-full max-w-[260px] sm:max-w-[360px] h-11 sm:h-14 flex items-center justify-center sm:justify-start">
                 <Image
                   src={siteConfig.art.themeLogo}
                   alt={siteConfig.theme}
                   fill
                   sizes="(max-width: 640px) 260px, 360px"
-                  className="object-contain object-left"
+                  className="object-contain object-center sm:object-left"
                   priority
                 />
               </div>
@@ -178,7 +179,7 @@ export function Hero() {
               </div>
 
               {/* Social Channels Quick Badges */}
-              <div className="flex flex-wrap items-center gap-2 pt-1">
+              <div className="flex flex-wrap items-center justify-center sm:justify-start gap-2 pt-1 w-full">
                 <a
                   href={siteConfig.social.instagram.url}
                   target="_blank"

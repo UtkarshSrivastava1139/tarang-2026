@@ -25,24 +25,6 @@ export function FeaturedVideo() {
         />
       </div>
 
-      {/* Decorative Rangoli Mandala Flanks (pointer-events: none, low opacity) */}
-      <div className="absolute -left-24 top-1/2 -translate-y-1/2 w-80 h-80 opacity-15 pointer-events-none select-none">
-        <Image
-          src="/assets/tarang/raster/decorative-motifs/rangoli-mandala.webp"
-          alt=""
-          fill
-          className="object-contain"
-        />
-      </div>
-      <div className="absolute -right-24 top-1/2 -translate-y-1/2 w-80 h-80 opacity-15 pointer-events-none select-none">
-        <Image
-          src="/assets/tarang/raster/decorative-motifs/rangoli-mandala.webp"
-          alt=""
-          fill
-          className="object-contain"
-        />
-      </div>
-
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* Section Header */}
