@@ -14,7 +14,7 @@ export function SocialMediaHub() {
         {/* Section Heading */}
         <div className="flex items-center gap-2 text-xs font-semibold text-gold uppercase tracking-widest mb-1.5">
           <span className="w-1.5 h-1.5 rounded-full bg-vermilion" />
-          <span>06 • {t('connect.badge')}</span>
+          <span>07 • {t('connect.badge')}</span>
         </div>
         <h2 className="font-display text-2xl sm:text-3xl lg:text-4xl font-bold text-navy leading-tight mb-2">
           {t('connect.title')}

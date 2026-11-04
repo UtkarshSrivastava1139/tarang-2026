@@ -53,74 +53,118 @@ export function MoreClient() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           
           {/* Intermediate College Card */}
-          <div className="bg-white p-6 sm:p-8 rounded-xl border border-gold/40 shadow-card hover:shadow-editorial transition-all space-y-4 flex flex-col justify-between">
-            <div className="space-y-4">
-              <div className="flex items-center gap-3">
-                <div className="relative w-14 h-14 bg-ivory rounded-lg p-1.5 border border-gold/30">
-                  <Image
-                    src={siteConfig.institutions.college.logo}
-                    alt={siteConfig.institutions.college.en}
-                    fill
-                    sizes="56px"
-                    className="object-contain"
-                  />
-                </div>
-                <div>
-                  <span className="text-[10px] uppercase font-bold tracking-wider text-gold-dim">
-                    Senior Secondary Institution
-                  </span>
-                  <h3 className="font-display text-lg sm:text-xl font-bold text-navy leading-snug">
-                    {isHindi ? siteConfig.institutions.college.hi : siteConfig.institutions.college.en}
-                  </h3>
-                </div>
+          <div className="bg-white rounded-xl border border-gold/40 shadow-card hover:shadow-editorial transition-all overflow-hidden flex flex-col justify-between group">
+            {/* Campus Photo Header */}
+            <div className="relative aspect-[16/9] w-full overflow-hidden bg-parchment/20">
+              <Image
+                src={siteConfig.institutions.college.image}
+                alt={isHindi ? siteConfig.institutions.college.hi : siteConfig.institutions.college.en}
+                fill
+                sizes="(max-width: 768px) 100vw, 600px"
+                className="object-cover group-hover:scale-103 transition-transform duration-700"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-navy/85 via-navy/20 to-transparent" />
+              <div className="absolute bottom-3 left-3 right-3 flex items-center justify-between text-ivory">
+                <span className="text-[10px] uppercase font-bold tracking-wider px-2.5 py-0.5 rounded bg-navy/85 border border-gold/40 text-gold shadow-xs">
+                  {isHindi ? 'कॉलेज परिसर एवं मुख्य मंच प्रांगण' : 'College Campus & Event Arena'}
+                </span>
+                <span className="text-[10px] font-medium text-ivory/90">
+                  Mathauli Bazar
+                </span>
               </div>
-
-              <p className="text-xs sm:text-sm text-text-muted leading-relaxed">
-                {isHindi
-                  ? 'श्रीमती राधिका देवी इण्टर कॉलेज मथौली बाज़ार में उच्च माध्यमिक शिक्षा का प्रतिष्ठित संस्थान है। यहाँ विद्यार्थियों को अकादमिक उत्कृष्टता के साथ-साथ नैतिक मूल्य, अनुशासन और राष्ट्रीय चेतना की शिक्षा दी जाती है।'
-                  : 'Smt. Radhika Devi Intermediate College is a distinguished senior secondary institution in Mathauli Bazar, dedicated to academic distinction, scientific temperament, and ethical character building.'}
-              </p>
             </div>
 
-            <div className="pt-4 border-t border-gold/20 flex items-center justify-between text-xs text-text-muted">
-              <span>Mathauli Bazar, Kushinagar</span>
-              <span className="text-gold font-bold">UP Board Affiliated</span>
+            <div className="p-6 sm:p-7 space-y-4 flex-1 flex flex-col justify-between">
+              <div className="space-y-3">
+                <div className="flex items-center gap-3">
+                  <div className="relative w-12 h-12 bg-ivory rounded-lg p-1 border border-gold/30 shrink-0">
+                    <Image
+                      src={siteConfig.institutions.college.logo}
+                      alt={siteConfig.institutions.college.en}
+                      fill
+                      sizes="48px"
+                      className="object-contain"
+                    />
+                  </div>
+                  <div>
+                    <span className="text-[10px] uppercase font-bold tracking-wider text-gold-dim block">
+                      Senior Secondary Institution
+                    </span>
+                    <h3 className="font-display text-lg sm:text-xl font-bold text-navy leading-snug">
+                      {isHindi ? siteConfig.institutions.college.hi : siteConfig.institutions.college.en}
+                    </h3>
+                  </div>
+                </div>
+
+                <p className="text-xs sm:text-sm text-text-muted leading-relaxed">
+                  {isHindi
+                    ? 'श्रीमती राधिका देवी इण्टर कॉलेज मथौली बाज़ार में उच्च माध्यमिक शिक्षा का प्रतिष्ठित संस्थान है। यहाँ विद्यार्थियों को अकादमिक उत्कृष्टता के साथ-साथ नैतिक मूल्य, अनुशासन और राष्ट्रीय चेतना की शिक्षा दी जाती है।'
+                    : 'Smt. Radhika Devi Intermediate College is a distinguished senior secondary institution in Mathauli Bazar, dedicated to academic distinction, scientific temperament, and ethical character building.'}
+                </p>
+              </div>
+
+              <div className="pt-4 border-t border-gold/20 flex items-center justify-between text-xs text-text-muted">
+                <span>Mathauli Bazar, Kushinagar</span>
+                <span className="text-gold font-bold">UP Board Affiliated</span>
+              </div>
             </div>
           </div>
 
           {/* Children Academy Card */}
-          <div className="bg-white p-6 sm:p-8 rounded-xl border border-gold/40 shadow-card hover:shadow-editorial transition-all space-y-4 flex flex-col justify-between">
-            <div className="space-y-4">
-              <div className="flex items-center gap-3">
-                <div className="relative w-14 h-14 bg-ivory rounded-lg p-1.5 border border-gold/30">
-                  <Image
-                    src={siteConfig.institutions.academy.logo}
-                    alt={siteConfig.institutions.academy.en}
-                    fill
-                    sizes="56px"
-                    className="object-contain"
-                  />
-                </div>
-                <div>
-                  <span className="text-[10px] uppercase font-bold tracking-wider text-gold-dim">
-                    Foundational Academy
-                  </span>
-                  <h3 className="font-display text-lg sm:text-xl font-bold text-navy leading-snug">
-                    {isHindi ? siteConfig.institutions.academy.hi : siteConfig.institutions.academy.en}
-                  </h3>
-                </div>
+          <div className="bg-white rounded-xl border border-gold/40 shadow-card hover:shadow-editorial transition-all overflow-hidden flex flex-col justify-between group">
+            {/* Campus Photo Header */}
+            <div className="relative aspect-[16/9] w-full overflow-hidden bg-parchment/20">
+              <Image
+                src={siteConfig.institutions.academy.image}
+                alt={isHindi ? siteConfig.institutions.academy.hi : siteConfig.institutions.academy.en}
+                fill
+                sizes="(max-width: 768px) 100vw, 600px"
+                className="object-cover group-hover:scale-103 transition-transform duration-700"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-navy/85 via-navy/20 to-transparent" />
+              <div className="absolute bottom-3 left-3 right-3 flex items-center justify-between text-ivory">
+                <span className="text-[10px] uppercase font-bold tracking-wider px-2.5 py-0.5 rounded bg-navy/85 border border-gold/40 text-gold shadow-xs">
+                  {isHindi ? 'चिल्ड्रेन्स एकेडमी परिसर' : 'Children Academy Campus'}
+                </span>
+                <span className="text-[10px] font-medium text-ivory/90">
+                  Mathauli Bazar
+                </span>
               </div>
-
-              <p className="text-xs sm:text-sm text-text-muted leading-relaxed">
-                {isHindi
-                  ? 'श्रीमती राधिका देवी चिल्ड्रेन्स एकेडमी बाल मनोविज्ञान पर आधारित आधुनिक एवं मूल्यनिष्ठ प्राथमिक व पूर्व-माध्यमिक शिक्षा प्रदान करती है, जहाँ खेलकूद और कलात्मक गतिविधियों द्वारा बच्चों का सर्वांगीण विकास होता है।'
-                  : 'Smt. Radhika Devi Children Academy fosters joyful early childhood and middle school education, combining modern pedagogical methods with performing arts, sports, and cultural enrichment.'}
-              </p>
             </div>
 
-            <div className="pt-4 border-t border-gold/20 flex items-center justify-between text-xs text-text-muted">
-              <span>Mathauli Bazar, Kushinagar</span>
-              <span className="text-gold font-bold">Holistic Learning</span>
+            <div className="p-6 sm:p-7 space-y-4 flex-1 flex flex-col justify-between">
+              <div className="space-y-3">
+                <div className="flex items-center gap-3">
+                  <div className="relative w-12 h-12 bg-ivory rounded-lg p-1 border border-gold/30 shrink-0">
+                    <Image
+                      src={siteConfig.institutions.academy.logo}
+                      alt={siteConfig.institutions.academy.en}
+                      fill
+                      sizes="48px"
+                      className="object-contain"
+                    />
+                  </div>
+                  <div>
+                    <span className="text-[10px] uppercase font-bold tracking-wider text-gold-dim block">
+                      Foundational Academy
+                    </span>
+                    <h3 className="font-display text-lg sm:text-xl font-bold text-navy leading-snug">
+                      {isHindi ? siteConfig.institutions.academy.hi : siteConfig.institutions.academy.en}
+                    </h3>
+                  </div>
+                </div>
+
+                <p className="text-xs sm:text-sm text-text-muted leading-relaxed">
+                  {isHindi
+                    ? 'श्रीमती राधिका देवी चिल्ड्रेन्स एकेडमी बाल मनोविज्ञान पर आधारित आधुनिक एवं मूल्यनिष्ठ प्राथमिक व पूर्व-माध्यमिक शिक्षा प्रदान करती है, जहाँ खेलकूद और कलात्मक गतिविधियों द्वारा बच्चों का सर्वांगीण विकास होता है।'
+                    : 'Smt. Radhika Devi Children Academy fosters joyful early childhood and middle school education, combining modern pedagogical methods with performing arts, sports, and cultural enrichment.'}
+                </p>
+              </div>
+
+              <div className="pt-4 border-t border-gold/20 flex items-center justify-between text-xs text-text-muted">
+                <span>Mathauli Bazar, Kushinagar</span>
+                <span className="text-gold font-bold">Holistic Learning</span>
+              </div>
             </div>
           </div>
 

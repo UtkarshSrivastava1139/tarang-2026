@@ -14,7 +14,7 @@ export function AnnouncementsSection() {
         {/* Section Heading */}
         <div className="flex items-center gap-2 text-xs font-semibold text-gold uppercase tracking-widest mb-1.5">
           <span className="w-1.5 h-1.5 rounded-full bg-vermilion" />
-          <span>05 • {t('announcements.badge')}</span>
+          <span>06 • {t('announcements.badge')}</span>
         </div>
         <h2 className="font-display text-2xl sm:text-3xl lg:text-4xl font-bold text-navy leading-tight mb-8">
           {t('announcements.title')}

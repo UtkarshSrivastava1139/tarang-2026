@@ -5,6 +5,7 @@ import { ThemeSection } from '@/components/home/ThemeSection';
 import { CategoriesSection } from '@/components/home/CategoriesSection';
 import { ArchivalCollage } from '@/components/home/ArchivalCollage';
 import { FeaturedVideo } from '@/components/home/FeaturedVideo';
+import { CampusShowcase } from '@/components/home/CampusShowcase';
 import { AnnouncementsSection } from '@/components/home/AnnouncementsSection';
 import { SocialMediaHub } from '@/components/home/SocialMediaHub';
 
@@ -17,6 +18,7 @@ export default function HomePage() {
       <CategoriesSection />
       <ArchivalCollage />
       <FeaturedVideo />
+      <CampusShowcase />
       <AnnouncementsSection />
       <SocialMediaHub />
     </>

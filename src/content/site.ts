@@ -52,13 +52,15 @@ export const siteConfig = {
       en: 'Smt. Radhika Devi Intermediate College',
       hi: 'श्रीमती राधिका देवी इण्टर कॉलेज',
       shortEn: 'SRD Intermediate College',
-      logo: '/branding/college_logo.png'
+      logo: '/branding/college_logo.png',
+      image: '/campus/srd_intermediate_college_campus.jpg'
     },
     academy: {
       en: 'Smt. Radhika Devi Children Academy',
       hi: 'श्रीमती राधिका देवी चिल्ड्रेन्स एकेडमी',
       shortEn: 'SRD Children Academy',
-      logo: '/branding/academy_logo.png'
+      logo: '/branding/academy_logo.png',
+      image: '/campus/srd_children_academy_campus.jpg'
     }
   },
   event: {
