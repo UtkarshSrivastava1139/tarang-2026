@@ -23,8 +23,45 @@ export function SocialMediaHub() {
           {t('connect.subtitle')}
         </p>
 
-        {/* Channels Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-5 sm:gap-6">
+        {/* Channels Grid - 4 Columns */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 sm:gap-6">
+          
+          {/* WhatsApp Channel Card */}
+          <div className="bg-gradient-to-br from-[#25D366]/10 via-[#25D366]/5 to-white rounded-xl p-5 sm:p-6 border border-[#25D366]/30 shadow-card flex flex-col justify-between relative overflow-hidden group">
+            <div>
+              <div className="flex items-center justify-between mb-4">
+                <div className="w-10 h-10 rounded-full bg-[#25D366] text-white flex items-center justify-center font-bold text-sm shadow-md">
+                  wa
+                </div>
+                <span className="text-[10px] uppercase font-bold tracking-widest text-[#25D366] bg-white/80 px-2.5 py-1 rounded-full border border-[#25D366]/30">
+                  {isHindi ? 'त्वरित अपडेट' : 'Instant Broadcast'}
+                </span>
+              </div>
+
+              <h3 className="font-display text-xl font-bold text-navy mb-1">
+                WhatsApp Channel
+              </h3>
+              <p className="text-sm font-semibold text-[#25D366] mb-3">
+                {siteConfig.social.whatsapp.channelName}
+              </p>
+
+              <p className="text-xs text-text-muted leading-relaxed mb-6">
+                {isHindi
+                  ? 'विद्यालय की आधिकारिक घोषणाएं, कार्यक्रम सारणी, मंच निर्देश और सजीव उत्सव अपडेट सीधे अपने व्हाट्सएप पर प्राप्त करें।'
+                  : 'Official announcements, program circulars, event guidelines, and live updates delivered directly to your WhatsApp.'}
+              </p>
+            </div>
+
+            <a
+              href={siteConfig.social.whatsapp.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full py-3 px-4 rounded-md bg-[#25D366] hover:bg-[#20BA5A] text-white font-bold text-xs uppercase tracking-wider flex items-center justify-center gap-2 shadow-sm transition-all"
+            >
+              <span>{t('connect.whatsappCta')}</span>
+              <span>↗</span>
+            </a>
+          </div>
           
           {/* Instagram Card */}
           <div className="bg-gradient-to-br from-[#833AB4]/10 via-[#FD1D1D]/5 to-[#F56040]/10 rounded-xl p-5 sm:p-6 border border-[#E1306C]/30 shadow-card flex flex-col justify-between relative overflow-hidden group">

@@ -209,6 +209,16 @@ export function Hero() {
                   <span className="text-[#FF0000] font-bold">yt</span>
                   <span>{siteConfig.social.youtube.channelName}</span>
                 </a>
+
+                <a
+                  href={siteConfig.social.whatsapp.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-md bg-white/80 hover:bg-white border border-gold/30 text-[11px] font-medium text-navy transition-colors shadow-2xs"
+                >
+                  <span className="text-[#25D366] font-bold">wa</span>
+                  <span>WhatsApp</span>
+                </a>
               </div>
 
             </div>

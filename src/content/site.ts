@@ -87,6 +87,10 @@ export const siteConfig = {
     youtube: {
       channelName: 'SRDIC Tarang 2024',
       url: 'https://www.youtube.com/@SRDICTarang2024'
+    },
+    whatsapp: {
+      channelName: 'SRD Institutions Official',
+      url: 'https://whatsapp.com/channel/0029VaEDRDJG3R3lICfz881o'
     }
   },
   video: {

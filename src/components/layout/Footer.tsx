@@ -152,6 +152,24 @@ export function Footer() {
                 </div>
                 <span className="text-gold group-hover:translate-x-0.5 transition-transform">↗</span>
               </a>
+
+              <a
+                href={siteConfig.social.whatsapp.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-between p-2.5 rounded-lg bg-navy-surface border border-gold/30 hover:border-gold transition-all group text-xs"
+              >
+                <div className="flex items-center gap-2">
+                  <div className="w-6 h-6 rounded-full bg-[#25D366]/20 text-[#25D366] flex items-center justify-center font-bold text-xs">
+                    wa
+                  </div>
+                  <div>
+                    <span className="font-semibold text-ivory block leading-tight">WhatsApp Channel</span>
+                    <span className="text-[11px] text-ivory/60">{siteConfig.social.whatsapp.channelName}</span>
+                  </div>
+                </div>
+                <span className="text-gold group-hover:translate-x-0.5 transition-transform">↗</span>
+              </a>
             </div>
 
             {/* Event Day Pill */}
