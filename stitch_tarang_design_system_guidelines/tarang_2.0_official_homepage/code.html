@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
+<title>TARANG 2.0 | Smt. Radhika Devi Intermediate College &amp; Children Academy</title>
+<!-- Google Fonts & Material Symbols -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&amp;family=Manrope:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS with custom configuration -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "surface": "#fff9ee",
+            "outline-variant": "#c5c6cf",
+            "secondary": "#7b580c",
+            "inverse-primary": "#b7c5f2",
+            "on-surface-variant": "#45464e",
+            "saffron": "#E98727",
+            "surface-container-high": "#eee7db",
+            "on-tertiary-container": "#ef604f",
+            "surface-container-low": "#faf3e6",
+            "on-tertiary": "#ffffff",
+            "on-error-container": "#93000a",
+            "on-secondary-fixed": "#271900",
+            "on-secondary": "#ffffff",
+            "muted-rose": "#925064",
+            "surface-tint": "#4f5d85",
+            "outline": "#75777f",
+            "secondary-fixed-dim": "#edc06c",
+            "surface-container": "#f4ede0",
+            "on-primary-container": "#7f8eb8",
+            "inverse-on-surface": "#f7f0e3",
+            "error-container": "#ffdad6",
+            "background": "#fff9ee",
+            "tertiary-fixed-dim": "#ffb4a9",
+            "primary-fixed-dim": "#b7c5f2",
+            "on-primary-fixed-variant": "#38466b",
+            "secondary-container": "#fccd79",
+            "on-primary-fixed": "#091a3d",
+            "tertiary-fixed": "#ffdad5",
+            "on-primary": "#ffffff",
+            "on-secondary-container": "#775608",
+            "primary": "#011135",
+            "on-tertiary-fixed": "#410001",
+            "on-surface": "#1e1b14",
+            "on-error": "#ffffff",
+            "primary-fixed": "#dae2ff",
+            "text-muted": "#56627A",
+            "surface-card": "#FFFFFF",
+            "secondary-fixed": "#ffdea7",
+            "inverse-surface": "#333028",
+            "error": "#ba1a1a",
+            "primary-container": "#17264a",
+            "surface-variant": "#e8e2d5",
+            "surface-container-highest": "#e8e2d5",
+            "surface-bright": "#fff9ee",
+            "tertiary": "#310000",
+            "border-subtle": "#E2D3B3",
+            "surface-container-lowest": "#ffffff",
+            "on-background": "#1e1b14",
+            "parchment": "#E5D5B8",
+            "tertiary-container": "#580001",
+            "emerald": "#286B50",
+            "vermilion": "#AD3025",
+            "on-secondary-fixed-variant": "#5e4200",
+            "on-tertiary-fixed-variant": "#8c1711",
+            "surface-dim": "#e0d9cd"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.125rem",
+            "lg": "0.25rem",
+            "xl": "0.5rem",
+            "full": "0.75rem"
+          },
+          "spacing": {
+            "space-xs": "0.25rem",
+            "margin": "1rem",
+            "margin-desktop": "3rem",
+            "space-sm": "0.5rem",
+            "gutter": "1rem",
+            "space-md": "1rem",
+            "gutter-desktop": "1.5rem",
+            "space-lg": "1.5rem",
+            "space-xl": "2.5rem"
+          },
+          "fontFamily": {
+            "label-lg": ["Manrope", "sans-serif"],
+            "display-hero-mobile": ["EB Garamond", "serif"],
+            "headline-md": ["EB Garamond", "serif"],
+            "body-sm": ["Manrope", "sans-serif"],
+            "body-lg": ["Manrope", "sans-serif"],
+            "display-hero": ["EB Garamond", "serif"],
+            "headline-lg": ["EB Garamond", "serif"],
+            "headline-lg-mobile": ["EB Garamond", "serif"],
+            "body-md": ["Manrope", "sans-serif"],
+            "headline-sm": ["EB Garamond", "serif"],
+            "label-md": ["Manrope", "sans-serif"],
+            "label-sm": ["Manrope", "sans-serif"]
+          },
+          "fontSize": {
+            "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "600" }],
+            "display-hero-mobile": ["34px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "headline-md": ["22px", { "lineHeight": "28px", "fontWeight": "500" }],
+            "body-sm": ["12px", { "lineHeight": "18px", "fontWeight": "400" }],
+            "body-lg": ["16px", { "lineHeight": "26px", "fontWeight": "400" }],
+            "display-hero": ["44px", { "lineHeight": "52px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "headline-lg": ["32px", { "lineHeight": "38px", "fontWeight": "600" }],
+            "headline-lg-mobile": ["26px", { "lineHeight": "32px", "fontWeight": "600" }],
+            "body-md": ["14px", { "lineHeight": "22px", "fontWeight": "400" }],
+            "headline-sm": ["18px", { "lineHeight": "24px", "fontWeight": "600" }],
+            "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "600" }],
+            "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.06em", "fontWeight": "700" }]
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1;
+    }
+    .heritage-gold-pattern {
+      background-image: radial-gradient(#C49A4B 0.75px, transparent 0.75px);
+      background-size: 10px 10px;
+    }
+  </style>
+</head>
+<body class="bg-surface text-on-surface antialiased font-body-md text-body-md min-h-screen selection:bg-secondary-fixed selection:text-on-secondary-fixed overflow-x-hidden">
+<!-- Main Mobile Container (Fluid 360-430px, max-w-md) -->
+<div class="max-w-md mx-auto min-h-screen flex flex-col bg-surface shadow-2xl relative pb-24 border-x border-border-subtle/50">
+<!-- 1. INSTITUTIONAL TOP APP BAR -->
+<header class="docked full-width top-0 sticky z-40 bg-surface/95 backdrop-blur-sm border-b border-border-subtle shadow-xs flex justify-between items-center w-full px-4 h-14 max-w-md mx-auto">
+<div class="flex items-center space-x-2">
+<span class="material-symbols-outlined text-primary text-xl" data-icon="school">school</span>
+<span class="text-headline-sm font-headline-sm font-semibold text-primary tracking-wide">TARANG 2.0</span>
+</div>
+<div class="flex items-center space-x-2">
+<!-- Language Switch Interactive Pill -->
+<button class="px-2.5 py-1 rounded-full border border-border-subtle bg-surface-container hover:bg-surface-container-high transition-colors duration-200 active:scale-95 text-label-sm font-label-sm text-primary flex items-center gap-1 shadow-xs" id="langToggle">
+<span class="material-symbols-outlined text-sm text-secondary" data-icon="translate">translate</span>
+<span>हिन्दी</span>
+</button>
+</div>
+</header>
+<!-- Institutional Brand Strip (Clear Prominent Official Names & Logos) -->
+<div class="bg-surface-container-low px-4 py-3.5 border-b border-border-subtle">
+<div class="flex items-center justify-between gap-3">
+<!-- College Emblem https://lh3.googleusercontent.com/aida-public/AB6AXuDJvEjQCCpXXUuCMqNlhHuLpyeiwyHhmZWDoaJD0kywfXzcKfjShwa85FlNDNxTCTK_MKezcMgD5f1zh26milYOvXW7Lvrmp6abWL6716iGMB-KHP1GrKEGBAivSb6cq7CLvXfASnDB2_2yt2fVhnjmiOPTLle2rDs5tulBnIcYzQikanpL26gISP4Ut55g2JEwL5m6n3lKHngQQF5HrgnyH9fcuI3vGsy9A4ilUp1nRjJSLR9KqDXf_Q -->
+<div class="w-12 h-12 shrink-0 p-0.5 bg-surface-card rounded-md border border-border-subtle flex items-center justify-center shadow-xs">
+<img alt="Smt. Radhika Devi Intermediate College Emblem" class="w-full h-full object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJvEjQCCpXXUuCMqNlhHuLpyeiwyHhmZWDoaJD0kywfXzcKfjShwa85FlNDNxTCTK_MKezcMgD5f1zh26milYOvXW7Lvrmp6abWL6716iGMB-KHP1GrKEGBAivSb6cq7CLvXfASnDB2_2yt2fVhnjmiOPTLle2rDs5tulBnIcYzQikanpL26gISP4Ut55g2JEwL5m6n3lKHngQQF5HrgnyH9fcuI3vGsy9A4ilUp1nRjJSLR9KqDXf_Q"/>
+</div>
+<!-- Institutional Stacked Typography -->
+<div class="flex-1 text-center">
+<h1 class="text-[12px] font-bold text-primary uppercase tracking-wide leading-tight">
+        Smt. Radhika Devi Intermediate College
+      </h1>
+<div class="flex items-center justify-center gap-1.5 my-0.5">
+<span class="h-px w-3 bg-secondary/40"></span>
+<span class="text-[10px] font-semibold text-secondary uppercase tracking-widest">&amp;</span>
+<span class="h-px w-3 bg-secondary/40"></span>
+</div>
+<h2 class="text-[12px] font-bold text-primary uppercase tracking-wide leading-tight">
+        Smt. Radhika Devi Children Academy
+      </h2>
+<p class="text-body-sm font-body-sm text-text-muted text-[11px] leading-tight mt-1 flex items-center justify-center gap-1">
+<span class="material-symbols-outlined text-[13px] text-secondary" data-icon="location_on">location_on</span>
+        Mathauli Bazar, Kushinagar, U.P.
+      </p>
+</div>
+<!-- Children Academy Emblem https://lh3.googleusercontent.com/aida-public/AB6AXuAaHLO6CWhjLyRGEyPD0vkG6aCgxHHEPqt4YORBoYRjbBlWI4L_kM_cCsXHFTecxTWb0WTBEyNuR_Eh558PuttN6dkflp1K6yg8gAwJskFEEIX_t7CsZYSQSYzr1euuFlNWRH4C2lg_ITUc3k-4n4K1fchQGFn3OPHAVLhwcbKygYZQrlj6nndmDjLzpKMfqbtOQD6tdHKqpcKeHor7bFzUPf6PrW1tAHg6EGFkkVGQ_SuiOkiJGTyexw -->
+<div class="w-12 h-12 shrink-0 p-0.5 bg-surface-card rounded-md border border-border-subtle flex items-center justify-center shadow-xs">
+<img alt="Smt. Radhika Devi Children Academy Crest" class="w-full h-full object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAaHLO6CWhjLyRGEyPD0vkG6aCgxHHEPqt4YORBoYRjbBlWI4L_kM_cCsXHFTecxTWb0WTBEyNuR_Eh558PuttN6dkflp1K6yg8gAwJskFEEIX_t7CsZYSQSYzr1euuFlNWRH4C2lg_ITUc3k-4n4K1fchQGFn3OPHAVLhwcbKygYZQrlj6nndmDjLzpKMfqbtOQD6tdHKqpcKeHor7bFzUPf6PrW1tAHg6EGFkkVGQ_SuiOkiJGTyexw"/>
+</div>
+</div>
+</div>
+<!-- MAIN EDITORIAL CONTENT -->
+<main class="flex-1 px-4 pt-4 space-y-6">
+<!-- 2. HERO SECTION -->
+<section class="relative bg-surface-container-lowest border border-border-subtle rounded-lg p-5 text-center overflow-hidden shadow-xs">
+<!-- Decorative Filigree Accent -->
+<div class="absolute -top-10 -right-10 w-28 h-28 rounded-full border border-border-subtle/50 pointer-events-none opacity-40"></div>
+<div class="absolute -bottom-10 -left-10 w-28 h-28 rounded-full border border-border-subtle/50 pointer-events-none opacity-40"></div>
+<div class="relative z-10 flex flex-col items-center">
+<!-- Accurate Event Tag -->
+<div class="inline-flex items-center gap-1.5 px-3 py-1 bg-surface-container rounded-full text-secondary text-[11px] font-label-sm mb-3.5 border border-border-subtle shadow-2xs">
+<span class="material-symbols-outlined text-xs text-saffron" data-icon="verified">verified</span>
+<span class="font-medium">Annual Function &amp; Cultural Event 2026 | Wednesday, 18 Nov 2026</span>
+</div>
+<!-- Official Tarang 2.0 Artwork / Logo https://lh3.googleusercontent.com/aida-public/AB6AXuDGfWIuzXzDJz5XCD-9rCwxJnOFAOiwwlXl-yxjkUbpRGsVc2ZzMb87m_sVQm4lEaClhYvro5ZnSATcW1XV7dDHr7z2uCPjJzACPvh011QU6XOgsyLf7OIdkKdNDNv25l83h7r1w-9Qe0kZoXg5y_C_KT8UKVxJHDZnbRwsezG427rLkcogA2_Mi6O5jbuUPXU3w3weP3h16HmWVFKbPLcqPABz1sIt00uUVgPJY6UqqA3y5YBkYeyi5Q -->
+<div class="w-full max-w-[280px] my-1 flex justify-center">
+<img alt="Tarang 2.0 Official Branding" class="w-full h-auto max-h-24 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDGfWIuzXzDJz5XCD-9rCwxJnOFAOiwwlXl-yxjkUbpRGsVc2ZzMb87m_sVQm4lEaClhYvro5ZnSATcW1XV7dDHr7z2uCPjJzACPvh011QU6XOgsyLf7OIdkKdNDNv25l83h7r1w-9Qe0kZoXg5y_C_KT8UKVxJHDZnbRwsezG427rLkcogA2_Mi6O5jbuUPXU3w3weP3h16HmWVFKbPLcqPABz1sIt00uUVgPJY6UqqA3y5YBkYeyi5Q"/>
+</div>
+<!-- Permanent Tagline -->
+<p class="font-headline-sm text-headline-sm text-secondary italic tracking-wide mt-0.5">
+        "The Rhythm of Togetherness"
+      </p>
+<!-- Theme Artwork https://lh3.googleusercontent.com/aida-public/AB6AXuDeOmTVCM1ORoX__PfHy2ML1FV5qB43uBLesCxcx539Qwcv68MatxyvKTm0LzrIRu7A54RhASPW4JOh51M7f_BMqNgTJqgELOMuFZfJQfbss1vC_8A4E_rCTNqvaNUhEtYS90qsLywNfPI3Soc-hji55HxGxeDLKcgQzxjpl41Foo8v7ur4PCQHRRFrQLJuLfiammB6UMfLDTWOJaLxuNE3jYUTJqXDCHbTA9vHG-UCDeQwp4WD8-HfVg -->
+<div class="w-full max-w-[260px] my-3">
+<img alt="एक भारत • अनेक रंग Theme Artwork" class="w-full h-auto max-h-14 object-contain mx-auto" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDeOmTVCM1ORoX__PfHy2ML1FV5qB43uBLesCxcx539Qwcv68MatxyvKTm0LzrIRu7A54RhASPW4JOh51M7f_BMqNgTJqgELOMuFZfJQfbss1vC_8A4E_rCTNqvaNUhEtYS90qsLywNfPI3Soc-hji55HxGxeDLKcgQzxjpl41Foo8v7ur4PCQHRRFrQLJuLfiammB6UMfLDTWOJaLxuNE3jYUTJqXDCHbTA9vHG-UCDeQwp4WD8-HfVg"/>
+</div>
+<!-- Ornamental Divider -->
+<div class="flex items-center justify-center gap-2 text-border-subtle my-1">
+<span class="h-px w-10 bg-border-subtle"></span>
+<span class="material-symbols-outlined text-secondary text-sm" data-icon="spa">spa</span>
+<span class="h-px w-10 bg-border-subtle"></span>
+</div>
+<p class="text-body-sm font-body-sm text-on-surface-variant max-w-xs mx-auto mt-2 leading-relaxed">
+        The Management, Principal, Staff &amp; Students cordially invite you to celebrate cultural vibrancy, music, and civilizational heritage.
+      </p>
+<!-- Accurate Event Schedule Badges -->
+<div class="grid grid-cols-2 gap-2 w-full mt-4 pt-3 border-t border-border-subtle/80">
+<div class="flex items-center justify-center gap-2 p-2.5 bg-surface-container rounded border border-border-subtle/70">
+<span class="material-symbols-outlined text-secondary text-base shrink-0" data-icon="calendar_month">calendar_month</span>
+<div class="text-left">
+<span class="text-label-sm font-label-sm block text-primary font-bold">18 Nov 2026</span>
+<span class="text-body-sm font-body-sm text-text-muted text-[10.5px] block">Wednesday</span>
+</div>
+</div>
+<div class="flex items-center justify-center gap-2 p-2.5 bg-surface-container rounded border border-border-subtle/70">
+<span class="material-symbols-outlined text-secondary text-base shrink-0" data-icon="schedule">schedule</span>
+<div class="text-left">
+<span class="text-label-sm font-label-sm block text-primary font-bold">3:00 PM IST Onwards</span>
+<span class="text-body-sm font-body-sm text-text-muted text-[10.5px] block truncate">School Campus</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 3. LIVE COUNTDOWN CARD (Targeting 18 Nov 2026 15:00:00 GMT+0530) -->
+<section class="bg-primary-container text-surface-card rounded-lg p-4 border border-secondary shadow-sm relative overflow-hidden">
+<div class="flex items-center justify-between mb-3 border-b border-white/10 pb-2">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary-fixed text-lg" data-icon="hourglass_top">hourglass_top</span>
+<h2 class="text-label-lg font-label-lg text-secondary-fixed tracking-wide uppercase text-[13px]">Countdown to Tarang</h2>
+</div>
+<span class="text-body-sm font-body-sm text-primary-fixed-dim text-[11px]">Wednesday, 18 Nov 2026</span>
+</div>
+<div class="grid grid-cols-4 gap-2 text-center">
+<div class="bg-primary/80 border border-secondary/30 rounded p-2 flex flex-col items-center">
+<span class="font-headline-lg-mobile text-headline-lg-mobile font-bold text-secondary-fixed" id="daysCount">--</span>
+<span class="text-label-sm font-label-sm text-primary-fixed-dim text-[10px] tracking-wider uppercase mt-0.5">Days</span>
+</div>
+<div class="bg-primary/80 border border-secondary/30 rounded p-2 flex flex-col items-center">
+<span class="font-headline-lg-mobile text-headline-lg-mobile font-bold text-secondary-fixed" id="hoursCount">--</span>
+<span class="text-label-sm font-label-sm text-primary-fixed-dim text-[10px] tracking-wider uppercase mt-0.5">Hours</span>
+</div>
+<div class="bg-primary/80 border border-secondary/30 rounded p-2 flex flex-col items-center">
+<span class="font-headline-lg-mobile text-headline-lg-mobile font-bold text-secondary-fixed" id="minsCount">--</span>
+<span class="text-label-sm font-label-sm text-primary-fixed-dim text-[10px] tracking-wider uppercase mt-0.5">Mins</span>
+</div>
+<div class="bg-primary/80 border border-secondary/30 rounded p-2 flex flex-col items-center">
+<span class="font-headline-lg-mobile text-headline-lg-mobile font-bold text-secondary-fixed" id="secsCount">--</span>
+<span class="text-label-sm font-label-sm text-primary-fixed-dim text-[10px] tracking-wider uppercase mt-0.5">Secs</span>
+</div>
+</div>
+<div class="mt-3 flex items-center justify-between text-[11px] text-primary-fixed-dim pt-2 border-t border-white/10">
+<span class="flex items-center gap-1 truncate mr-2">
+<span class="material-symbols-outlined text-xs text-saffron shrink-0" data-icon="pin_drop">pin_drop</span>
+        School Campus, Mathauli Bazar, Kushinagar
+      </span>
+<span class="text-secondary-fixed font-medium shrink-0">3:00 PM IST Onwards</span>
+</div>
+</section>
+<!-- 4. PRIMARY ACTIONS -->
+<section class="space-y-2.5">
+<a class="w-full bg-[#AD3025] hover:bg-[#8E241B] active:scale-95 transition-all duration-150 text-white rounded font-label-lg text-label-lg h-12 px-6 flex items-center justify-center gap-2 shadow-sm" href="#programme">
+<span>Explore Programme</span>
+<span class="material-symbols-outlined text-base" data-icon="arrow_forward">arrow_forward</span>
+</a>
+<div class="grid grid-cols-2 gap-2">
+<a class="bg-surface-card border border-primary text-primary hover:bg-surface-container active:scale-95 transition-all duration-150 rounded font-label-md text-label-md h-11 px-3 flex items-center justify-center gap-1.5 shadow-2xs" href="#memories">
+<span class="material-symbols-outlined text-sm text-secondary" data-icon="photo_library">photo_library</span>
+<span>Relive 2024</span>
+</a>
+<a class="bg-primary-container border border-secondary text-secondary-fixed hover:bg-primary active:scale-95 transition-all duration-150 rounded font-label-md text-label-md h-11 px-3 flex items-center justify-center gap-1.5 shadow-2xs" href="#invitation">
+<span class="material-symbols-outlined text-sm text-secondary-fixed" data-icon="mail">mail</span>
+<span>Invitation Card</span>
+</a>
+</div>
+<!-- Social Channels Engagement Badges -->
+<div class="flex items-center justify-between gap-2 pt-0.5">
+<a class="flex-1 flex items-center justify-center gap-1.5 py-2 px-2.5 rounded bg-surface-container border border-border-subtle text-primary hover:bg-surface-container-high transition-colors text-label-sm font-label-sm shadow-2xs" href="https://www.instagram.com/srdic_mathauli/" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-xs text-[#E1306C]" data-icon="photo_camera">photo_camera</span>
+<span class="truncate">@srdic_mathauli</span>
+</a>
+<a class="flex-1 flex items-center justify-center gap-1.5 py-2 px-2.5 rounded bg-surface-container border border-border-subtle text-primary hover:bg-surface-container-high transition-colors text-label-sm font-label-sm shadow-2xs" href="https://www.youtube.com/@SRDICTarang2024" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-xs text-[#FF0000]" data-icon="play_circle">play_circle</span>
+<span class="truncate">Tarang YouTube</span>
+</a>
+</div>
+</section>
+<!-- 5. THEME INTRODUCTION -->
+<section class="bg-surface-card border border-border-subtle rounded-lg p-5 relative">
+<div class="flex items-center gap-2 mb-2">
+<span class="h-4 w-1 bg-saffron rounded-full"></span>
+<h2 class="font-headline-sm text-headline-sm text-primary">Theme: एक भारत • अनेक रंग</h2>
+</div>
+<p class="text-body-md font-body-md text-on-surface-variant leading-relaxed">
+      Inspired by India’s enduring civilizational unity, <strong class="text-primary font-semibold">TARANG 2.0</strong> brings forth the colors of traditional regional dance forms, devotional ragas, theatrical folklore, and youth expressions curated by the students of Smt. Radhika Devi Institutions.
+    </p>
+<div class="mt-4 pt-3 border-t border-border-subtle grid grid-cols-3 gap-2 text-center">
+<div class="p-2 bg-surface-container rounded border border-border-subtle/50">
+<span class="material-symbols-outlined text-saffron text-lg" data-icon="music_note">music_note</span>
+<span class="block text-label-sm font-label-sm text-primary mt-1">Classical</span>
+</div>
+<div class="p-2 bg-surface-container rounded border border-border-subtle/50">
+<span class="material-symbols-outlined text-emerald text-lg" data-icon="theater_comedy">theater_comedy</span>
+<span class="block text-label-sm font-label-sm text-primary mt-1">Folk Drama</span>
+</div>
+<div class="p-2 bg-surface-container rounded border border-border-subtle/50">
+<span class="material-symbols-outlined text-muted-rose text-lg" data-icon="diversity_3">diversity_3</span>
+<span class="block text-label-sm font-label-sm text-primary mt-1">Heritage</span>
+</div>
+</div>
+</section>
+<!-- 6. FEATURED MEMORIES (TARANG 2024 AUTHENTIC PHOTOGRAPHS) -->
+<section class="space-y-3" id="memories">
+<div class="flex items-center justify-between">
+<div>
+<h2 class="font-headline-sm text-headline-sm text-primary">Relive The Moments</h2>
+<p class="text-body-sm font-body-sm text-text-muted">Highlights from TARANG 2024 Edition</p>
+</div>
+<a class="text-label-sm font-label-sm text-secondary hover:underline flex items-center gap-0.5" href="#gallery">
+<span>Full Gallery</span>
+<span class="material-symbols-outlined text-xs" data-icon="chevron_right">chevron_right</span>
+</a>
+</div>
+<!-- Authentic TARANG 2024 Photo Collage: https://lh3.googleusercontent.com/aida-public/AB6AXuC2IY2jo7C2ghVoTVbJKAItnWmr_-xGXDTzW-jqSCoBFquxonK32KEevRwsfWOnRP4EAhPIC9OxWJLSSLp6QhUPoBIeO2_UW7H0e7AP_hQKw-OvOW6Wcs1xIWGv12y9CnDvWIyqX8-Oc2OchYw1ADXiTDyOnX1dDt4XW65_Be56v0FsT-lStZ7pT5vHjiHhW-kpSb7OpwVKt6KqlXoOLQATFO5a4Y6w9h5bAWWpQIi742MIPIhVhSqCIg, https://lh3.googleusercontent.com/aida-public/AB6AXuB_xPAsWavnTVNvMUAvdCkulO_7ElyfY2s6BDf_DKrh3HpsZWAdyeNKnVXkS35oP4BxvnXyCRZp3PrkVd8HlLvKLiElQsu4Wuu47vvVvZd1SfolZbotJ2CivzcsDhzBlm8C_UI1Hrg7HbwpS0EZVvkZ3CXAPFxDgVoBlupscYPz1-TOVKfSTBbRJseeeaqayfsP_Go9wLQT85ygTQ2VeqcM6MhREFfi1AqeAsI1Nfx__IPFUHXxRIcHzw, https://lh3.googleusercontent.com/aida-public/AB6AXuBut51miXd4tORv0zWDf--HfZ_ApsceYxeCPEWbn7Z-E3X2PkpPDCXkXwLxyQrkS95Wkpx8cvS3BuyuvcIbrUg72z2fgd1amySUXWcqCONJWn27OtZi8wUNX2G8y2Aqi_5vPkInz9DyrCDU7BT3ivqE7BDlOXdDfmkNGoxqg519h35Dio_bp19RDmNebz_KTjtxWogDqTkD4bf4VYxKfgUm7BziGt1MXVpSWmWDpO9erMfAATCuICRl0Q, https://lh3.googleusercontent.com/aida-public/AB6AXuAzewCigID7Ogs60Z6lHoTp46K1RSw2P8yrIQUVOcyHOrI9tnhspcdJL3y-sK7u_1XkH6PhLxR6da7wDAp45pFTQX69kLRupT04JCKpr-y6s07i3WHEDxgzS54jQsoTO_W2j9Chm3Iy_FM8w1kcDTVo_RkJb36NNs-RDjQEB4v8fbteACQRLn4AtN57mY8Cd97yczyfSOsdy7bJfATjA5dCFHR3mnPc1VRUiXmbEzXfLTkmxuKz5xZTjw -->
+<div class="grid grid-cols-2 gap-2.5">
+<!-- Main Hero Performance Photo https://lh3.googleusercontent.com/aida-public/AB6AXuC2IY2jo7C2ghVoTVbJKAItnWmr_-xGXDTzW-jqSCoBFquxonK32KEevRwsfWOnRP4EAhPIC9OxWJLSSLp6QhUPoBIeO2_UW7H0e7AP_hQKw-OvOW6Wcs1xIWGv12y9CnDvWIyqX8-Oc2OchYw1ADXiTDyOnX1dDt4XW65_Be56v0FsT-lStZ7pT5vHjiHhW-kpSb7OpwVKt6KqlXoOLQATFO5a4Y6w9h5bAWWpQIi742MIPIhVhSqCIg -->
+<div class="col-span-2 relative rounded overflow-hidden border border-border-subtle bg-surface-container shadow-xs group">
+<img alt="Tarang 2024 Classical Dance Mudra Invocation" class="w-full h-56 object-cover object-center group-hover:scale-102 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC2IY2jo7C2ghVoTVbJKAItnWmr_-xGXDTzW-jqSCoBFquxonK32KEevRwsfWOnRP4EAhPIC9OxWJLSSLp6QhUPoBIeO2_UW7H0e7AP_hQKw-OvOW6Wcs1xIWGv12y9CnDvWIyqX8-Oc2OchYw1ADXiTDyOnX1dDt4XW65_Be56v0FsT-lStZ7pT5vHjiHhW-kpSb7OpwVKt6KqlXoOLQATFO5a4Y6w9h5bAWWpQIi742MIPIhVhSqCIg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent"></div>
+<div class="absolute bottom-2.5 left-3 right-3 text-white">
+<span class="px-2 py-0.5 rounded bg-emerald text-[10px] font-label-sm text-white uppercase tracking-wider inline-block mb-1">Classical Dance</span>
+<p class="text-label-md font-label-md leading-tight text-white font-medium">Invocation of Bharatanatyam &amp; Kathak Fusion</p>
+</div>
+</div>
+<!-- Performance Image 2: Ganesh Vandana https://lh3.googleusercontent.com/aida-public/AB6AXuB_xPAsWavnTVNvMUAvdCkulO_7ElyfY2s6BDf_DKrh3HpsZWAdyeNKnVXkS35oP4BxvnXyCRZp3PrkVd8HlLvKLiElQsu4Wuu47vvVvZd1SfolZbotJ2CivzcsDhzBlm8C_UI1Hrg7HbwpS0EZVvkZ3CXAPFxDgVoBlupscYPz1-TOVKfSTBbRJseeeaqayfsP_Go9wLQT85ygTQ2VeqcM6MhREFfi1AqeAsI1Nfx__IPFUHXxRIcHzw -->
+<div class="relative rounded overflow-hidden border border-border-subtle bg-surface-container shadow-2xs group">
+<img alt="Lord Ganesha invocation performance troupe" class="w-full h-36 object-cover object-top group-hover:scale-102 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB_xPAsWavnTVNvMUAvdCkulO_7ElyfY2s6BDf_DKrh3HpsZWAdyeNKnVXkS35oP4BxvnXyCRZp3PrkVd8HlLvKLiElQsu4Wuu47vvVvZd1SfolZbotJ2CivzcsDhzBlm8C_UI1Hrg7HbwpS0EZVvkZ3CXAPFxDgVoBlupscYPz1-TOVKfSTBbRJseeeaqayfsP_Go9wLQT85ygTQ2VeqcM6MhREFfi1AqeAsI1Nfx__IPFUHXxRIcHzw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent"></div>
+<div class="absolute bottom-1.5 left-2 right-2 text-white">
+<p class="text-label-sm font-label-sm text-surface-bright leading-tight truncate">Ganesh Vandana</p>
+</div>
+</div>
+<!-- Performance Image 3: Historical Drama Troupe https://lh3.googleusercontent.com/aida-public/AB6AXuBut51miXd4tORv0zWDf--HfZ_ApsceYxeCPEWbn7Z-E3X2PkpPDCXkXwLxyQrkS95Wkpx8cvS3BuyuvcIbrUg72z2fgd1amySUXWcqCONJWn27OtZi8wUNX2G8y2Aqi_5vPkInz9DyrCDU7BT3ivqE7BDlOXdDfmkNGoxqg519h35Dio_bp19RDmNebz_KTjtxWogDqTkD4bf4VYxKfgUm7BziGt1MXVpSWmWDpO9erMfAATCuICRl0Q -->
+<div class="relative rounded overflow-hidden border border-border-subtle bg-surface-container shadow-2xs group">
+<img alt="Dramatic cultural theater presentation" class="w-full h-36 object-cover object-center group-hover:scale-102 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBut51miXd4tORv0zWDf--HfZ_ApsceYxeCPEWbn7Z-E3X2PkpPDCXkXwLxyQrkS95Wkpx8cvS3BuyuvcIbrUg72z2fgd1amySUXWcqCONJWn27OtZi8wUNX2G8y2Aqi_5vPkInz9DyrCDU7BT3ivqE7BDlOXdDfmkNGoxqg519h35Dio_bp19RDmNebz_KTjtxWogDqTkD4bf4VYxKfgUm7BziGt1MXVpSWmWDpO9erMfAATCuICRl0Q"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent"></div>
+<div class="absolute bottom-1.5 left-2 right-2 text-white">
+<p class="text-label-sm font-label-sm text-surface-bright leading-tight truncate">Historical Drama</p>
+</div>
+</div>
+<!-- Wide Banner Performance Image 4: Grand Finale Troupe https://lh3.googleusercontent.com/aida-public/AB6AXuAzewCigID7Ogs60Z6lHoTp46K1RSw2P8yrIQUVOcyHOrI9tnhspcdJL3y-sK7u_1XkH6PhLxR6da7wDAp45pFTQX69kLRupT04JCKpr-y6s07i3WHEDxgzS54jQsoTO_W2j9Chm3Iy_FM8w1kcDTVo_RkJb36NNs-RDjQEB4v8fbteACQRLn4AtN57mY8Cd97yczyfSOsdy7bJfATjA5dCFHR3mnPc1VRUiXmbEzXfLTkmxuKz5xZTjw -->
+<div class="col-span-2 relative rounded overflow-hidden border border-border-subtle bg-surface-container shadow-2xs group">
+<img alt="Youth acrobatic and folk rhythm ensemble" class="w-full h-36 object-cover object-center group-hover:scale-102 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAzewCigID7Ogs60Z6lHoTp46K1RSw2P8yrIQUVOcyHOrI9tnhspcdJL3y-sK7u_1XkH6PhLxR6da7wDAp45pFTQX69kLRupT04JCKpr-y6s07i3WHEDxgzS54jQsoTO_W2j9Chm3Iy_FM8w1kcDTVo_RkJb36NNs-RDjQEB4v8fbteACQRLn4AtN57mY8Cd97yczyfSOsdy7bJfATjA5dCFHR3mnPc1VRUiXmbEzXfLTkmxuKz5xZTjw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent"></div>
+<div class="absolute bottom-2 left-3 right-3 text-white flex justify-between items-end">
+<div>
+<span class="text-[10px] text-secondary-fixed block font-label-sm">Grand Finale Troupe</span>
+<p class="text-label-md font-label-md text-white font-medium">Patriotic Ensemble &amp; Folk Rhythm</p>
+</div>
+<span class="text-[10px] text-border-subtle">Tarang 2024</span>
+</div>
+</div>
+</div>
+</section>
+<!-- 7. CULTURAL CATEGORIES -->
+<section class="space-y-3">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-base" data-icon="palette">palette</span>
+<h2 class="font-headline-sm text-headline-sm text-primary">Performance Categories</h2>
+</div>
+<div class="grid grid-cols-2 gap-2">
+<div class="p-3 bg-surface-card border border-border-subtle rounded flex items-start gap-2.5">
+<span class="material-symbols-outlined text-saffron text-lg mt-0.5" data-icon="queue_music">queue_music</span>
+<div>
+<h3 class="text-label-md font-label-md text-primary font-bold">Music</h3>
+<p class="text-body-sm font-body-sm text-text-muted text-[11px]">शास्त्रीय एवं सुगम संगीत</p>
+</div>
+</div>
+<div class="p-3 bg-surface-card border border-border-subtle rounded flex items-start gap-2.5">
+<span class="material-symbols-outlined text-emerald text-lg mt-0.5" data-icon="sports_kabaddi">sports_kabaddi</span>
+<div>
+<h3 class="text-label-md font-label-md text-primary font-bold">Dance</h3>
+<p class="text-body-sm font-body-sm text-text-muted text-[11px]">लोक व शास्त्रीय नृत्य</p>
+</div>
+</div>
+<div class="p-3 bg-surface-card border border-border-subtle rounded flex items-start gap-2.5">
+<span class="material-symbols-outlined text-muted-rose text-lg mt-0.5" data-icon="mic">mic</span>
+<div>
+<h3 class="text-label-md font-label-md text-primary font-bold">Singing</h3>
+<p class="text-body-sm font-body-sm text-text-muted text-[11px]">समूह एवं एकल गायन</p>
+</div>
+</div>
+<div class="p-3 bg-surface-card border border-border-subtle rounded flex items-start gap-2.5">
+<span class="material-symbols-outlined text-secondary text-lg mt-0.5" data-icon="theater_comedy">theater_comedy</span>
+<div>
+<h3 class="text-label-md font-label-md text-primary font-bold">Drama</h3>
+<p class="text-body-sm font-body-sm text-text-muted text-[11px]">नाट्य एवं प्रहसन</p>
+</div>
+</div>
+<div class="p-3 bg-surface-card border border-border-subtle rounded flex items-start gap-2.5">
+<span class="material-symbols-outlined text-saffron text-lg mt-0.5" data-icon="brush">brush</span>
+<div>
+<h3 class="text-label-md font-label-md text-primary font-bold">Regional Arts</h3>
+<p class="text-body-sm font-body-sm text-text-muted text-[11px]">क्षेत्रीय कला संगम</p>
+</div>
+</div>
+<div class="p-3 bg-surface-card border border-border-subtle rounded flex items-start gap-2.5">
+<span class="material-symbols-outlined text-emerald text-lg mt-0.5" data-icon="celebration">celebration</span>
+<div>
+<h3 class="text-label-md font-label-md text-primary font-bold">Showcases</h3>
+<p class="text-body-sm font-body-sm text-text-muted text-[11px]">सांस्कृतिक प्रस्तुतियां</p>
+</div>
+</div>
+</div>
+</section>
+<!-- 8. OFFICIAL INVITATION CARD & AUTHENTIC NOTICE -->
+<section class="space-y-3" id="invitation">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-base" data-icon="campaign">campaign</span>
+<h2 class="font-headline-sm text-headline-sm text-primary">Official Notices</h2>
+</div>
+<span class="text-[11px] font-label-sm text-secondary bg-surface-container px-2 py-0.5 rounded border border-border-subtle">Tarang 2.0</span>
+</div>
+<!-- Official Ceremonial Invitation Card Preview https://lh3.googleusercontent.com/aida-public/AB6AXuDiDlCO5hEA_OT_imeI7VU-ZnBlB1EPWEnir0U1lwJ32IiJLkmRuUbhyDj7fmJ-0QRPVnMzASjVsgfJeOQpSV2f6j19mTNKz9iwB7h-6y-58IK9wdd5ClwtCO4KZwGREIFEtXT3TyRMHs5-Yge8g1IgQ7qZPsSf4zeOYzSPQIVlZqxK31PYnH2yiJoDjoIyAjEB_tNbHW0u65IweGTH_GrDfieP9EenpN-8m9hOErSz6q5yVQ-9b6shvw -->
+<div class="bg-surface-card border border-border-subtle rounded-lg p-3.5 space-y-3 shadow-xs">
+<div class="flex items-start justify-between gap-2">
+<div>
+<span class="px-2 py-0.5 bg-saffron/15 text-saffron border border-saffron/30 rounded text-[10px] font-label-sm font-bold uppercase">Official Release</span>
+<h3 class="text-label-md font-label-md text-primary font-bold mt-1">Official Invitation Card Released</h3>
+<p class="text-body-sm font-body-sm text-text-muted text-[12px]">The ceremonial invitation card for Tarang 2.0 has been unveiled for dignitaries, parents &amp; patrons.</p>
+</div>
+<span class="material-symbols-outlined text-secondary text-lg" data-icon="mark_email_read">mark_email_read</span>
+</div>
+<!-- Invitation Card Preview Embedded -->
+<div class="rounded border border-border-subtle overflow-hidden bg-surface-container-low p-1">
+<img alt="Tarang 2.0 Official Ceremonial Invitation Card" class="w-full h-auto rounded object-contain shadow-2xs" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDiDlCO5hEA_OT_imeI7VU-ZnBlB1EPWEnir0U1lwJ32IiJLkmRuUbhyDj7fmJ-0QRPVnMzASjVsgfJeOQpSV2f6j19mTNKz9iwB7h-6y-58IK9wdd5ClwtCO4KZwGREIFEtXT3TyRMHs5-Yge8g1IgQ7qZPsSf4zeOYzSPQIVlZqxK31PYnH2yiJoDjoIyAjEB_tNbHW0u65IweGTH_GrDfieP9EenpN-8m9hOErSz6q5yVQ-9b6shvw"/>
+</div>
+</div>
+<!-- Offline Auditions & Participation Notice -->
+<div class="bg-surface-card border border-border-subtle rounded-lg p-3.5 flex items-start justify-between gap-3 shadow-xs">
+<div class="space-y-1">
+<span class="px-2 py-0.5 bg-emerald/15 text-emerald border border-emerald/30 rounded text-[10px] font-label-sm font-bold uppercase">Participation Notice</span>
+<h3 class="text-label-md font-label-md text-primary font-bold">Student Participation &amp; Auditions</h3>
+<p class="text-body-sm font-body-sm text-text-muted text-[12px] leading-relaxed">
+          Offline entries coordinated through House Masters &amp; Class In-charges. No online registrations required.
+        </p>
+</div>
+<span class="material-symbols-outlined text-primary text-xl shrink-0 mt-1" data-icon="how_to_reg">how_to_reg</span>
+</div>
+</section>
+<!-- 9. FOOTER & INSTITUTIONAL CREDITS -->
+<footer class="mt-8 pt-6 pb-4 border-t border-border-subtle space-y-4 text-center">
+<!-- Logos Strip: https://lh3.googleusercontent.com/aida-public/AB6AXuDJvEjQCCpXXUuCMqNlhHuLpyeiwyHhmZWDoaJD0kywfXzcKfjShwa85FlNDNxTCTK_MKezcMgD5f1zh26milYOvXW7Lvrmp6abWL6716iGMB-KHP1GrKEGBAivSb6cq7CLvXfASnDB2_2yt2fVhnjmiOPTLle2rDs5tulBnIcYzQikanpL26gISP4Ut55g2JEwL5m6n3lKHngQQF5HrgnyH9fcuI3vGsy9A4ilUp1nRjJSLR9KqDXf_Q, https://lh3.googleusercontent.com/aida-public/AB6AXuDGfWIuzXzDJz5XCD-9rCwxJnOFAOiwwlXl-yxjkUbpRGsVc2ZzMb87m_sVQm4lEaClhYvro5ZnSATcW1XV7dDHr7z2uCPjJzACPvh011QU6XOgsyLf7OIdkKdNDNv25l83h7r1w-9Qe0kZoXg5y_C_KT8UKVxJHDZnbRwsezG427rLkcogA2_Mi6O5jbuUPXU3w3weP3h16HmWVFKbPLcqPABz1sIt00uUVgPJY6UqqA3y5YBkYeyi5Q, https://lh3.googleusercontent.com/aida-public/AB6AXuAaHLO6CWhjLyRGEyPD0vkG6aCgxHHEPqt4YORBoYRjbBlWI4L_kM_cCsXHFTecxTWb0WTBEyNuR_Eh558PuttN6dkflp1K6yg8gAwJskFEEIX_t7CsZYSQSYzr1euuFlNWRH4C2lg_ITUc3k-4n4K1fchQGFn3OPHAVLhwcbKygYZQrlj6nndmDjLzpKMfqbtOQD6tdHKqpcKeHor7bFzUPf6PrW1tAHg6EGFkkVGQ_SuiOkiJGTyexw -->
+<div class="flex items-center justify-center gap-3">
+<img alt="SRDIC College Emblem" class="w-8 h-8 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJvEjQCCpXXUuCMqNlhHuLpyeiwyHhmZWDoaJD0kywfXzcKfjShwa85FlNDNxTCTK_MKezcMgD5f1zh26milYOvXW7Lvrmp6abWL6716iGMB-KHP1GrKEGBAivSb6cq7CLvXfASnDB2_2yt2fVhnjmiOPTLle2rDs5tulBnIcYzQikanpL26gISP4Ut55g2JEwL5m6n3lKHngQQF5HrgnyH9fcuI3vGsy9A4ilUp1nRjJSLR9KqDXf_Q"/>
+<img alt="Tarang 2.0 Emblem" class="h-6 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDGfWIuzXzDJz5XCD-9rCwxJnOFAOiwwlXl-yxjkUbpRGsVc2ZzMb87m_sVQm4lEaClhYvro5ZnSATcW1XV7dDHr7z2uCPjJzACPvh011QU6XOgsyLf7OIdkKdNDNv25l83h7r1w-9Qe0kZoXg5y_C_KT8UKVxJHDZnbRwsezG427rLkcogA2_Mi6O5jbuUPXU3w3weP3h16HmWVFKbPLcqPABz1sIt00uUVgPJY6UqqA3y5YBkYeyi5Q"/>
+<img alt="Children Academy Emblem" class="w-8 h-8 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAaHLO6CWhjLyRGEyPD0vkG6aCgxHHEPqt4YORBoYRjbBlWI4L_kM_cCsXHFTecxTWb0WTBEyNuR_Eh558PuttN6dkflp1K6yg8gAwJskFEEIX_t7CsZYSQSYzr1euuFlNWRH4C2lg_ITUc3k-4n4K1fchQGFn3OPHAVLhwcbKygYZQrlj6nndmDjLzpKMfqbtOQD6tdHKqpcKeHor7bFzUPf6PrW1tAHg6EGFkkVGQ_SuiOkiJGTyexw"/>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-primary">Smt. Radhika Devi Intermediate College</h4>
+<h4 class="font-headline-sm text-headline-sm text-primary text-[15px]">&amp; Children Academy</h4>
+<p class="text-body-sm font-body-sm text-text-muted text-[12px] mt-1">
+        A Disciplined, Moral &amp; Culturally Enriching Educational Institution
+      </p>
+<p class="text-body-sm font-body-sm text-text-muted text-[11px] mt-0.5">
+        Wednesday, 18 November 2026 • Mathauli Bazar, Kushinagar — Uttar Pradesh
+      </p>
+</div>
+<!-- Social Media Direct Links -->
+<div class="flex items-center justify-center gap-3 pt-1">
+<a aria-label="Instagram" class="p-2 rounded-full bg-surface-container border border-border-subtle text-primary hover:bg-surface-container-high transition-colors" href="https://www.instagram.com/srdic_mathauli/" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-base text-[#E1306C]" data-icon="photo_camera">photo_camera</span>
+</a>
+<a aria-label="YouTube" class="p-2 rounded-full bg-surface-container border border-border-subtle text-primary hover:bg-surface-container-high transition-colors" href="https://www.youtube.com/@SRDICTarang2024" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-base text-[#FF0000]" data-icon="smart_display">smart_display</span>
+</a>
+<a aria-label="Email" class="p-2 rounded-full bg-surface-container border border-border-subtle text-primary hover:bg-surface-container-high transition-colors" href="mailto:contact@srdic.org">
+<span class="material-symbols-outlined text-base text-secondary" data-icon="mail">mail</span>
+</a>
+</div>
+<div class="text-[10px] text-text-muted border-t border-border-subtle/60 pt-3">
+      © 2026 TARANG 2.0 — Smt. Radhika Devi Institutions. All Rights Reserved.
+    </div>
+</footer>
+</main>
+<!-- 10. FIXED MOBILE BOTTOM NAVIGATION BAR -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center h-14 px-2 max-w-md mx-auto inset-x-0 bg-primary border-t border-secondary shadow-lg">
+<!-- Tab 1: Home (ACTIVE ITEM) -->
+<a class="flex flex-col items-center justify-center text-secondary-fixed font-bold py-1 px-3 min-w-[56px] relative after:content-[''] after:w-1 after:h-1 after:bg-secondary-fixed after:rounded-full after:mt-0.5 active:scale-95 transition-transform duration-150" href="#">
+<span class="material-symbols-outlined text-xl" data-icon="home" data-weight="fill" style="font-variation-settings: 'FILL' 1;">home</span>
+<span class="text-label-sm font-label-sm text-[10px]">Home</span>
+</a>
+<!-- Tab 2: Programme -->
+<a class="flex flex-col items-center justify-center text-on-primary-container font-medium py-1 px-3 min-w-[56px] opacity-75 hover:opacity-100 transition-opacity duration-200 active:scale-95 transition-transform duration-150" href="#programme">
+<span class="material-symbols-outlined text-xl" data-icon="event_upcoming">event_upcoming</span>
+<span class="text-label-sm font-label-sm text-[10px]">Programme</span>
+</a>
+<!-- Tab 3: Journey -->
+<a class="flex flex-col items-center justify-center text-on-primary-container font-medium py-1 px-3 min-w-[56px] opacity-75 hover:opacity-100 transition-opacity duration-200 active:scale-95 transition-transform duration-150" href="#journey">
+<span class="material-symbols-outlined text-xl" data-icon="history_edu">history_edu</span>
+<span class="text-label-sm font-label-sm text-[10px]">Journey</span>
+</a>
+<!-- Tab 4: Gallery -->
+<a class="flex flex-col items-center justify-center text-on-primary-container font-medium py-1 px-3 min-w-[56px] opacity-75 hover:opacity-100 transition-opacity duration-200 active:scale-95 transition-transform duration-150" href="#memories">
+<span class="material-symbols-outlined text-xl" data-icon="photo_library">photo_library</span>
+<span class="text-label-sm font-label-sm text-[10px]">Gallery</span>
+</a>
+<!-- Tab 5: More -->
+<a class="flex flex-col items-center justify-center text-on-primary-container font-medium py-1 px-3 min-w-[56px] opacity-75 hover:opacity-100 transition-opacity duration-200 active:scale-95 transition-transform duration-150" href="#more">
+<span class="material-symbols-outlined text-xl" data-icon="more_horiz">more_horiz</span>
+<span class="text-label-sm font-label-sm text-[10px]">More</span>
+</a>
+</nav>
+</div>
+<!-- Inline Real-Time Countdown Timer Script -->
+<script>
+  // Target: Wednesday, 18 November 2026, 15:00:00 GMT+0530 (Asia/Kolkata)
+  function updateCountdown() {
+    const targetDate = new Date("2026-11-18T15:00:00+05:30").getTime();
+    const now = new Date().getTime();
+    const difference = targetDate - now;
+
+    const dElem = document.getElementById("daysCount");
+    const hElem = document.getElementById("hoursCount");
+    const mElem = document.getElementById("minsCount");
+    const sElem = document.getElementById("secsCount");
+
+    if (difference > 0) {
+      const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((difference % (1000 * 60)) / 1000);
+
+      if (dElem) dElem.textContent = days;
+      if (hElem) hElem.textContent = String(hours).padStart(2, '0');
+      if (mElem) mElem.textContent = String(minutes).padStart(2, '0');
+      if (sElem) sElem.textContent = String(seconds).padStart(2, '0');
+    } else {
+      if (dElem) dElem.textContent = "0";
+      if (hElem) hElem.textContent = "00";
+      if (mElem) mElem.textContent = "00";
+      if (sElem) sElem.textContent = "00";
+    }
+  }
+
+  setInterval(updateCountdown, 1000);
+  updateCountdown();
+
+  // Bilingual Toggle Micro-Interaction
+  const langBtn = document.getElementById("langToggle");
+  let isHindi = false;
+  if (langBtn) {
+    langBtn.addEventListener("click", () => {
+      isHindi = !isHindi;
+      const textSpan = langBtn.querySelector("span:not(.material-symbols-outlined)");
+      if (textSpan) {
+        textSpan.textContent = isHindi ? "English" : "हिन्दी";
+      }
+    });
+  }
+</script>
+</body></html>

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="800" height="800" viewBox="0 0 800 800">
+<defs><pattern id="woven" width="120" height="120" patternUnits="userSpaceOnUse">
+ <rect width="120" height="120" fill="#F7F0E3"/>
+ <path d="M60 5L115 60 60 115 5 60Z" fill="none" stroke="#C49A4B" stroke-width="2" opacity=".28"/>
+ <path d="M60 22L98 60 60 98 22 60Z" fill="none" stroke="#AD3025" stroke-width="1.5" opacity=".18"/>
+ <path d="M0 60H120M60 0V120" stroke="#286B50" stroke-width="1" opacity=".14"/>
+ <path d="M60 37Q82 60 60 83Q38 60 60 37Z" fill="#E98727" opacity=".12"/>
+ <circle cx="60" cy="60" r="4" fill="#C49A4B" opacity=".26"/>
+</pattern></defs>
+<rect width="800" height="800" fill="url(#woven)"/>
+</svg>

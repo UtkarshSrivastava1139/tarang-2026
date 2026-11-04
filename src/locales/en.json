@@ -1,0 +1,96 @@
+{
+  "navigation": {
+    "home": "Home",
+    "programme": "Programme",
+    "journey": "Journey",
+    "gallery": "Gallery",
+    "more": "More"
+  },
+  "common": {
+    "announcement": "Official Bulletin",
+    "language": "Language",
+    "viewMore": "View Details",
+    "close": "Close",
+    "back": "Back",
+    "share": "Share",
+    "download": "Download",
+    "watch": "Watch",
+    "all": "All",
+    "schoolCampus": "School Campus, Mathauli Bazar",
+    "kushinagar": "Kushinagar, Uttar Pradesh"
+  },
+  "hero": {
+    "kicker": "Annual Function & Cultural Event 2026",
+    "tagline": "The Rhythm of Togetherness",
+    "subtitle": "A grand celebration of student expression, cultural heritage, and the many vibrant colours that unite our motherland.",
+    "exploreProgramme": "The Journey & Legacy",
+    "viewInvitation": "Invitation Card",
+    "relive2024": "Relive 2024",
+    "countdownLabel": "Countdown to Tarang 2.0",
+    "eventDateTag": "Wednesday, 18 Nov 2026",
+    "days": "Days",
+    "hours": "Hours",
+    "mins": "Mins",
+    "secs": "Secs",
+    "eventLive": "TARANG 2.0 Is Live Today!",
+    "eventConcluded": "TARANG 2.0 Concluded with Grandeur"
+  },
+  "eventStrip": {
+    "dateTitle": "18 November 2026",
+    "dateSubtitle": "Wednesday · Main Event",
+    "timeTitle": "3:00 PM onwards",
+    "timeSubtitle": "Doors open for celebration",
+    "venueTitle": "School Campus",
+    "venueSubtitle": "Mathauli Bazar, Kushinagar",
+    "exploreAction": "Explore Journey"
+  },
+  "theme": {
+    "badge": "Central Cultural Theme",
+    "titleLine1": "Many Traditions.",
+    "titleLine2": "One Shared Rhythm.",
+    "hindiTheme": "एक भारत • अनेक रंग",
+    "description": "Ek Bharat • Anek Rang is a tribute to India's timeless tapestry of regional languages, folk dances, musical traditions, and philosophical heritage. Through Tarang, our students weave these distinct threads into one harmonious celebration of unity.",
+    "subtext": "From the classical ragas of the north to the graceful abhinaya of the south, experience the civilizational spirit of togetherness."
+  },
+  "categories": {
+    "badge": "Activities & Disciplines",
+    "title": "A Celebration of Talent & Expression",
+    "subtitle": "Discover the performances, voices, stories and creativity that bring TARANG 2.0 to life."
+  },
+  "archive": {
+    "badge": "Archival Memories",
+    "title": "Relive the Celebration",
+    "subtitle": "Memorable glimpses from TARANG 2024",
+    "viewFull": "View Full Gallery",
+    "photoCaption": "TARANG 2024 Archival Record"
+  },
+  "announcements": {
+    "badge": "Official Notices",
+    "title": "Latest Updates & Announcements"
+  },
+  "connect": {
+    "badge": "Stay Connected",
+    "title": "Join the Celebration",
+    "subtitle": "Follow our social channels for behind-the-scenes, rehearsal updates, and live event stories.",
+    "instagramCta": "Follow on Instagram",
+    "facebookCta": "Connect on Facebook",
+    "youtubeCta": "Tarang YouTube Channel",
+    "instagramHandle": "@srdic_mathauli",
+    "facebookHandle": "SRDHSSchool",
+    "youtubeHandle": "SRDIC Tarang 2024"
+  },
+  "invitation": {
+    "badge": "Ceremonial Card",
+    "title": "Official Invitation",
+    "desc": "The Management, Principal, Staff, and Students warmly welcome you to join TARANG 2.0.",
+    "downloadBtn": "Save Invitation",
+    "openBtn": "View Invitation Card"
+  },
+  "footer": {
+    "tagline": "The Rhythm of Togetherness",
+    "rights": "© 2026 TARANG. Official cultural festival platform of Smt. Radhika Devi Intermediate College & Children Academy.",
+    "address": "Mathauli Bazar, Kushinagar, U.P. · PIN 274306",
+    "contact": "Contact & Enquiries",
+    "designedFor": "A dedicated institutional digital platform."
+  }
+}

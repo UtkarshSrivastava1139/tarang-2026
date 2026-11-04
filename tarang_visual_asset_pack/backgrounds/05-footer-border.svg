@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="108" viewBox="0 0 1920 108">
+<defs><pattern id="borderPattern" width="96" height="54" patternUnits="userSpaceOnUse">
+ <rect width="96" height="54" fill="#17264A"/>
+ <path d="M0 27L24 4 48 27 72 4 96 27 72 50 48 27 24 50Z" fill="none" stroke="#C49A4B" stroke-width="2"/>
+ <path d="M24 27L48 8 72 27 48 46Z" fill="none" stroke="#AD3025" stroke-width="1.5"/>
+ <circle cx="48" cy="27" r="4" fill="#E98727"/>
+</pattern></defs>
+<rect width="1920" height="108" fill="url(#borderPattern)"/><path d="M0 4H1920M0 104H1920" stroke="#E5D5B8" stroke-width="3" opacity=".75"/>
+</svg>

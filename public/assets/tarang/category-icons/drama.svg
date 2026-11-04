@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" width="160" height="160" fill="none">
+  <defs>
+    <radialGradient id="dramaGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#AD3025" stop-opacity="0.15" />
+      <stop offset="100%" stop-color="#AD3025" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="vermilionGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#C84337" />
+      <stop offset="100%" stop-color="#AD3025" />
+    </linearGradient>
+    <linearGradient id="goldGradDr" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D8AB56" />
+      <stop offset="100%" stop-color="#C49A4B" />
+    </linearGradient>
+  </defs>
+
+  <!-- Ambient Glow -->
+  <circle cx="80" cy="80" r="70" fill="url(#dramaGlow)" />
+
+  <!-- Outer Fine Ornamental Ring -->
+  <circle cx="80" cy="80" r="68" stroke="#C49A4B" stroke-width="1" stroke-dasharray="2 4" opacity="0.4" />
+  <circle cx="80" cy="80" r="64" stroke="#AD3025" stroke-width="0.75" opacity="0.3" />
+
+  <!-- Classical Indian Theater Proscenium Curtains Arch -->
+  <path d="M22 28 C42 42 54 28 80 34 C106 28 118 42 138 28" stroke="url(#goldGradDr)" stroke-width="2.5" stroke-linecap="round" fill="none" />
+  <path d="M20 28 C28 50 26 90 20 120" stroke="#AD3025" stroke-width="3" stroke-linecap="round" opacity="0.4" />
+  <path d="M140 28 C132 50 134 90 140 120" stroke="#AD3025" stroke-width="3" stroke-linecap="round" opacity="0.4" />
+
+  <!-- Mask 1: Classical Radiant Mask (Heroic / Veera Rasa with Mukut Crown) - Left & Higher -->
+  <g transform="translate(32, 38)">
+    <!-- Ornate Mukut (Royal Crown) -->
+    <path d="M8 22 L24 2 L40 22 L32 20 L24 24 L16 20 Z" fill="url(#goldGradDr)" stroke="#9C762F" stroke-width="1.5" />
+    <circle cx="24" cy="9" r="2.5" fill="#AD3025" />
+    <circle cx="16" cy="18" r="1.5" fill="#286B50" />
+    <circle cx="32" cy="18" r="1.5" fill="#286B50" />
+
+    <!-- Mask Face Outline -->
+    <path d="M8 22 C6 50 14 68 24 74 C34 68 42 50 40 22 Z" fill="#FFFDF9" stroke="url(#vermilionGrad)" stroke-width="2.5" />
+    <!-- Tilak on Forehead -->
+    <path d="M22 26 L26 26 L25 36 L23 36 Z" fill="#AD3025" />
+    <circle cx="24" cy="38" r="1.5" fill="#C49A4B" />
+
+    <!-- Elegant Expressive Eyes (Kathakali/Classical Eye Contour) -->
+    <path d="M12 40 C16 36 21 38 21 40 C21 43 15 43 12 40 Z" fill="#17264A" />
+    <path d="M27 40 C27 38 32 36 36 40 C33 43 27 43 27 40 Z" fill="#17264A" />
+    <path d="M10 37 C15 32 22 35 22 36" stroke="#9C762F" stroke-width="1.2" />
+    <path d="M26 36 C26 35 33 32 38 37" stroke="#9C762F" stroke-width="1.2" />
+
+    <!-- Smiling Lips (Joy / Celebration) -->
+    <path d="M16 57 C20 64 28 64 32 57" stroke="#AD3025" stroke-width="2.5" stroke-linecap="round" fill="none" />
+    <!-- Mustache curve (Traditional heroic) -->
+    <path d="M14 53 C20 52 24 55 24 55 C24 55 28 52 34 53" stroke="#17264A" stroke-width="1.5" fill="none" />
+  </g>
+
+  <!-- Mask 2: Contemplative / Dramatic Mask (Shringara / Karuna Rasa) - Right & Lower -->
+  <g transform="translate(78, 56)">
+    <!-- Ornate Tiara / Crown -->
+    <path d="M10 20 L24 6 L38 20 Z" fill="#E5D5B8" stroke="url(#goldGradDr)" stroke-width="1.5" />
+    <circle cx="24" cy="13" r="2" fill="#E98727" />
+
+    <!-- Mask Face Outline -->
+    <path d="M8 20 C6 46 14 62 24 68 C34 62 42 46 40 20 Z" fill="#F7F0E3" stroke="url(#goldGradDr)" stroke-width="2.5" />
+    
+    <!-- Third Eye / Bindi -->
+    <circle cx="24" cy="28" r="2" fill="#AD3025" />
+
+    <!-- Arched Brows & Almond Eyes -->
+    <path d="M12 36 C16 32 21 34 21 37 C21 40 15 39 12 36 Z" fill="#17264A" />
+    <path d="M27 37 C27 34 32 32 36 36 C33 39 27 40 27 37 Z" fill="#17264A" />
+
+    <!-- Serene / Dramatic Lips -->
+    <path d="M17 53 C21 57 27 57 31 53" stroke="#C49A4B" stroke-width="2.2" stroke-linecap="round" fill="none" />
+  </g>
+
+  <!-- Stage Light Sparkles -->
+  <g fill="#D8AB56">
+    <path d="M38 18 L40 12 L42 18 L48 20 L42 22 L40 28 L38 22 L32 20 Z" />
+    <path d="M124 38 L125 34 L126 38 L130 39 L126 40 L125 44 L124 40 L120 39 Z" opacity="0.8" />
+  </g>
+</svg>

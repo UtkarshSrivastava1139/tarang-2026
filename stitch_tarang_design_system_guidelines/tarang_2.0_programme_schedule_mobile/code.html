@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>TARANG 2.0 - Programme Schedule | Smt. Radhika Devi Intermediate College</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&amp;family=Manrope:wght@300;400;500;600;700;800&amp;family=Cinzel+Decorative:wght@700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CDN -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Theme Configuration -->
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "on-tertiary": "#ffffff",
+            "emerald": "#286B50",
+            "on-secondary-fixed": "#271900",
+            "surface": "#fff9ee",
+            "on-surface": "#1e1b14",
+            "outline-variant": "#c5c6cf",
+            "tertiary-container": "#580001",
+            "on-primary-container": "#7f8eb8",
+            "on-primary-fixed": "#091a3d",
+            "on-surface-variant": "#45464e",
+            "on-tertiary-container": "#ef604f",
+            "primary-fixed-dim": "#b7c5f2",
+            "background": "#fff9ee",
+            "primary-container": "#17264a",
+            "on-secondary-fixed-variant": "#5e4200",
+            "tertiary": "#310000",
+            "surface-variant": "#e8e2d5",
+            "surface-container-lowest": "#FFFFFF",
+            "on-secondary": "#ffffff",
+            "inverse-surface": "#333028",
+            "secondary-fixed-dim": "#edc06c",
+            "surface-dim": "#e0d9cd",
+            "text-muted": "#56627A",
+            "on-tertiary-fixed": "#410001",
+            "inverse-primary": "#b7c5f2",
+            "secondary-container": "#fccd79",
+            "muted-rose": "#925064",
+            "surface-container-highest": "#e8e2d5",
+            "on-primary": "#ffffff",
+            "tertiary-fixed": "#ffdad5",
+            "outline": "#75777f",
+            "on-tertiary-fixed-variant": "#8c1711",
+            "surface-tint": "#4f5d85",
+            "on-secondary-container": "#775608",
+            "surface-bright": "#fff9ee",
+            "error-container": "#ffdad6",
+            "surface-container-low": "#faf3e6",
+            "saffron": "#E98727",
+            "on-error-container": "#93000a",
+            "surface-container": "#f4ede0",
+            "on-error": "#ffffff",
+            "parchment": "#E5D5B8",
+            "surface-container-high": "#eee7db",
+            "error": "#ba1a1a",
+            "primary-fixed": "#dae2ff",
+            "primary": "#011135",
+            "on-primary-fixed-variant": "#38466b",
+            "tertiary-fixed-dim": "#ffb4a9",
+            "border-hairline": "#E2D3B3",
+            "inverse-on-surface": "#f7f0e3",
+            "on-background": "#1e1b14",
+            "secondary-fixed": "#ffdea7",
+            "secondary": "#7b580c"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.125rem",
+            "lg": "0.25rem",
+            "xl": "0.5rem",
+            "full": "0.75rem"
+          },
+          "spacing": {
+            "gutter-desktop": "1.5rem",
+            "space-lg": "1.5rem",
+            "margin-desktop": "3rem",
+            "space-xl": "2.5rem",
+            "margin": "1rem",
+            "space-sm": "0.5rem",
+            "gutter": "1rem",
+            "space-xs": "0.25rem",
+            "space-md": "1rem"
+          },
+          "fontFamily": {
+            "headline-lg": ["EB Garamond"],
+            "label-lg": ["Manrope"],
+            "headline-sm": ["EB Garamond"],
+            "label-md": ["Manrope"],
+            "body-lg": ["Manrope"],
+            "body-sm": ["Manrope"],
+            "label-sm": ["Manrope"],
+            "display-hero": ["EB Garamond"],
+            "headline-lg-mobile": ["EB Garamond"],
+            "body-md": ["Manrope"],
+            "headline-md": ["EB Garamond"],
+            "display-hero-mobile": ["EB Garamond"]
+          },
+          "fontSize": {
+            "headline-lg": ["32px", { "lineHeight": "38px", "fontWeight": "600" }],
+            "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.04em", "fontWeight": "600" }],
+            "headline-sm": ["18px", { "lineHeight": "24px", "fontWeight": "600" }],
+            "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.06em", "fontWeight": "600" }],
+            "body-lg": ["16px", { "lineHeight": "26px", "fontWeight": "400" }],
+            "body-sm": ["12px", { "lineHeight": "18px", "fontWeight": "400" }],
+            "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.08em", "fontWeight": "700" }],
+            "display-hero": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "headline-lg-mobile": ["26px", { "lineHeight": "32px", "fontWeight": "600" }],
+            "body-md": ["14px", { "lineHeight": "22px", "fontWeight": "400" }],
+            "headline-md": ["22px", { "lineHeight": "28px", "fontWeight": "500" }],
+            "display-hero-mobile": ["34px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "600" }]
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-family: 'Material Symbols Outlined';
+      font-weight: normal;
+      font-style: normal;
+      font-size: 20px;
+      line-height: 1;
+      display: inline-block;
+      text-transform: none;
+      letter-spacing: normal;
+      word-wrap: normal;
+      white-space: nowrap;
+      direction: ltr;
+    }
+    /* Hide scrollbar for category tabs */
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+  </style>
+</head>
+<body class="bg-background text-on-surface antialiased font-body-md selection:bg-secondary-fixed selection:text-on-secondary-fixed min-h-screen pb-24">
+<!-- Mobile Viewport Wrapper max-w-md -->
+<div class="max-w-md mx-auto relative min-h-screen flex flex-col bg-background shadow-2xl">
+<!-- Top Institutional Masthead Bar -->
+<div class="bg-primary text-on-primary px-4 py-2 border-b border-border-hairline/20 flex flex-col items-center text-center">
+<span class="text-[9px] tracking-[0.14em] font-label-sm uppercase text-secondary-fixed font-bold opacity-90">
+        SMT. RADHIKA DEVI INTERMEDIATE COLLEGE &amp; CHILDREN ACADEMY
+      </span>
+<span class="text-[8px] font-body-sm tracking-wider text-primary-fixed-dim mt-0.5">
+        Mathauli Bazar, Kushinagar, U.P. • A Disciplined &amp; Culturally Enriched Heritage
+      </span>
+</div>
+<!-- SHARED COMPONENT: TopAppBar (Exact casing & styles from JSON) -->
+<header class="bg-surface dark:bg-surface text-primary dark:text-inverse-primary docked full-width top-0 sticky z-40 border-b border-border-subtle dark:border-outline-variant shadow-sm dark:shadow-none">
+<div class="flex justify-between items-center w-full px-4 h-14 max-w-md mx-auto">
+<!-- Leading Icon -->
+<button aria-label="College Crest" class="w-9 h-9 rounded flex items-center justify-center text-primary hover:bg-surface-container active:scale-95 transition-transform duration-150" type="button">
+<span class="material-symbols-outlined" data-icon="school">school</span>
+</button>
+<!-- Brand Headline Anchor -->
+<div class="flex items-center space-x-1.5">
+<span class="text-headline-sm font-headline-sm font-semibold text-primary dark:text-inverse-primary tracking-wide">
+            TARANG 2.0
+          </span>
+<span class="w-1.5 h-1.5 rounded-full bg-saffron inline-block"></span>
+</div>
+<!-- Trailing Action (Exact String Hindi Toggle from JSON) -->
+<button class="px-2.5 py-1 text-label-sm font-label-sm font-bold rounded border border-border-hairline bg-surface-container-low text-primary hover:bg-surface-container active:scale-95 transition-all flex items-center space-x-1" type="button">
+<span class="material-symbols-outlined text-[15px]" data-icon="translate">translate</span>
+<span>हिन्दी</span>
+</button>
+</div>
+</header>
+<!-- Visual Heritage Banner Frame -->
+<div class="relative overflow-hidden bg-primary-container px-4 pt-6 pb-6 text-on-primary">
+<div class="absolute inset-0 opacity-15 pointer-events-none mix-blend-overlay" style="background-image: radial-gradient(#edc06c 1px, transparent 1px); background-size: 16px 16px;"></div>
+<!-- Decorative Motif Line -->
+<div class="flex items-center justify-center gap-2 mb-3">
+<span class="h-[1px] w-10 bg-secondary-fixed-dim/60"></span>
+<span class="material-symbols-outlined text-secondary-fixed text-sm" data-icon="local_florist">local_florist</span>
+<span class="h-[1px] w-10 bg-secondary-fixed-dim/60"></span>
+</div>
+<!-- Tarang 2.0 Identity Emblem & Bilingual Theme -->
+<div class="text-center relative z-10">
+<div class="inline-block px-3 py-0.5 rounded-full bg-tertiary-container/80 border border-on-tertiary-container/30 text-on-tertiary text-[10px] font-label-sm tracking-wider uppercase mb-2">
+          Official Cultural Retrospective 2026
+        </div>
+<h1 class="text-display-hero-mobile font-display-hero-mobile text-surface-bright tracking-tight leading-none mb-1">
+          एक भारत, अनेक रंग
+        </h1>
+<p class="text-secondary-fixed-dim font-headline-sm italic text-sm tracking-wide">
+          The Rhythm of Togetherness...
+        </p>
+<!-- Date & Sanctuary Tag -->
+<div class="mt-4 pt-3 border-t border-border-hairline/25 flex items-center justify-between text-left">
+<div>
+<div class="flex items-center gap-1.5 text-secondary-fixed text-xs font-semibold">
+<span class="material-symbols-outlined text-sm" data-icon="calendar_month">calendar_month</span>
+<span>18 November 2026</span>
+</div>
+<div class="flex items-center gap-1.5 text-primary-fixed-dim text-[11px] mt-0.5">
+<span class="material-symbols-outlined text-xs" data-icon="schedule">schedule</span>
+<span>03:00 PM – 07:30 PM IST</span>
+</div>
+</div>
+<button class="bg-secondary text-on-secondary px-3 py-1.5 rounded flex items-center gap-1 text-label-sm font-label-sm hover:opacity-90 active:scale-95 transition-all shadow-sm" type="button">
+<span class="material-symbols-outlined text-sm" data-icon="download">download</span>
+<span>Itinerary PDF</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Editorial Briefing Card -->
+<section class="px-4 py-4 bg-surface-container-low border-b border-border-hairline">
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary text-2xl mt-0.5" data-icon="campaign">campaign</span>
+<div>
+<div class="text-label-sm font-label-sm text-secondary uppercase tracking-wider">Institutional Circular</div>
+<p class="text-body-sm font-body-sm text-on-surface-variant leading-relaxed mt-0.5">
+            Offline House Coordination: Entry strictly via College Gate No. 2. Student performers are scheduled with designated House Masters &amp; Class In-charges. No online pass needed for parent delegations.
+          </p>
+</div>
+</div>
+</section>
+<!-- Curatorial Category Tabs (Horizontal Scroll) -->
+<nav class="sticky top-14 z-30 bg-surface/95 backdrop-blur-md px-4 py-3 border-b border-border-hairline">
+<div class="flex items-center gap-2 overflow-x-auto no-scrollbar scroll-smooth">
+<!-- Active Filter Chip -->
+<button class="shrink-0 px-3.5 py-1.5 rounded-full bg-primary-container text-surface-bright text-label-md font-label-md border border-secondary-fixed flex items-center gap-1.5 shadow-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-saffron"></span>
+<span>All Orders</span>
+</button>
+<!-- Filter Chips (Inactive Parchment Grounds) -->
+<button class="shrink-0 px-3.5 py-1.5 rounded-full bg-parchment/60 text-primary hover:bg-parchment text-label-md font-label-md border border-border-hairline transition-colors">
+          Classical Dance
+        </button>
+<button class="shrink-0 px-3.5 py-1.5 rounded-full bg-parchment/60 text-primary hover:bg-parchment text-label-md font-label-md border border-border-hairline transition-colors">
+          Music &amp; Choral
+        </button>
+<button class="shrink-0 px-3.5 py-1.5 rounded-full bg-parchment/60 text-primary hover:bg-parchment text-label-md font-label-md border border-border-hairline transition-colors">
+          Regional Folk
+        </button>
+<button class="shrink-0 px-3.5 py-1.5 rounded-full bg-parchment/60 text-primary hover:bg-parchment text-label-md font-label-md border border-border-hairline transition-colors">
+          Theatrical Drama
+        </button>
+<button class="shrink-0 px-3.5 py-1.5 rounded-full bg-parchment/60 text-primary hover:bg-parchment text-label-md font-label-md border border-border-hairline transition-colors">
+          Conclave Honors
+        </button>
+</div>
+</nav>
+<!-- Curatorial Chronological Cultural Timeline -->
+<main class="px-4 py-6 flex-1 space-y-6">
+<div class="flex items-baseline justify-between border-b border-border-hairline pb-2">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+<h2 class="text-headline-sm font-headline-sm text-primary tracking-wide">
+            Curatorial Running Order
+          </h2>
+</div>
+<span class="text-label-sm font-label-sm text-secondary uppercase">6 Movements</span>
+</div>
+<!-- Item 1: Protocol & Inaugural (Mangalacharan) -->
+<article class="relative bg-surface-container-lowest border border-border-hairline rounded p-4 shadow-sm transition-all hover:border-secondary">
+<div class="flex items-start justify-between gap-2 mb-2">
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded text-[10px] font-label-sm font-bold bg-parchment text-primary border border-border-hairline uppercase">
+              Protocol &amp; Inaugural
+            </span>
+<span class="text-[11px] font-body-sm text-emerald font-semibold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald inline-block"></span> Sanctum
+            </span>
+</div>
+<span class="text-label-sm font-label-sm text-secondary font-bold">03:00 – 03:30 PM</span>
+</div>
+<h3 class="text-headline-sm font-headline-sm text-primary leading-snug">
+          Mangalacharan &amp; Deep Prajwalan
+        </h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant mt-1.5 leading-relaxed">
+          Sacred sanctum lamp lighting ceremony officiated by the Council of Elders and Patron Trustees, accompanied by Rigvedic invocations chanted by student scholars.
+        </p>
+<div class="mt-3 pt-2.5 border-t border-border-hairline/60 flex items-center justify-between text-[11px] text-text-muted">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-sm" data-icon="location_on">location_on</span>
+<span>Central Sanctum &amp; Vedika</span>
+</div>
+<span class="text-secondary font-semibold">House: Rishi Dayanand</span>
+</div>
+</article>
+<!-- Item 2: Classical Dance Fusion (Featured Editorial Card with Image) -->
+<article class="relative bg-surface-container-lowest border border-border-hairline rounded overflow-hidden shadow-sm hover:border-secondary transition-all">
+<!-- Hero Photographic Ratio -->
+<div class="relative h-44 w-full overflow-hidden bg-primary-container">
+<img alt="Kathak and Bharatanatyam classical dancers performing with expressive mudras and traditional ghungroos" class="w-full h-full object-cover object-top opacity-95 transition-transform duration-300 hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAfonGKAXngiMjKgkDMnC19IFWIhxFKc9gMlgfGk-HGTL0qAEmTozWAMuDFiX8o9CBApaoPz75UdQUROeGvLzf3egPIOppZZzxmRSGWRgnDUeirC-VJehzgpGHODWkSo2SX0UzUUsGsOxH5v6EKeHLi34N7CrqSqoaLQ7m82jrcDDhl-ZOOXVOEPIC68WGiuCdBC4QBKAme7MEaC7OGqNZ8wJ4EflJCOn6w62IaB29u5J0t7E-kWWzIuQ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent"></div>
+<div class="absolute bottom-2.5 left-3 right-3 flex items-end justify-between">
+<span class="px-2.5 py-0.5 rounded-full text-[10px] font-label-sm font-bold bg-tertiary-container text-on-tertiary border border-on-tertiary-container/40 uppercase">
+              Classical Dance
+            </span>
+<span class="text-secondary-fixed text-xs font-bold bg-primary/75 px-2 py-0.5 rounded backdrop-blur-sm">
+              03:35 – 04:15 PM
+            </span>
+</div>
+</div>
+<div class="p-4">
+<h3 class="text-headline-sm font-headline-sm text-primary leading-snug">
+            Natya Samanvay: Kathak &amp; Bharatanatyam Fusion
+          </h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant mt-2 leading-relaxed">
+            Choreographic exposition depicting the sacred confluence of the northern Ganga and southern Kaveri rivers. Features intricate tatkar, abhinaya, and synchronized jugalbandi by senior academy ballerinas.
+          </p>
+<div class="mt-3 pt-3 border-t border-border-hairline flex items-center justify-between text-xs">
+<div class="flex items-center gap-1 text-on-surface-variant">
+<span class="material-symbols-outlined text-sm text-secondary" data-icon="theater_comedy">theater_comedy</span>
+<span>Stage: <strong>Raga Mandap</strong></span>
+</div>
+<span class="text-label-sm font-label-sm text-secondary uppercase font-semibold">Choreography: Dept. of Arts</span>
+</div>
+</div>
+</article>
+<!-- Item 3: Music & Choral (Ganesh Vandana & Sitar-Tabla Vadan) -->
+<article class="relative bg-surface-container-lowest border border-border-hairline rounded overflow-hidden shadow-sm hover:border-secondary transition-all">
+<div class="relative h-44 w-full overflow-hidden bg-primary-container">
+<img alt="Young sitar and tabla musical performers in traditional attire seated on stage during classical performance" class="w-full h-full object-cover object-center opacity-95 transition-transform duration-300 hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAKo1IqvScb4_VJxohG2FZgQP5yFu4n_MPGGjfim6n8TAHlMQl9FR0OOr6mpF0M5dGWYbbi8Mi1P6dqx89yRN_ugFiOoerMJvJSwkzVJi09DgUMswBwlKqLqO6qssYdY3Lef5kl3_ZYQLGAVcTXWkN2KeYsN81S2KyS8n0RiZ8fAeqQQIYXN7KeUW0dTdFekxX9-R--egTgMCFt_NwwyO_EpR6dl9QBBto2xEMkCHs02XvMLpwkdN-gkA"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent"></div>
+<div class="absolute bottom-2.5 left-3 right-3 flex items-end justify-between">
+<span class="px-2.5 py-0.5 rounded-full text-[10px] font-label-sm font-bold bg-emerald text-on-tertiary uppercase">
+              Music &amp; Choral
+            </span>
+<span class="text-secondary-fixed text-xs font-bold bg-primary/75 px-2 py-0.5 rounded backdrop-blur-sm">
+              04:20 – 05:00 PM
+            </span>
+</div>
+</div>
+<div class="p-4">
+<h3 class="text-headline-sm font-headline-sm text-primary leading-snug">
+            Ganesh Vandana &amp; Sitar-Tabla Vadan
+          </h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant mt-2 leading-relaxed">
+            Raga Bhairav bandish presented by the junior classical ensemble, celebrating sacred compositions through acoustic harmony of strings and rhythm.
+          </p>
+<div class="mt-3 pt-3 border-t border-border-hairline flex items-center justify-between text-xs">
+<div class="flex items-center gap-1 text-on-surface-variant">
+<span class="material-symbols-outlined text-sm text-secondary" data-icon="music_note">music_note</span>
+<span>Stage: <strong>Main Arena</strong></span>
+</div>
+<span class="text-label-sm font-label-sm text-secondary uppercase font-semibold">Master Class Orchestra</span>
+</div>
+</div>
+</article>
+<!-- Item 4: Theatrical Drama (Lok Rang Natak) -->
+<article class="relative bg-surface-container-lowest border border-border-hairline rounded overflow-hidden shadow-sm hover:border-secondary transition-all">
+<div class="relative h-44 w-full overflow-hidden bg-primary-container">
+<img alt="Dramatic stage portrayal of historical Indian freedom fighters during open air performance" class="w-full h-full object-cover object-center opacity-95 transition-transform duration-300 hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDWeVhCAJrfSj_8EBzzznzWxTRQnAFf__hXnjPUS2djUxyQUBF2UBMvk377gIBBv1haU0GO_K9qSazcRYIt10tljYVEdnopUhs-IlcTqbEEsoUNfUfJgUSBTk9VfdNABHzEFRThdGrxTJytPPp3k_xN6di1_7afm8Cng4BEkwVldAASvUAsu59MCF5WZPsQxhWUwRzi5NNLvR5L3FN0cRdfO5QDCBE21k4CRCh3VZDYg5tVbaQvlM1M_g"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent"></div>
+<div class="absolute bottom-2.5 left-3 right-3 flex items-end justify-between">
+<span class="px-2.5 py-0.5 rounded-full text-[10px] font-label-sm font-bold bg-secondary text-on-secondary uppercase">
+              Theatrical Drama
+            </span>
+<span class="text-secondary-fixed text-xs font-bold bg-primary/75 px-2 py-0.5 rounded backdrop-blur-sm">
+              05:05 – 05:50 PM
+            </span>
+</div>
+</div>
+<div class="p-4">
+<h3 class="text-headline-sm font-headline-sm text-primary leading-snug">
+            Lok Rang Natak: Mati Ki Saugandh
+          </h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant mt-2 leading-relaxed">
+            Heroic oral traditions and theatrical chronicle revisiting the courage of regional freedom martyrs of Eastern Uttar Pradesh. Original script penned by Senior Humanities faculty.
+          </p>
+<div class="mt-3 pt-3 border-t border-border-hairline flex items-center justify-between text-xs">
+<div class="flex items-center gap-1 text-on-surface-variant">
+<span class="material-symbols-outlined text-sm text-secondary" data-icon="stadium">stadium</span>
+<span>Stage: <strong>Open Amphitheatre</strong></span>
+</div>
+<span class="text-label-sm font-label-sm text-secondary uppercase font-semibold">House: Tagore &amp; Bose</span>
+</div>
+</div>
+</article>
+<!-- Item 5: Regional Folk Confluence (Vande Mataram Medley) -->
+<article class="relative bg-surface-container-lowest border border-border-hairline rounded overflow-hidden shadow-sm hover:border-secondary transition-all">
+<div class="relative h-44 w-full overflow-hidden bg-primary-container">
+<img alt="Vibrant multi-regional Indian folk dance gathering with dancers in colourful traditional attire celebrating together" class="w-full h-full object-cover object-center opacity-95 transition-transform duration-300 hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA72UhnMCXI88IL2bgLrwYodsLVCgHAp-hjCDA9pjVJlpjynAaxBAJlH79qTlEzwhaL6VeouffLBsIWLF64Xnep92GkcibUO8VHojNSpfe2hb2ncs30OpzEU1n8AJgz_EBXtqt2RTcLxRjqJmwBZh2nL8k7TRvzx-0H2Hiyi3zYc1q7iTMYq4XNRGGbwcJuMTb_WKQaqD-4luraaa1Y7LDLdMqccvugru1wVSeRNiY0cbZVPu1-UPlxzA"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent"></div>
+<div class="absolute bottom-2.5 left-3 right-3 flex items-end justify-between">
+<span class="px-2.5 py-0.5 rounded-full text-[10px] font-label-sm font-bold bg-tertiary-container text-on-tertiary uppercase">
+              Regional Folk
+            </span>
+<span class="text-secondary-fixed text-xs font-bold bg-primary/75 px-2 py-0.5 rounded backdrop-blur-sm">
+              05:55 – 06:40 PM
+            </span>
+</div>
+</div>
+<div class="p-4">
+<h3 class="text-headline-sm font-headline-sm text-primary leading-snug">
+            Vande Mataram &amp; Pan-Indian Folk Medley
+          </h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant mt-2 leading-relaxed">
+            Celebratory crescendo blending Garba, Lavani, Bihu, and Bhangra in unbroken rhythmic dialogue, uniting over 120 students in celebration of "एक भारत • अनेक रंग".
+          </p>
+<div class="mt-3 pt-3 border-t border-border-hairline flex items-center justify-between text-xs">
+<div class="flex items-center gap-1 text-on-surface-variant">
+<span class="material-symbols-outlined text-sm text-secondary" data-icon="groups">groups</span>
+<span>Stage: <strong>Central Mandap</strong></span>
+</div>
+<span class="text-label-sm font-label-sm text-secondary uppercase font-semibold">Combined Conclave</span>
+</div>
+</div>
+</article>
+<!-- Item 6: Conclave Honors & Valedictory -->
+<article class="relative bg-surface-container-lowest border border-border-hairline rounded p-4 shadow-sm hover:border-secondary transition-all">
+<div class="flex items-start justify-between gap-2 mb-2">
+<span class="px-2 py-0.5 rounded text-[10px] font-label-sm font-bold bg-secondary-container text-on-secondary-container border border-secondary/20 uppercase">
+            Special Honors
+          </span>
+<span class="text-label-sm font-label-sm text-secondary font-bold">06:45 – 07:15 PM</span>
+</div>
+<h3 class="text-headline-sm font-headline-sm text-primary leading-snug">
+          Academic Honors &amp; Valedictory Conclave
+        </h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant mt-1.5 leading-relaxed">
+          Conferment of institution merit medallions, Radhika Ratna trophy, Principal's cultural citation, and closing National Anthem assembly.
+        </p>
+<div class="mt-3 pt-2.5 border-t border-border-hairline/60 flex items-center justify-between text-[11px] text-text-muted">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-sm" data-icon="workspace_premium">workspace_premium</span>
+<span>Grand Podium Arena</span>
+</div>
+<span class="text-secondary font-semibold">Presided by Patron Trustees</span>
+</div>
+</article>
+</main>
+<!-- Venue Navigation Architectural Matrix -->
+<section class="px-4 py-5 bg-surface-container border-t border-border-hairline">
+<div class="flex items-center justify-between mb-3">
+<h4 class="text-headline-sm font-headline-sm text-primary">Venue &amp; Stage Coordinates</h4>
+<span class="text-[10px] font-label-sm uppercase text-secondary font-bold">Campus Map</span>
+</div>
+<div class="grid grid-cols-2 gap-2.5">
+<div class="bg-surface-container-lowest p-3 rounded border border-border-hairline">
+<div class="flex items-center gap-1.5 text-secondary text-xs font-bold mb-1">
+<span class="material-symbols-outlined text-sm" data-icon="pin_drop">pin_drop</span>
+<span>Raga Mandap</span>
+</div>
+<div class="text-[11px] text-on-surface-variant">North Courtyard • Classical performances &amp; Vocal arena</div>
+</div>
+<div class="bg-surface-container-lowest p-3 rounded border border-border-hairline">
+<div class="flex items-center gap-1.5 text-secondary text-xs font-bold mb-1">
+<span class="material-symbols-outlined text-sm" data-icon="stadium">stadium</span>
+<span>Amphitheatre</span>
+</div>
+<div class="text-[11px] text-on-surface-variant">Central Quadrangle • Dramatic presentations &amp; Ensembles</div>
+</div>
+</div>
+<div class="mt-3 p-3 bg-surface-container-high rounded border border-border-hairline/80 flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-base" data-icon="info">info</span>
+<span class="text-body-sm font-body-sm text-primary font-medium">Guest seating opens at 02:15 PM</span>
+</div>
+<span class="text-label-sm font-label-sm text-secondary font-bold">Gate #2</span>
+</div>
+</section>
+<!-- Refined Institutional Archival Footer -->
+<footer class="bg-primary text-on-primary px-4 pt-6 pb-20 border-t border-secondary/30">
+<div class="text-center">
+<!-- Golden Decorative Divider Motif -->
+<div class="flex items-center justify-center gap-2 mb-2">
+<span class="h-[1px] w-8 bg-secondary-fixed/40"></span>
+<span class="text-secondary-fixed text-xs font-headline-sm">संस्कार • साधना • राष्ट्रप्रेम</span>
+<span class="h-[1px] w-8 bg-secondary-fixed/40"></span>
+</div>
+<p class="text-xs text-primary-fixed-dim font-headline-sm">
+          Smt. Radhika Devi Intermediate College &amp; Children Academy
+        </p>
+<p class="text-[10px] text-outline-variant mt-1">
+          Affiliated to U.P. Board • Mathauli Bazar, Kushinagar, Uttar Pradesh
+        </p>
+<!-- Social Handles & Archives -->
+<div class="flex items-center justify-center gap-4 mt-4 pt-4 border-t border-white/10 text-xs text-secondary-fixed-dim">
+<a class="hover:text-secondary-fixed transition-colors flex items-center gap-1" href="#">
+<span class="material-symbols-outlined text-sm" data-icon="videocam">videocam</span>
+<span>Live Stream</span>
+</a>
+<span>•</span>
+<a class="hover:text-secondary-fixed transition-colors flex items-center gap-1" href="#">
+<span class="material-symbols-outlined text-sm" data-icon="photo_camera">photo_camera</span>
+<span>@srdic_official</span>
+</a>
+<span>•</span>
+<a class="hover:text-secondary-fixed transition-colors flex items-center gap-1" href="#">
+<span class="material-symbols-outlined text-sm" data-icon="mail">mail</span>
+<span>Secretariat</span>
+</a>
+</div>
+<div class="text-[9px] text-outline-variant/70 mt-4 uppercase tracking-widest font-label-sm">
+          TARANG 2.0 © 2026 • Curatorial Archive Edition
+        </div>
+</div>
+</footer>
+<!-- SHARED COMPONENT: BottomNavBar (Active on Programme tab per protocol) -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center h-14 px-2 max-w-md mx-auto inset-x-0 bg-primary dark:bg-primary-container shadow-lg dark:shadow-none border-t border-secondary dark:border-secondary-container">
+<!-- Destination 1: Home (Inactive) -->
+<button aria-label="Home" class="flex flex-col items-center justify-center text-on-primary-container dark:text-outline-variant font-medium py-1 px-2 opacity-70 hover:opacity-100 transition-opacity duration-200 active:scale-95 transition-transform duration-150" type="button">
+<span class="material-symbols-outlined" data-icon="home">home</span>
+<span class="text-label-sm font-label-sm mt-0.5">Home</span>
+</button>
+<!-- Destination 2: Programme (ACTIVE per design intent & prompt) -->
+<button aria-current="page" aria-label="Programme" class="flex flex-col items-center justify-center text-secondary-fixed dark:text-secondary-fixed-dim font-bold py-1 px-2 relative after:content-[''] after:w-1 after:h-1 after:bg-secondary-fixed after:rounded-full after:mt-0.5 active:scale-95 transition-transform duration-150" type="button">
+<span class="material-symbols-outlined" data-icon="event_upcoming">event_upcoming</span>
+<span class="text-label-sm font-label-sm mt-0.5">Programme</span>
+</button>
+<!-- Destination 3: Journey (Inactive) -->
+<button aria-label="Journey" class="flex flex-col items-center justify-center text-on-primary-container dark:text-outline-variant font-medium py-1 px-2 opacity-70 hover:opacity-100 transition-opacity duration-200 active:scale-95 transition-transform duration-150" type="button">
+<span class="material-symbols-outlined" data-icon="history_edu">history_edu</span>
+<span class="text-label-sm font-label-sm mt-0.5">Journey</span>
+</button>
+<!-- Destination 4: Gallery (Inactive) -->
+<button aria-label="Gallery" class="flex flex-col items-center justify-center text-on-primary-container dark:text-outline-variant font-medium py-1 px-2 opacity-70 hover:opacity-100 transition-opacity duration-200 active:scale-95 transition-transform duration-150" type="button">
+<span class="material-symbols-outlined" data-icon="photo_library">photo_library</span>
+<span class="text-label-sm font-label-sm mt-0.5">Gallery</span>
+</button>
+<!-- Destination 5: More (Inactive) -->
+<button aria-label="More" class="flex flex-col items-center justify-center text-on-primary-container dark:text-outline-variant font-medium py-1 px-2 opacity-70 hover:opacity-100 transition-opacity duration-200 active:scale-95 transition-transform duration-150" type="button">
+<span class="material-symbols-outlined" data-icon="more_horiz">more_horiz</span>
+<span class="text-label-sm font-label-sm mt-0.5">More</span>
+</button>
+</nav>
+</div>
+</body></html>

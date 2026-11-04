@@ -1,0 +1,24 @@
+/* TARANG 2.0 — visual system starter */
+:root {
+  --tarang-ivory: #F7F0E3;
+  --tarang-parchment: #E5D5B8;
+  --tarang-navy: #17264A;
+  --tarang-gold: #C49A4B;
+  --tarang-vermilion: #AD3025;
+  --tarang-saffron: #E98727;
+  --tarang-emerald: #286B50;
+  --tarang-rose: #925064;
+  --tarang-ink: #342C27;
+  --tarang-muted: #756B61;
+  --tarang-border: rgba(126, 91, 55, .19);
+  --tarang-shadow: 0 18px 48px rgba(23, 38, 74, .10);
+  --tarang-radius-sm: 8px;
+  --tarang-radius-md: 16px;
+  --tarang-radius-lg: 24px;
+  --tarang-content-width: 1240px;
+}
+html { background: var(--tarang-ivory); color: var(--tarang-ink); }
+body { background-color: var(--tarang-ivory); }
+.tarang-canvas { background: var(--tarang-ivory) url('/assets/tarang/backgrounds/01-signature-canvas.svg') center top / cover no-repeat; }
+.tarang-woven { background-color: var(--tarang-ivory); background-image: url('/assets/tarang/backgrounds/03-woven-canvas.svg'); background-size: 360px 360px; background-repeat: repeat; }
+.tarang-midnight { background: var(--tarang-navy) url('/assets/tarang/backgrounds/04-midnight-celebration.svg') center / cover no-repeat; }

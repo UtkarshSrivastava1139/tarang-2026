@@ -1,0 +1,23 @@
+{
+  "name": "TARANG 2.0 — Official Cultural Festival Platform",
+  "short_name": "TARANG 2.0",
+  "description": "The official cultural festival platform of Smt. Radhika Devi Intermediate College & Children Academy, Mathauli Bazar, Kushinagar.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#F7F0E3",
+  "theme_color": "#17264A",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/branding/tarang_logo.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/branding/tarang_logo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
+

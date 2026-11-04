@@ -1,0 +1,4 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="160" height="160" viewBox="0 0 160 160">
+<defs></defs>
+<g fill="none" stroke="#286B50" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="80" cy="80" r="25"/><circle cx="80" cy="80" r="9" fill="#C49A4B" stroke="none"/><path d="M80 20v26M80 114v26M20 80h26M114 80h26M38 38l19 19M103 103l19 19M122 38l-19 19M57 103l-19 19"/><path d="M80 9q-16 18 0 34q16 -16 0 -34ZM80 117q-16 18 0 34q16 -16 0 -34ZM9 80q18 -16 34 0q-16 16 -34 0ZM117 80q18 -16 34 0q-16 16 -34 0Z" stroke="#AD3025"/><path d="M53 80q27 -39 54 0q-27 39 -54 0Z" stroke="#E98727"/></g>
+</svg>

@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>TARANG 2.0 — Directory &amp; Compendium</title>
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Fonts: EB Garamond (Display/Headlines) & Manrope (UI/Body) -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&amp;family=Manrope:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "tertiary-fixed": "#ffdad5",
+            "on-tertiary": "#ffffff",
+            "on-error": "#ffffff",
+            "on-primary-container": "#7f8eb8",
+            "on-background": "#1e1b14",
+            "secondary-container": "#fccd79",
+            "secondary": "#7b580c",
+            "on-primary-fixed-variant": "#38466b",
+            "on-secondary-container": "#775608",
+            "inverse-primary": "#b7c5f2",
+            "border-hairline": "#E2D3B3",
+            "background": "#fff9ee",
+            "on-secondary-fixed-variant": "#5e4200",
+            "tertiary-container": "#580001",
+            "surface-container-highest": "#e8e2d5",
+            "surface-bright": "#fff9ee",
+            "on-primary-fixed": "#091a3d",
+            "on-primary": "#ffffff",
+            "surface-container-lowest": "#ffffff",
+            "saffron": "#E98727",
+            "on-tertiary-container": "#ef604f",
+            "tertiary": "#310000",
+            "on-secondary-fixed": "#271900",
+            "inverse-on-surface": "#f7f0e3",
+            "primary-fixed-dim": "#b7c5f2",
+            "on-tertiary-fixed-variant": "#8c1711",
+            "inverse-surface": "#333028",
+            "on-surface": "#1e1b14",
+            "primary": "#011135",
+            "surface": "#fff9ee",
+            "surface-container-high": "#eee7db",
+            "tertiary-fixed-dim": "#ffb4a9",
+            "parchment": "#E5D5B8",
+            "error": "#ba1a1a",
+            "on-secondary": "#ffffff",
+            "on-surface-variant": "#45464e",
+            "primary-fixed": "#dae2ff",
+            "outline": "#75777f",
+            "emerald": "#286B50",
+            "surface-container": "#f4ede0",
+            "on-error-container": "#93000a",
+            "text-muted": "#56627A",
+            "error-container": "#ffdad6",
+            "surface-tint": "#4f5d85",
+            "secondary-fixed": "#ffdea7",
+            "primary-container": "#17264a",
+            "surface-variant": "#e8e2d5",
+            "surface-dim": "#e0d9cd",
+            "outline-variant": "#c5c6cf",
+            "secondary-fixed-dim": "#edc06c",
+            "on-tertiary-fixed": "#410001",
+            "surface-container-low": "#faf3e6",
+            "muted-rose": "#925064"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.125rem",
+            "lg": "0.25rem",
+            "xl": "0.5rem",
+            "full": "0.75rem"
+          },
+          "spacing": {
+            "space-sm": "0.5rem",
+            "gutter-desktop": "1.5rem",
+            "margin-desktop": "3rem",
+            "margin": "1rem",
+            "space-md": "1rem",
+            "space-xs": "0.25rem",
+            "space-lg": "1.5rem",
+            "space-xl": "2.5rem",
+            "gutter": "1rem"
+          },
+          "fontFamily": {
+            "body-lg": ["Manrope"],
+            "body-md": ["Manrope"],
+            "display-hero": ["EB Garamond"],
+            "label-md": ["Manrope"],
+            "headline-md": ["EB Garamond"],
+            "headline-lg": ["EB Garamond"],
+            "body-sm": ["Manrope"],
+            "headline-lg-mobile": ["EB Garamond"],
+            "label-sm": ["Manrope"],
+            "display-hero-mobile": ["EB Garamond"],
+            "headline-sm": ["EB Garamond"],
+            "label-lg": ["Manrope"]
+          },
+          "fontSize": {
+            "body-lg": ["16px", { "lineHeight": "26px", "fontWeight": "400" }],
+            "body-md": ["14px", { "lineHeight": "22px", "fontWeight": "400" }],
+            "display-hero": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.06em", "fontWeight": "600" }],
+            "headline-md": ["22px", { "lineHeight": "28px", "fontWeight": "500" }],
+            "headline-lg": ["32px", { "lineHeight": "38px", "fontWeight": "600" }],
+            "body-sm": ["12px", { "lineHeight": "18px", "fontWeight": "400" }],
+            "headline-lg-mobile": ["26px", { "lineHeight": "32px", "fontWeight": "600" }],
+            "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.08em", "fontWeight": "700" }],
+            "display-hero-mobile": ["34px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "headline-sm": ["18px", { "lineHeight": "24px", "fontWeight": "600" }],
+            "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.04em", "fontWeight": "600" }]
+          }
+        },
+      },
+    }
+  </script>
+</head>
+<body class="bg-background text-on-surface antialiased min-h-screen selection:bg-secondary-container selection:text-on-secondary-container">
+<!-- Mobile Viewport Container (390px Mobile Layout Standard) -->
+<div class="max-w-md mx-auto min-h-screen bg-surface relative flex flex-col shadow-sm">
+<!-- TopAppBar (From Shared Components JSON) -->
+<header class="bg-surface docked full-width top-0 sticky z-40 shadow-sm border-b border-border-hairline">
+<div class="flex justify-between items-center w-full px-4 h-14 max-w-md mx-auto">
+<div class="flex items-center space-x-2">
+<div class="flex items-center space-x-1.5">
+<img alt="College Crest" class="w-7 h-7 object-contain rounded-full border border-border-hairline bg-surface-container-lowest p-0.5" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBAhTynJHQaVlaxfQJ-ff9Y8ejdB6AnHRaRjCApM6boIqCdbLpYLRURdHwuvkdAJNZ9hLrmXoEd2j8X-U3EOFDH2F9aqKlMZ3TFXujC8A-_L93-5jITKxL02v6mnoKiGFkNZt-KJSGrSH66-d0MBlRPzyj-M0HVClzXkLTqRKtetTpqOfPn1iL1YzVmJLEis8UwQIX6MDI7wkDlw3v8RuZ-T_cXb-F_lwV3y9aWRwnsROQ7sMlJmXRfrg"/>
+<img alt="Academy Crest" class="w-7 h-7 object-contain rounded-full border border-border-hairline bg-surface-container-lowest p-0.5" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCNl56IBZnQsBZS8jcUiwxQrE9kjhE_8eH7Fi7gegUzeyyx5cguUas2bXWtuQXl4vvOtcW9L1hu7r2b2dGHoHrQVuz0Qnm0z9i09Iic5eEGU6SPX6QTcyZtNG92vJfacizpwKgtMpCR_tAQshQHqdGoRTSULLxxiJiZWVa9qai8VG7ulBqJkptTYT_82zbjj7-gabYuqdZpTWfDt1iLCRmcD-ySj26GHf7ZRd__0fG61FpjySFELtu1IQ"/>
+</div>
+<span class="text-headline-sm font-headline-sm font-semibold text-primary tracking-wide ml-1">TARANG 2.0</span>
+</div>
+<div class="flex items-center space-x-2">
+<!-- Bilingual Language Toggle Button -->
+<button class="border border-border-hairline bg-surface-container-low px-2.5 py-1 text-label-sm font-label-sm text-secondary hover:bg-surface-container transition-colors duration-200 active:scale-95 flex items-center space-x-1" type="button">
+<span class="material-symbols-outlined text-sm text-secondary">translate</span>
+<span>हिन्दी / EN</span>
+</button>
+</div>
+</div>
+</header>
+<!-- Main Editorial Content Canvas -->
+<main class="flex-1 px-4 pt-5 pb-28 space-y-7">
+<!-- Section 1: Editorial Header / Masthead -->
+<section class="border-b border-border-hairline pb-5">
+<div class="flex items-center space-x-2 mb-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span class="text-label-sm font-label-sm text-secondary tracking-widest uppercase">SECTION 9 &amp; 11 · DIRECTORY</span>
+</div>
+<h1 class="text-display-hero-mobile font-display-hero-mobile text-primary tracking-tight leading-tight">
+          Institutional Compendium &amp; Directory
+        </h1>
+<p class="font-headline-sm text-headline-sm text-secondary italic mt-1 font-serif">
+          संस्थागत परिचय एवं संदर्शिका
+        </p>
+<div class="w-12 h-px bg-secondary my-3"></div>
+<p class="text-body-md font-body-md text-on-surface-variant leading-relaxed">
+          Official guidelines, patron protocols, offline performer schedules, architectural transit notes, and PWA utilities for TARANG 2.0.
+        </p>
+</section>
+<!-- Section 2: About TARANG & The Two Institutions -->
+<section class="space-y-4">
+<div class="flex items-center justify-between border-b border-border-hairline pb-2">
+<span class="text-label-sm font-label-sm text-primary tracking-widest uppercase">01 / The Twin Foundations</span>
+<span class="text-label-sm font-label-sm text-secondary font-mono">ESTD. 2011</span>
+</div>
+<!-- Dual College Profile Architecture -->
+<div class="bg-surface-container-lowest border border-border-hairline p-4 space-y-4">
+<!-- College 1 -->
+<div class="flex items-start space-x-3.5 pb-4 border-b border-border-hairline">
+<img alt="Smt. Radhika Devi Intermediate College Seal" class="w-12 h-12 object-contain p-1 border border-border-hairline bg-surface-container-low shrink-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBAhTynJHQaVlaxfQJ-ff9Y8ejdB6AnHRaRjCApM6boIqCdbLpYLRURdHwuvkdAJNZ9hLrmXoEd2j8X-U3EOFDH2F9aqKlMZ3TFXujC8A-_L93-5jITKxL02v6mnoKiGFkNZt-KJSGrSH66-d0MBlRPzyj-M0HVClzXkLTqRKtetTpqOfPn1iL1YzVmJLEis8UwQIX6MDI7wkDlw3v8RuZ-T_cXb-F_lwV3y9aWRwnsROQ7sMlJmXRfrg"/>
+<div>
+<span class="text-label-sm font-label-sm text-secondary uppercase tracking-wider block">Board Affiliation #1184</span>
+<h2 class="text-headline-sm font-headline-sm text-primary font-semibold leading-snug">
+                Smt. Radhika Devi Intermediate College
+              </h2>
+<p class="text-body-sm font-body-sm text-on-surface-variant mt-1 leading-normal">
+                Mathauli Bazar, Kushinagar (U.P.). Dedicated to disciplined, moral, and culturally anchored academic excellence from secondary through senior secondary cadres.
+              </p>
+</div>
+</div>
+<!-- Academy 2 -->
+<div class="flex items-start space-x-3.5">
+<img alt="Smt. Radhika Devi Children Academy Seal" class="w-12 h-12 object-contain p-1 border border-border-hairline bg-surface-container-low shrink-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCNl56IBZnQsBZS8jcUiwxQrE9kjhE_8eH7Fi7gegUzeyyx5cguUas2bXWtuQXl4vvOtcW9L1hu7r2b2dGHoHrQVuz0Qnm0z9i09Iic5eEGU6SPX6QTcyZtNG92vJfacizpwKgtMpCR_tAQshQHqdGoRTSULLxxiJiZWVa9qai8VG7ulBqJkptTYT_82zbjj7-gabYuqdZpTWfDt1iLCRmcD-ySj26GHf7ZRd__0fG61FpjySFELtu1IQ"/>
+<div>
+<span class="text-label-sm font-label-sm text-emerald uppercase tracking-wider block">Foundational Cadre</span>
+<h2 class="text-headline-sm font-headline-sm text-primary font-semibold leading-snug">
+                Smt. Radhika Devi Children Academy
+              </h2>
+<p class="text-body-sm font-body-sm text-on-surface-variant mt-1 leading-normal">
+                Nurturing foundational curiosity, classical arts, folk heritage, and communicative eloquence from early childhood through preparatory stages.
+              </p>
+</div>
+</div>
+</div>
+<!-- Curatorial Leadership Quote -->
+<div class="bg-surface-container-low border-l-2 border-secondary p-3.5">
+<p class="font-headline-sm text-headline-sm italic text-primary leading-snug">
+            “Art and discipline are not extracurricular pursuits; they are the rhythmic spine of moral and intellectual character.”
+          </p>
+<div class="flex items-center justify-between mt-2 pt-2 border-t border-border-hairline/60">
+<span class="text-label-sm font-label-sm text-secondary uppercase">From The Directorate &amp; Principal’s Desk</span>
+<span class="text-body-sm font-body-sm text-text-muted">Mathauli Bazar</span>
+</div>
+</div>
+</section>
+<!-- Section 3: Offline Participation & Performer Protocols -->
+<section class="space-y-4">
+<div class="flex items-center justify-between border-b border-border-hairline pb-2">
+<span class="text-label-sm font-label-sm text-primary tracking-widest uppercase">02 / Performer Protocols</span>
+<span class="text-label-sm font-label-sm text-tertiary-container bg-tertiary-fixed px-1.5 py-0.5 font-bold">OFFLINE ONLY</span>
+</div>
+<p class="text-body-md font-body-md text-on-surface-variant">
+          Strictly offline procedural mandate. TARANG maintains zero digital registration forms and collects no fees. All participation adheres to intra-collegiate house rosters:
+        </p>
+<!-- Houses Grid -->
+<div class="grid grid-cols-2 gap-2.5">
+<div class="p-3 bg-surface-container-low border border-border-hairline">
+<span class="text-label-sm font-label-sm text-secondary block font-bold">HOUSE TAGORE</span>
+<span class="text-body-sm font-body-sm text-on-surface-variant">Vocal, Rabindra Sangeet &amp; Folk Heritage</span>
+</div>
+<div class="p-3 bg-surface-container-low border border-border-hairline">
+<span class="text-label-sm font-label-sm text-secondary block font-bold">HOUSE BOSE</span>
+<span class="text-body-sm font-body-sm text-on-surface-variant">Patriotic Dramatics &amp; Physical Drill</span>
+</div>
+<div class="p-3 bg-surface-container-low border border-border-hairline">
+<span class="text-label-sm font-label-sm text-secondary block font-bold">HOUSE RAMAN</span>
+<span class="text-body-sm font-body-sm text-on-surface-variant">Exhibition Curation &amp; Stage Architecture</span>
+</div>
+<div class="p-3 bg-surface-container-low border border-border-hairline">
+<span class="text-label-sm font-label-sm text-secondary block font-bold">HOUSE SAROJINI</span>
+<span class="text-body-sm font-body-sm text-on-surface-variant">Classical Kathak, Bharatnatyam &amp; Poetry</span>
+</div>
+</div>
+<!-- Protocol Rules Architectural Row -->
+<div class="border-t border-b border-border-hairline divide-y divide-border-hairline">
+<div class="py-2.5 flex items-start space-x-3">
+<span class="material-symbols-outlined text-secondary text-lg mt-0.5 shrink-0">how_to_reg</span>
+<div>
+<h3 class="text-body-md font-body-md font-semibold text-primary">In-Person Audition Gate</h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant">Conducted at the Central Quadrangle under the respective House Master by Nov 10, 2026.</p>
+</div>
+</div>
+<div class="py-2.5 flex items-start space-x-3">
+<span class="material-symbols-outlined text-secondary text-lg mt-0.5 shrink-0">checkroom</span>
+<div>
+<h3 class="text-body-md font-body-md font-semibold text-primary">Greenroom &amp; Wardrobe Verification</h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant">Traditional attire vetted 48 hours prior. Performer entry exclusively via North Gate No. 3.</p>
+</div>
+</div>
+<div class="py-2.5 flex items-start space-x-3">
+<span class="material-symbols-outlined text-secondary text-lg mt-0.5 shrink-0">event_repeat</span>
+<div>
+<h3 class="text-body-md font-body-md font-semibold text-primary">Mandatory Dress Rehearsal</h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant">90% rehearsal attendance mandatory for biennial certification and stage clearance.</p>
+</div>
+</div>
+</div>
+<div class="p-2.5 bg-surface-container border border-border-hairline flex items-center space-x-2 text-label-sm font-label-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-sm text-secondary">info</span>
+<span>No external portal or digital payment is authorized. Report to Campus Admin.</span>
+</div>
+</section>
+<!-- Section 4: Venue, Route & Campus Access Plan -->
+<section class="space-y-4">
+<div class="flex items-center justify-between border-b border-border-hairline pb-2">
+<span class="text-label-sm font-label-sm text-primary tracking-widest uppercase">03 / Campus Access &amp; Gates</span>
+<span class="text-label-sm font-label-sm text-secondary font-mono">MAP REF · KSN</span>
+</div>
+<div class="bg-surface-container-lowest border border-border-hairline p-4 space-y-3">
+<div class="flex items-start justify-between">
+<div>
+<h3 class="text-headline-sm font-headline-sm text-primary">Smt. Radhika Devi Campus</h3>
+<p class="text-body-sm font-body-sm text-text-muted">Mathauli Bazar, District Kushinagar, Uttar Pradesh — 274306</p>
+</div>
+<a class="border border-border-hairline bg-surface px-2.5 py-1 text-label-sm font-label-sm text-primary hover:bg-surface-container flex items-center space-x-1 shrink-0" href="https://maps.google.com" target="_blank">
+<span class="material-symbols-outlined text-xs">navigation</span>
+<span>Directions</span>
+</a>
+</div>
+<!-- Gates Breakdown -->
+<div class="space-y-2 pt-2 border-t border-border-hairline">
+<div class="p-2.5 bg-surface-container-low border-l-2 border-primary flex items-start justify-between">
+<div>
+<span class="text-label-sm font-label-sm font-bold text-primary block">GATE NO. 1 (EAST FAÇADE)</span>
+<span class="text-body-sm font-body-sm text-on-surface-variant">VVIP Delegations, Education Officers, Faculty &amp; Media Desk</span>
+</div>
+<span class="text-label-sm font-label-sm text-primary bg-surface border border-border-hairline px-1.5 py-0.5">02:00 PM</span>
+</div>
+<div class="p-2.5 bg-surface-container-low border-l-2 border-secondary flex items-start justify-between">
+<div>
+<span class="text-label-sm font-label-sm font-bold text-secondary block">GATE NO. 2 (MAIN BOULEVARD)</span>
+<span class="text-body-sm font-body-sm text-on-surface-variant">Patron Families, Parents, Alumni &amp; Community Invitees</span>
+</div>
+<span class="text-label-sm font-label-sm text-secondary bg-surface border border-border-hairline px-1.5 py-0.5">02:15 PM</span>
+</div>
+<div class="p-2.5 bg-surface-container-low border-l-2 border-emerald flex items-start justify-between">
+<div>
+<span class="text-label-sm font-label-sm font-bold text-emerald block">GATE NO. 3 (NORTH SERVICE)</span>
+<span class="text-body-sm font-body-sm text-on-surface-variant">Performer Cadres, Greenroom Staff &amp; Technical Logistics</span>
+</div>
+<span class="text-label-sm font-label-sm text-emerald bg-surface border border-border-hairline px-1.5 py-0.5">12:30 PM</span>
+</div>
+</div>
+<!-- Seating Advisory Note -->
+<div class="pt-2 text-body-sm font-body-sm text-text-muted flex items-center space-x-1.5">
+<span class="material-symbols-outlined text-sm text-secondary">schedule</span>
+<span>Auditorium doors lock strictly at <strong>02:45 PM</strong> prior to the National Anthem.</span>
+</div>
+</div>
+</section>
+<!-- Section 5: Frequently Asked Questions (Accordion Editorial Format) -->
+<section class="space-y-4">
+<div class="flex items-center justify-between border-b border-border-hairline pb-2">
+<span class="text-label-sm font-label-sm text-primary tracking-widest uppercase">04 / Patron Inquiries</span>
+<span class="text-label-sm font-label-sm text-secondary font-mono">Q&amp;A DIRECTORY</span>
+</div>
+<div class="border-t border-b border-border-hairline divide-y divide-border-hairline">
+<!-- FAQ 1 -->
+<details class="group py-3 cursor-pointer">
+<summary class="flex justify-between items-center list-none select-none">
+<span class="text-body-md font-body-md font-semibold text-primary pr-3">Is there an entry fee or digital ticket required?</span>
+<span class="material-symbols-outlined text-secondary transform group-open:rotate-180 transition-transform duration-200">expand_more</span>
+</summary>
+<div class="pt-2.5 text-body-sm font-body-sm text-on-surface-variant leading-relaxed">
+              No. TARANG 2.0 is an institutional cultural celebration. Admission is completely free, governed by the ceremonial physical Patron Invitation Card distributed through registered students.
+            </div>
+</details>
+<!-- FAQ 2 -->
+<details class="group py-3 cursor-pointer">
+<summary class="flex justify-between items-center list-none select-none">
+<span class="text-body-md font-body-md font-semibold text-primary pr-3">Can non-student community members attend?</span>
+<span class="material-symbols-outlined text-secondary transform group-open:rotate-180 transition-transform duration-200">expand_more</span>
+</summary>
+<div class="pt-2.5 text-body-sm font-body-sm text-on-surface-variant leading-relaxed">
+              Attendance is prioritized for parents, guardians, verified alumni of both institutions, and official academic dignitaries of Kushinagar district. Extra seats in the balcony quadrangle open at 02:30 PM.
+            </div>
+</details>
+<!-- FAQ 3 -->
+<details class="group py-3 cursor-pointer">
+<summary class="flex justify-between items-center list-none select-none">
+<span class="text-body-md font-body-md font-semibold text-primary pr-3">What are the camera and recording protocols?</span>
+<span class="material-symbols-outlined text-secondary transform group-open:rotate-180 transition-transform duration-200">expand_more</span>
+</summary>
+<div class="pt-2.5 text-body-sm font-body-sm text-on-surface-variant leading-relaxed">
+              Flash photography is strictly prohibited during classical classical dance and solo theatrical recitals to avoid blinding performers. The entire festival will be archived and livestreamed on the official YouTube channel.
+            </div>
+</details>
+<!-- FAQ 4 -->
+<details class="group py-3 cursor-pointer">
+<summary class="flex justify-between items-center list-none select-none">
+<span class="text-body-md font-body-md font-semibold text-primary pr-3">How may accredited press or journalists register?</span>
+<span class="material-symbols-outlined text-secondary transform group-open:rotate-180 transition-transform duration-200">expand_more</span>
+</summary>
+<div class="pt-2.5 text-body-sm font-body-sm text-on-surface-variant leading-relaxed">
+              Accredited journalists may present press credentials at the Secretariat Desk at Gate No. 1 between 12:00 PM and 01:45 PM on November 18 for official press badges and reserved media tier seating.
+            </div>
+</details>
+</div>
+</section>
+<!-- Section 6: Official Secretariat, Press & Social Channels -->
+<section class="space-y-4">
+<div class="flex items-center justify-between border-b border-border-hairline pb-2">
+<span class="text-label-sm font-label-sm text-primary tracking-widest uppercase">05 / Official Secretariat</span>
+<span class="text-label-sm font-label-sm text-secondary font-mono">DISPATCH</span>
+</div>
+<div class="space-y-2.5">
+<!-- Institutional Channels -->
+<div class="p-3 bg-surface-container-lowest border border-border-hairline flex items-center justify-between">
+<div class="flex items-center space-x-3">
+<div class="w-9 h-9 rounded-full bg-surface-container-low flex items-center justify-center border border-border-hairline text-primary">
+<span class="material-symbols-outlined text-lg">call</span>
+</div>
+<div>
+<span class="text-label-sm font-label-sm text-text-muted block">Direct Campus Helpline</span>
+<span class="text-body-md font-body-md font-semibold text-primary">+91 94500 82190</span>
+</div>
+</div>
+<a class="border border-border-hairline px-2.5 py-1 text-label-sm font-label-sm text-secondary hover:bg-surface-container" href="tel:+919450082190">Dial</a>
+</div>
+<div class="p-3 bg-surface-container-lowest border border-border-hairline flex items-center justify-between">
+<div class="flex items-center space-x-3">
+<div class="w-9 h-9 rounded-full bg-surface-container-low flex items-center justify-center border border-border-hairline text-primary">
+<span class="material-symbols-outlined text-lg">mail</span>
+</div>
+<div>
+<span class="text-label-sm font-label-sm text-text-muted block">Secretariat Inquiries</span>
+<span class="text-body-sm font-body-sm font-semibold text-primary">secretariat@srdicmathauli.edu.in</span>
+</div>
+</div>
+<a class="border border-border-hairline px-2.5 py-1 text-label-sm font-label-sm text-secondary hover:bg-surface-container" href="mailto:secretariat@srdicmathauli.edu.in">Write</a>
+</div>
+<!-- Social Archival Handles -->
+<div class="grid grid-cols-2 gap-2.5 pt-1">
+<a class="p-3 bg-surface-container-lowest border border-border-hairline flex flex-col justify-between hover:bg-surface-container-low transition-colors" href="https://instagram.com" target="_blank">
+<div class="flex items-center justify-between mb-2">
+<span class="text-label-sm font-label-sm text-muted-rose font-bold">INSTAGRAM</span>
+<span class="material-symbols-outlined text-sm text-text-muted">open_in_new</span>
+</div>
+<span class="text-body-sm font-body-sm text-primary font-semibold">@srdic_mathauli</span>
+<span class="text-label-sm font-label-sm text-text-muted">Moments &amp; Live Feeds</span>
+</a>
+<a class="p-3 bg-surface-container-lowest border border-border-hairline flex flex-col justify-between hover:bg-surface-container-low transition-colors" href="https://youtube.com" target="_blank">
+<div class="flex items-center justify-between mb-2">
+<span class="text-label-sm font-label-sm text-tertiary-container font-bold">YOUTUBE</span>
+<span class="material-symbols-outlined text-sm text-text-muted">open_in_new</span>
+</div>
+<span class="text-body-sm font-body-sm text-primary font-semibold">@SRDICTarang2024</span>
+<span class="text-label-sm font-label-sm text-text-muted">Full Livestream &amp; Archives</span>
+</a>
+</div>
+</div>
+</section>
+<!-- Section 7: PWA & Offline Access Utility Banner (PRD Section 11) -->
+<section class="bg-primary-container text-surface p-4 border border-secondary/40 space-y-3">
+<div class="flex items-start justify-between">
+<div>
+<div class="flex items-center space-x-1.5 mb-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary-fixed"></span>
+<span class="text-label-sm font-label-sm text-secondary-fixed uppercase tracking-wider">OFFLINE PWA ENGINE</span>
+</div>
+<h3 class="text-headline-sm font-headline-sm text-surface font-semibold">
+              Install TARANG 2.0 Companion
+            </h3>
+</div>
+<span class="material-symbols-outlined text-secondary-fixed text-2xl">install_mobile</span>
+</div>
+<p class="text-body-sm font-body-sm text-on-primary-container leading-relaxed">
+          Cache the complete schedule, quadrangle map, and performer listings directly to your device storage. Operates seamlessly even during heavy auditorium network congestion.
+        </p>
+<div class="pt-1 flex items-center space-x-3">
+<button class="bg-tertiary-container hover:bg-tertiary text-on-tertiary px-3.5 py-2 text-label-md font-label-md rounded flex items-center space-x-2 transition-transform active:scale-95 shadow-sm" id="pwa-install-btn" type="button">
+<span class="material-symbols-outlined text-sm">download</span>
+<span>Pin to Home Screen</span>
+</button>
+<span class="text-label-sm font-label-sm text-secondary-fixed-dim">Zero Data Overhead (320 KB)</span>
+</div>
+</section>
+<!-- Section 8: Institutional Colophon & Footer -->
+<footer class="pt-6 border-t border-border-hairline text-center space-y-3 pb-4">
+<div class="flex justify-center items-center space-x-3">
+<img alt="College Crest" class="w-8 h-8 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBAhTynJHQaVlaxfQJ-ff9Y8ejdB6AnHRaRjCApM6boIqCdbLpYLRURdHwuvkdAJNZ9hLrmXoEd2j8X-U3EOFDH2F9aqKlMZ3TFXujC8A-_L93-5jITKxL02v6mnoKiGFkNZt-KJSGrSH66-d0MBlRPzyj-M0HVClzXkLTqRKtetTpqOfPn1iL1YzVmJLEis8UwQIX6MDI7wkDlw3v8RuZ-T_cXb-F_lwV3y9aWRwnsROQ7sMlJmXRfrg"/>
+<span class="text-secondary font-serif text-sm">✦</span>
+<img alt="Academy Crest" class="w-8 h-8 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCNl56IBZnQsBZS8jcUiwxQrE9kjhE_8eH7Fi7gegUzeyyx5cguUas2bXWtuQXl4vvOtcW9L1hu7r2b2dGHoHrQVuz0Qnm0z9i09Iic5eEGU6SPX6QTcyZtNG92vJfacizpwKgtMpCR_tAQshQHqdGoRTSULLxxiJiZWVa9qai8VG7ulBqJkptTYT_82zbjj7-gabYuqdZpTWfDt1iLCRmcD-ySj26GHf7ZRd__0fG61FpjySFELtu1IQ"/>
+</div>
+<div>
+<h4 class="text-headline-sm font-headline-sm text-primary font-semibold">
+            TARANG 2.0 — एक भारत, अनेक रंग
+          </h4>
+<p class="text-body-sm font-body-sm text-text-muted mt-0.5">
+            The Biennial Cultural Conclave &amp; Annual Showcase 2026
+          </p>
+</div>
+<p class="text-label-sm font-label-sm text-on-surface-variant">
+          Affiliated with the Uttar Pradesh State Board (#1184) · Mathauli Bazar, Kushinagar.<br/>
+          © 2026 Smt. Radhika Devi Educational Trust. All rights strictly reserved.
+        </p>
+</footer>
+</main>
+<!-- BottomNavBar (From Shared Components JSON - 'More' is ACTIVE) -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center h-14 px-2 max-w-md mx-auto inset-x-0 bg-primary docked full-width bottom-0 border-t border-secondary shadow-lg">
+<!-- Destination 1: Home -->
+<a class="flex flex-col items-center justify-center text-on-primary-container font-medium py-1 px-2 opacity-70 hover:opacity-100 transition-opacity duration-200 active:scale-95 transition-transform duration-150" href="#home">
+<span class="material-symbols-outlined text-xl">home</span>
+<span class="text-label-sm font-label-sm mt-0.5">Home</span>
+</a>
+<!-- Destination 2: Programme -->
+<a class="flex flex-col items-center justify-center text-on-primary-container font-medium py-1 px-2 opacity-70 hover:opacity-100 transition-opacity duration-200 active:scale-95 transition-transform duration-150" href="#programme">
+<span class="material-symbols-outlined text-xl">event_upcoming</span>
+<span class="text-label-sm font-label-sm mt-0.5">Programme</span>
+</a>
+<!-- Destination 3: Journey -->
+<a class="flex flex-col items-center justify-center text-on-primary-container font-medium py-1 px-2 opacity-70 hover:opacity-100 transition-opacity duration-200 active:scale-95 transition-transform duration-150" href="#journey">
+<span class="material-symbols-outlined text-xl">history_edu</span>
+<span class="text-label-sm font-label-sm mt-0.5">Journey</span>
+</a>
+<!-- Destination 4: Gallery -->
+<a class="flex flex-col items-center justify-center text-on-primary-container font-medium py-1 px-2 opacity-70 hover:opacity-100 transition-opacity duration-200 active:scale-95 transition-transform duration-150" href="#gallery">
+<span class="material-symbols-outlined text-xl">photo_library</span>
+<span class="text-label-sm font-label-sm mt-0.5">Gallery</span>
+</a>
+<!-- Destination 5: More (ACTIVE ITEM AS PER INSTRUCTION) -->
+<a class="flex flex-col items-center justify-center text-secondary-fixed font-bold py-1 px-2 relative after:content-[''] after:w-1 after:h-1 after:bg-secondary-fixed after:rounded-full after:mt-0.5 active:scale-95 transition-transform duration-150" href="#more">
+<span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1;">more_horiz</span>
+<span class="text-label-sm font-label-sm mt-0.5">More</span>
+</a>
+</nav>
+</div>
+<!-- Inline Script for Micro-interactions (PWA button toast) -->
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const pwaBtn = document.getElementById('pwa-install-btn');
+      if (pwaBtn) {
+        pwaBtn.addEventListener('click', function() {
+          const originalText = pwaBtn.innerHTML;
+          pwaBtn.innerHTML = '<span class="material-symbols-outlined text-sm">check_circle</span><span>Companion Cached</span>';
+          pwaBtn.classList.remove('bg-tertiary-container');
+          pwaBtn.classList.add('bg-emerald');
+          setTimeout(() => {
+            pwaBtn.innerHTML = originalText;
+            pwaBtn.classList.remove('bg-emerald');
+            pwaBtn.classList.add('bg-tertiary-container');
+          }, 3000);
+        });
+      }
+    });
+  </script>
+</body></html>

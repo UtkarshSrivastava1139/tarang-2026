@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" width="160" height="160" fill="none">
+  <defs>
+    <radialGradient id="unityGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#17264A" stop-opacity="0.18" />
+      <stop offset="100%" stop-color="#17264A" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="goldGradU" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D8AB56" />
+      <stop offset="50%" stop-color="#C49A4B" />
+      <stop offset="100%" stop-color="#9C762F" />
+    </linearGradient>
+  </defs>
+
+  <!-- Ambient Glow -->
+  <circle cx="80" cy="80" r="70" fill="url(#unityGlow)" />
+
+  <!-- Outer Fine Ornamental Ring -->
+  <circle cx="80" cy="80" r="68" stroke="#C49A4B" stroke-width="1" stroke-dasharray="2 4" opacity="0.4" />
+  <circle cx="80" cy="80" r="64" stroke="#17264A" stroke-width="0.75" opacity="0.3" />
+
+  <!-- Radiating Regional Unity Lotus Petals (Tricolor & Cultural Harmony) -->
+  <g transform="translate(80, 80)">
+    <!-- 8 Major Directional Petals (Ashta-Dala Padma) -->
+    <!-- Saffron North/South/East/West Accents -->
+    <path d="M0 -34 C-10 -46 -10 -58 0 -64 C10 -58 10 -46 0 -34 Z" fill="#E98727" fill-opacity="0.2" stroke="#E98727" stroke-width="1.8" />
+    <path d="M0 34 C-10 46 -10 58 0 64 C10 58 10 46 0 34 Z" fill="#286B50" fill-opacity="0.2" stroke="#286B50" stroke-width="1.8" />
+    <path d="M-34 0 C-46 -10 -58 -10 -64 0 C-58 10 -46 10 -34 0 Z" fill="#AD3025" fill-opacity="0.2" stroke="#AD3025" stroke-width="1.8" />
+    <path d="M34 0 C46 -10 58 -10 64 0 C58 10 46 10 34 0 Z" fill="url(#goldGradU)" fill-opacity="0.3" stroke="url(#goldGradU)" stroke-width="1.8" />
+
+    <!-- Diagonal Petals -->
+    <path d="M-24 -24 C-35 -38 -44 -35 -48 -28 C-44 -20 -35 -14 -24 -24 Z" stroke="#C49A4B" stroke-width="1.5" />
+    <path d="M24 -24 C35 -38 44 -35 48 -28 C44 -20 35 -14 24 -24 Z" stroke="#C49A4B" stroke-width="1.5" />
+    <path d="M-24 24 C-35 38 -44 35 -48 28 C-44 20 -35 14 -24 24 Z" stroke="#C49A4B" stroke-width="1.5" />
+    <path d="M24 24 C35 38 44 35 48 28 C44 20 35 14 24 24 Z" stroke="#C49A4B" stroke-width="1.5" />
+
+    <!-- Outer Decorative Concentric Rings -->
+    <circle cx="0" cy="0" r="34" stroke="url(#goldGradU)" stroke-width="2" />
+    <circle cx="0" cy="0" r="30" stroke="#17264A" stroke-width="1" stroke-dasharray="1.5 2" />
+
+    <!-- Center Ashoka Chakra (Symbol of Eternal Dharma & Sovereign Unity) -->
+    <circle cx="0" cy="0" r="26" fill="#FFFDF9" stroke="#17264A" stroke-width="2.5" />
+    <circle cx="0" cy="0" r="6" fill="#17264A" />
+
+    <!-- 24 Spokes (Generated symmetrically at 15 degree intervals) -->
+    <g stroke="#17264A" stroke-width="1.2">
+      <line x1="0" y1="-6" x2="0" y2="-26" />
+      <line x1="0" y1="6" x2="0" y2="26" />
+      <line x1="-6" y1="0" x2="-26" y2="0" />
+      <line x1="6" y1="0" x2="26" y2="0" />
+
+      <line x1="4.2" y1="-4.2" x2="18.4" y2="-18.4" />
+      <line x1="-4.2" y1="-4.2" x2="-18.4" y2="-18.4" />
+      <line x1="4.2" y1="4.2" x2="18.4" y2="18.4" />
+      <line x1="-4.2" y1="4.2" x2="-18.4" y2="18.4" />
+
+      <line x1="2.2" y1="-5.6" x2="9.9" y2="-24.0" />
+      <line x1="5.6" y1="-2.2" x2="24.0" y2="-9.9" />
+      <line x1="5.6" y1="2.2" x2="24.0" y2="9.9" />
+      <line x1="2.2" y1="5.6" x2="9.9" y2="24.0" />
+
+      <line x1="-2.2" y1="-5.6" x2="-9.9" y2="-24.0" />
+      <line x1="-5.6" y1="-2.2" x2="-24.0" y2="-9.9" />
+      <line x1="-5.6" y1="2.2" x2="-24.0" y2="9.9" />
+      <line x1="-2.2" y1="5.6" x2="-9.9" y2="24.0" />
+    </g>
+
+    <!-- 24 Tiny Petal Beads along Rim -->
+    <circle cx="0" cy="-26" r="1.2" fill="#C49A4B" />
+    <circle cx="0" cy="26" r="1.2" fill="#C49A4B" />
+    <circle cx="-26" cy="0" r="1.2" fill="#C49A4B" />
+    <circle cx="26" cy="0" r="1.2" fill="#C49A4B" />
+  </g>
+</svg>

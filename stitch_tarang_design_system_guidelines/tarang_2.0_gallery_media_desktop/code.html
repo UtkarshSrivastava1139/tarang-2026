@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>TARANG 2.0 — Curatorial Archive &amp; Media Center | Smt. Radhika Devi Intermediate College</title>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Editorial Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&amp;family=Manrope:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS v3 with Plugins -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Theme Configuration verbatim from requirements -->
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "secondary-fixed-dim": "#edc06c",
+            "surface-tint": "#4f5d85",
+            "border-hairline": "#E2D3B3",
+            "inverse-on-surface": "#f7f0e3",
+            "surface-container": "#f4ede0",
+            "on-error": "#ffffff",
+            "muted-rose": "#925064",
+            "inverse-primary": "#b7c5f2",
+            "on-tertiary-fixed": "#410001",
+            "tertiary-container": "#580001",
+            "parchment": "#E5D5B8",
+            "on-secondary": "#ffffff",
+            "secondary-container": "#fccd79",
+            "outline-variant": "#c5c6cf",
+            "surface-container-high": "#eee7db",
+            "saffron": "#E98727",
+            "secondary-fixed": "#ffdea7",
+            "error": "#ba1a1a",
+            "tertiary-fixed": "#ffdad5",
+            "surface-container-lowest": "#FFFFFF",
+            "primary-fixed-dim": "#b7c5f2",
+            "secondary": "#7b580c",
+            "surface-dim": "#e0d9cd",
+            "on-tertiary-container": "#ef604f",
+            "on-error-container": "#93000a",
+            "surface": "#fff9ee",
+            "surface-container-low": "#faf3e6",
+            "primary-fixed": "#dae2ff",
+            "tertiary-fixed-dim": "#ffb4a9",
+            "primary": "#011135",
+            "surface-variant": "#e8e2d5",
+            "on-surface": "#1e1b14",
+            "outline": "#75777f",
+            "on-primary-fixed-variant": "#38466b",
+            "surface-bright": "#fff9ee",
+            "on-primary-container": "#7f8eb8",
+            "inverse-surface": "#333028",
+            "on-primary": "#ffffff",
+            "emerald": "#286B50",
+            "on-background": "#1e1b14",
+            "primary-container": "#17264a",
+            "background": "#fff9ee",
+            "error-container": "#ffdad6",
+            "on-surface-variant": "#45464e",
+            "on-tertiary-fixed-variant": "#8c1711",
+            "text-muted": "#56627A",
+            "on-primary-fixed": "#091a3d",
+            "on-secondary-container": "#775608",
+            "tertiary": "#310000",
+            "surface-container-highest": "#e8e2d5",
+            "on-secondary-fixed-variant": "#5e4200",
+            "on-tertiary": "#ffffff",
+            "on-secondary-fixed": "#271900"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.125rem",
+            "lg": "0.25rem",
+            "xl": "0.5rem",
+            "full": "0.75rem"
+          },
+          "spacing": {
+            "space-lg": "1.5rem",
+            "margin": "1rem",
+            "space-sm": "0.5rem",
+            "space-md": "1rem",
+            "margin-desktop": "3rem",
+            "gutter": "1rem",
+            "gutter-desktop": "1.5rem",
+            "space-xl": "2.5rem",
+            "space-xs": "0.25rem"
+          },
+          "fontFamily": {
+            "display-hero-mobile": ["EB Garamond"],
+            "body-sm": ["Manrope"],
+            "label-sm": ["Manrope"],
+            "headline-sm": ["EB Garamond"],
+            "display-hero": ["EB Garamond"],
+            "headline-lg": ["EB Garamond"],
+            "body-lg": ["Manrope"],
+            "body-md": ["Manrope"],
+            "label-md": ["Manrope"],
+            "headline-md": ["EB Garamond"],
+            "headline-lg-mobile": ["EB Garamond"],
+            "label-lg": ["Manrope"]
+          },
+          "fontSize": {
+            "display-hero-mobile": ["34px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "body-sm": ["12px", { "lineHeight": "18px", "fontWeight": "400" }],
+            "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.08em", "fontWeight": "700" }],
+            "headline-sm": ["18px", { "lineHeight": "24px", "fontWeight": "600" }],
+            "display-hero": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "headline-lg": ["32px", { "lineHeight": "38px", "fontWeight": "600" }],
+            "body-lg": ["16px", { "lineHeight": "26px", "fontWeight": "400" }],
+            "body-md": ["14px", { "lineHeight": "22px", "fontWeight": "400" }],
+            "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.06em", "fontWeight": "600" }],
+            "headline-md": ["22px", { "lineHeight": "28px", "fontWeight": "500" }],
+            "headline-lg-mobile": ["26px", { "lineHeight": "32px", "fontWeight": "600" }],
+            "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.04em", "fontWeight": "600" }]
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-family: 'Material Symbols Outlined';
+      font-weight: normal;
+      font-style: normal;
+      font-size: 20px;
+      line-height: 1;
+      letter-spacing: normal;
+      text-transform: none;
+      display: inline-block;
+      white-space: nowrap;
+      word-wrap: normal;
+      direction: ltr;
+      -webkit-font-smoothing: antialiased;
+    }
+    /* Subtle parchment texture overlay */
+    .bg-parchment-pattern {
+      background-color: #fff9ee;
+      background-image: radial-gradient(#e2d3b3 0.6px, transparent 0.6px);
+      background-size: 24px 24px;
+    }
+  </style>
+</head>
+<body class="bg-background text-on-surface antialiased selection:bg-secondary-fixed selection:text-primary min-h-screen flex flex-col font-body-md text-body-md">
+<!-- TOP APP BAR (from Shared Components JSON: Sticky, TopNavBar, Active Gallery) -->
+<header class="sticky top-0 w-full z-50 bg-surface dark:bg-primary border-b border-border-subtle dark:border-primary-container shadow-sm">
+<div class="flex justify-between items-center w-full px-space-xl max-w-7xl mx-auto h-20">
+<!-- Institutional Branding & Wordmark Cluster -->
+<div class="flex items-center gap-4">
+<div class="flex items-center gap-2">
+<img alt="College Crest &amp; Institutional Seal of Smt. Radhika Devi Intermediate College and Children Academy" class="h-11 w-11 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBjC1hNA7iCGZekShvl7-k_ggmk5b05UEOmwo42URr1ToG5MB6to44H1ogfYftHPRIRA5qtthfPexWfqAAU8CAL57prhWxagqDQOHwKh9apePhOZgUBI5Iv0tdrfUCjFpePexZ-PU2sWaSp00gWGyS90GWFeJYA9-GybgrrC4tRLMb6UIbTPfzcIurAtJMo55d0qAmU2gUOYviHCcQtz3oKYwDd1T1vKgxkAhbSxglstvhWLLtihvm41Q"/>
+<img alt="College Crest &amp; Institutional Seal of Smt. Radhika Devi Intermediate College and Children Academy" class="h-11 w-11 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDyLVN6WoNcju7Go_YssYI7K2rOM7Gx-FAcs7LboY-0rpmZs4wbMmXsNf5tkNyJhZ0xlUosr-QWwatTItCRAtbBuhVoyh1qHnNkd10oZwSJDwYkTsukwFoHpxRGQNwgff9LJyuGpn71727mVD01z14WNNlwmcG5pFXCQZMk_v5MhECgtYneUzEfybsBRM563xenTOUeSwygqcjMqw_3FHeWNaZB9lGnp8r9QPD_4zhbF-s3U_h0f8VO6Q"/>
+</div>
+<div class="h-8 w-px bg-border-hairline hidden sm:block"></div>
+<a class="flex items-center gap-2 group" href="#">
+<img alt="TARANG 2.0" class="h-8 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBaTnzBCAEMSYpO_lRwNn6btoZKdSrrsZ-0tvIB3raunVTrHddDSk530c7IyLm3jOl4hGMykhtQejgUAiCvtiHEV60K6MV-lCLLM4EZjPf1gZrCnsYAFGIB01SU4oWlZwSw_w2PFJSMUzt-2pY-oreVXZzCBnASeGnaO9YAwyQMGYjgEVAyTK54Zs8orpSkYbiuBjio6g2QczoMeoDceHJ4WyaWco8GhY7n1XFzLdG7XWbQSUTaeGSJGg"/>
+<span class="sr-only">TARANG 2.0</span>
+</a>
+</div>
+<!-- Desktop Navigation Cluster (Gallery is ACTIVE based on JSON logic) -->
+<nav class="hidden md:flex items-center space-x-8">
+<a class="text-label-lg font-label-lg text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-surface-bright font-normal pb-1 transition-colors hover:text-secondary dark:hover:text-secondary-fixed duration-200" href="#">Home</a>
+<a class="text-label-lg font-label-lg text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-surface-bright font-normal pb-1 transition-colors hover:text-secondary dark:hover:text-secondary-fixed duration-200" href="#">Programme</a>
+<a class="text-label-lg font-label-lg text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-surface-bright font-normal pb-1 transition-colors hover:text-secondary dark:hover:text-secondary-fixed duration-200" href="#">Journey</a>
+<!-- Active link mapping from JSON: "border-b-2 border-secondary text-secondary dark:text-secondary-container font-semibold pb-1" -->
+<a aria-current="page" class="text-label-lg font-label-lg border-b-2 border-secondary text-secondary dark:text-secondary-container font-semibold pb-1 hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-200" href="#">Gallery</a>
+<a class="text-label-lg font-label-lg text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-surface-bright font-normal pb-1 transition-colors hover:text-secondary dark:hover:text-secondary-fixed duration-200" href="#">More</a>
+</nav>
+<!-- Trailing Action Group -->
+<div class="flex items-center space-x-4">
+<!-- Bilingual Toggle -->
+<button class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg border border-border-hairline text-label-md font-label-md text-primary hover:border-secondary transition-colors" title="Switch Language">
+<span class="material-symbols-outlined text-[18px]">translate</span>
+<span>हिन्दी / EN</span>
+</button>
+<!-- Trailing Primary Action CTA (Download Press Kit / Album PDF) -->
+<a class="hidden lg:inline-flex items-center gap-2 bg-[#AD3025] hover:bg-[#8E241B] text-surface-container-lowest text-label-lg font-label-lg px-4 py-2.5 rounded-lg transition-transform active:scale-[0.98] shadow-sm" href="#press-kit">
+<span class="material-symbols-outlined text-[18px]">menu_book</span>
+<span>Download Press Kit / Album PDF</span>
+</a>
+</div>
+</div>
+</header>
+<!-- MAIN CANVAS -->
+<main class="flex-1 w-full bg-parchment-pattern">
+<!-- PAGE HEADER: Curatorial Archive & Media Center Hero -->
+<section class="border-b border-border-hairline bg-surface-container-low/70 py-space-xl px-margin md:px-margin-desktop">
+<div class="max-w-7xl mx-auto space-y-6">
+<!-- Curatorial Tag & Bilingual Title -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-4">
+<div class="space-y-2 max-w-3xl">
+<div class="flex items-center gap-2">
+<span class="inline-block w-2.5 h-2.5 rounded-full bg-[#AD3025]"></span>
+<p class="font-label-sm text-label-sm text-[#AD3025] uppercase tracking-widest">Permanent Cultural Archive &amp; Visual Records</p>
+</div>
+<h1 class="font-display-hero text-display-hero text-primary tracking-tight">
+              Visual Chronicles of TARANG
+            </h1>
+<p class="font-headline-md text-headline-md text-secondary italic">
+              "Preserving the Heritage, Melodies &amp; Youthful Spirit of Kushinagar"
+            </p>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl pt-1">
+              An institutional photographic monograph and multimedia repository documenting the 2024–2025 Annual Cultural Extravaganza at Mathauli Bazar, showcasing classical discipline, student dramaturgy, and folk vitality.
+            </p>
+</div>
+<!-- Quick Curatorial Action -->
+<div class="flex flex-wrap items-center gap-3">
+<button class="px-4 py-2 rounded-lg border border-primary text-primary hover:bg-primary/5 font-label-md text-label-md flex items-center gap-1.5 transition-colors">
+<span class="material-symbols-outlined text-[18px]">filter_list</span>
+              Curatorial Index
+            </button>
+<button class="px-4 py-2 rounded-lg bg-primary text-surface-container-lowest font-label-md text-label-md flex items-center gap-1.5 hover:bg-primary-container transition-colors">
+<span class="material-symbols-outlined text-[18px]">photo_library</span>
+              High-Res Repository
+            </button>
+</div>
+</div>
+<!-- Archival Statistics Bar (Tonal Hairline Framed) -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-px bg-border-hairline rounded-lg overflow-hidden border border-border-hairline shadow-sm">
+<div class="bg-surface p-4 flex items-center gap-4">
+<span class="p-2.5 rounded-md bg-secondary-fixed/50 text-secondary">
+<span class="material-symbols-outlined text-[24px]">museum</span>
+</span>
+<div>
+<p class="font-headline-sm text-headline-sm text-primary">4 Archival Suites</p>
+<p class="font-label-md text-label-md text-text-muted">Classical, Skits, Choral, Conclave</p>
+</div>
+</div>
+<div class="bg-surface p-4 flex items-center gap-4">
+<span class="p-2.5 rounded-md bg-secondary-fixed/50 text-secondary">
+<span class="material-symbols-outlined text-[24px]">collections</span>
+</span>
+<div>
+<p class="font-headline-sm text-headline-sm text-primary">340+ Restored Photographic Plates</p>
+<p class="font-label-md text-label-md text-text-muted">High-Fidelity Stage &amp; Greenroom Stills</p>
+</div>
+</div>
+<div class="bg-surface p-4 flex items-center gap-4">
+<span class="p-2.5 rounded-md bg-secondary-fixed/50 text-secondary">
+<span class="material-symbols-outlined text-[24px]">live_tv</span>
+</span>
+<div>
+<p class="font-headline-sm text-headline-sm text-primary">Official Digital Broadcasts</p>
+<p class="font-label-md text-label-md text-text-muted">YouTube Master Feed &amp; Insta Dispatches</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION A: THE CURATORIAL MONOGRAPH (Asymmetric Editorial Collage) -->
+<section class="py-space-xl px-margin md:px-margin-desktop max-w-7xl mx-auto border-b border-border-hairline">
+<div class="flex items-center justify-between mb-8 pb-3 border-b border-border-hairline">
+<div class="flex items-center gap-3">
+<span class="font-label-sm text-label-sm px-2.5 py-1 rounded bg-secondary-fixed text-on-secondary-fixed uppercase">Monograph I</span>
+<h2 class="font-headline-lg text-headline-lg text-primary">The Curatorial Monograph: Movement &amp; Form</h2>
+</div>
+<span class="font-label-md text-label-md text-secondary italic hidden sm:block">Archive Series: KUSH-SRD-2024-C</span>
+</div>
+<!-- Asymmetrical 5:7 Editorial Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+<!-- Large Left Featured Plate: Classical Invocation (Kathak / Bharatanatyam) -->
+<article class="lg:col-span-7 bg-surface-container-lowest border border-border-hairline rounded-lg p-5 shadow-sm space-y-4">
+<div class="relative overflow-hidden rounded bg-surface-dim">
+<!-- Curatorial Image with data-alt -->
+<img alt="Classical Kathak and Bharatanatyam Invocation Recital at TARANG" class="w-full aspect-[16/11] object-cover hover:scale-[1.01] transition-transform duration-500" data-alt="A dignified photograph of a young Indian classical dancer on a heritage festival stage in green silk traditional attire, pearl adornments, and golden jewelry. Illuminated by dramatic warm spotlighting in midnight blue and vermilion tones, the dancer strikes a precise Kathak mudra with poised hand gestures. In the backdrop, traditional floral garlands and ceremonial college insignia anchor the cultural biennale mood." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB-QBYZ_BJexzWtXBtJjKXFzzKEXM9Z61nrhVjzNEHrFHRGDdrzkh5XIFBz39Y-lNtEp5TMo0MxrF29v_LlC1Hb2jKhByYM0IqXTaHVanGgF3I_kSklXiHOkXfj48igqfv6jfE-QAPictLy9panSBu4S8IMqdCZTm07t9bIqMLLu89JZ40VXnFF1WvQsoWt4QEQgHVzfOyin1wcz4wwpYYP03t-hAC-Sw0cNMxTKJQC"/>
+<span class="absolute top-3 left-3 bg-primary/90 text-surface-bright font-label-sm text-label-sm px-2.5 py-1 rounded tracking-wide border border-border-hairline/30">
+              ACCESSION #2024-NATYA-01
+            </span>
+<span class="absolute bottom-3 right-3 bg-surface/90 text-primary font-label-md text-label-md px-2.5 py-1 rounded border border-border-hairline backdrop-blur-sm">
+              Plate I: 'Ritu Vasant'
+            </span>
+</div>
+<div class="space-y-3 pt-2">
+<div class="flex items-center justify-between border-b border-border-hairline pb-2">
+<h3 class="font-headline-md text-headline-md text-primary">Classical Kathak &amp; Bharatanatyam Invocation</h3>
+<span class="font-label-sm text-label-sm text-[#AD3025] font-semibold">STAGE A • DURATION 18:40</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              Curated under the tutelage of senior performing arts faculty, this opening invocation synthesized rhythmic <em class="text-primary font-medium">tatkar</em> footwork with expressive <em class="text-primary font-medium">abhinaya</em>. The lighting architecture deliberately contrasted deep indigo stage flanks with warm vermilion floodlights, capturing the ceremonial transcendence of eastern Uttar Pradesh youth traditions.
+            </p>
+<div class="flex items-center justify-between pt-2 text-label-md text-label-md text-text-muted">
+<span>Primary Lens: 50mm f/1.8 • 1/250s ISO 800</span>
+<a class="text-secondary font-semibold hover:underline flex items-center gap-1" href="#">
+                Read Curatorial Essay <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</article>
+<!-- Right Column Staggered Grid (Ganesh Vandana, Mati Ki Saugandh, Patriotic Chorus) -->
+<div class="lg:col-span-5 space-y-6">
+<!-- Staggered Item 1: Ganesh Vandana -->
+<div class="bg-surface-container-lowest border border-border-hairline rounded-lg p-4 shadow-sm flex flex-col sm:flex-row gap-4 items-center">
+<div class="w-full sm:w-44 aspect-square flex-shrink-0 overflow-hidden rounded bg-surface-dim">
+<img alt="Ganesh Vandana Ceremonial Opening Tableau" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" data-alt="A festive and ceremonial tableau depicting children in traditional yellow and green Maharashtrian nine-yard sarees alongside a student portraying Lord Ganesha with decorative crown and trishul. The stage is embellished with marigold garlands and institutional emblems, bathed in warm festive lighting evoking celebratory cultural gravitas." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCq9qGNuN5LunycmMdySbUG2KQmdI9RtQfOlOfI_HugDhynoYHKCpL0fGHu4k6uA8VrJlcskrCiR9gtc_OHGg-0atyaTQd40IaBti5b13R8bVeovJ6iHtG7CN_iRnD92nVEQJ0f9B71vAlwesVKEON7MPLMazhIwKEeZeGCNEgrd_qK3-9cGDqNwWg4JAlU0tJ3EBPI46c23I9MjoGi5wncfZvwjtzBSb4HyqZ4eSZr"/>
+</div>
+<div class="space-y-1.5 flex-1">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider">Suite II • Opening Rite</span>
+<h4 class="font-headline-sm text-headline-sm text-primary">Ganesh Vandana Choral Ensemble</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+                Twelve disciples presented the Vedic Stuti in Raga Yaman, inaugurating TARANG 2.0 with sacred chants and synchronised ritual hand gestures.
+              </p>
+<div class="pt-1 flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-text-muted">Plate #2024-VAND-04</span>
+<span class="material-symbols-outlined text-secondary text-[18px]">zoom_in</span>
+</div>
+</div>
+</div>
+<!-- Staggered Item 2: Dramaturgy 'Mati Ki Saugandh' -->
+<div class="bg-surface-container-lowest border border-border-hairline rounded-lg p-4 shadow-sm flex flex-col sm:flex-row gap-4 items-center">
+<div class="w-full sm:w-44 aspect-square flex-shrink-0 overflow-hidden rounded bg-surface-dim">
+<img alt="Theatrical Play Mati Ki Saugandh and Modern Rhythmic Dance" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" data-alt="An energetic youth dance ensemble on stage featuring students in crisp white shirts, black trousers, and ties performing synchronized acrobatic pyramids and modern theatrical choreography. Vivid red and amber stage lighting highlights their spirited expressions and high-spirited teamwork." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBG9kWOAFKYUXa9BLTFHatrEB9IBnA-WMjw1ZOY1zKIDTBWGM6at55zC4UC8DOl-VixDNkPsADX8hMGvHVMkZwBEkT9-usLYoJGyLq0EZ6RvWf9rqv1TSmVL42vFcpFznSHI4jTVexWUhZHlW5an0sddJNjtY15NudxtvdRM9fWQkw1JyP1JbmooqsC4wpuNocdzBIjvPQfK4vlMtj7k2LVRQHMYUKNEYoyIYPz_KQA"/>
+</div>
+<div class="space-y-1.5 flex-1">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider">Suite III • Theatrical Act</span>
+<h4 class="font-headline-sm text-headline-sm text-primary">'Mati Ki Saugandh' &amp; Rhythm Ensemble</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+                Senior intermediate students depicted rural resilience through physical theater, culminating in an athletic youth pyramid celebrating shared nationhood.
+              </p>
+<div class="pt-1 flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-text-muted">Plate #2024-DRAM-12</span>
+<span class="material-symbols-outlined text-secondary text-[18px]">zoom_in</span>
+</div>
+</div>
+</div>
+<!-- Staggered Item 3: Valedictory Patriotic Chorus -->
+<div class="bg-surface-container-lowest border border-border-hairline rounded-lg p-4 shadow-sm flex flex-col sm:flex-row gap-4 items-center">
+<div class="w-full sm:w-44 aspect-square flex-shrink-0 overflow-hidden rounded bg-surface-dim">
+<img alt="Valedictory Patriotic Chorus and Shiva Tandava Fusion" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" data-alt="An expressive group of female performers dressed in black and vermilion attire with red tilak marks on their foreheads, performing an impassioned Tandava and patriotic devotional choreography. Low angle shot capturing expressive mudras and intense stage gaze under dramatic rim illumination." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDo9D8JzxlsOf_GN2mgU0pEkQT6k0LBj1o5aHkD6VlDLSNApk8jy7Yg1oZwFBosist3CB56PRRTi05hgDWx8SqKzS2VtKc7DABN4znk32HiX-XjJN68HI9OCI4j9WPNs_VMx-z91D6I8CESDS9DM26fk21rB3HL8KJLBC26znzS3GrbIcik5D5RPxlJosP0MEc0c5Uvmlnk7Zv7tb6an4J-lRJMNttPU1U8K83lBahK"/>
+</div>
+<div class="space-y-1.5 flex-1">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider">Suite IV • Valedictory</span>
+<h4 class="font-headline-sm text-headline-sm text-primary">Shiv Shakti &amp; Desh Prem Finale</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+                A 35-member student choir and percussion troupe combining devotional Sanskrit hymns with contemporary orchestral arrangements.
+              </p>
+<div class="pt-1 flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-text-muted">Plate #2024-VAL-09</span>
+<span class="material-symbols-outlined text-secondary text-[18px]">zoom_in</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION B: CATEGORIZED ARCHIVES & ALBUMS (Interactive Tabbed Filter Browser) -->
+<section class="py-space-xl px-margin md:px-margin-desktop max-w-7xl mx-auto border-b border-border-hairline">
+<div class="space-y-6">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-4">
+<div>
+<p class="font-label-sm text-label-sm text-[#AD3025] uppercase tracking-widest">Section B • Curated Catalog</p>
+<h2 class="font-headline-lg text-headline-lg text-primary">Thematic Archival Suites</h2>
+<p class="font-body-md text-body-md text-on-surface-variant pt-1">Explore high-resolution documentary collections sorted by discipline and genre.</p>
+</div>
+<!-- Category Filter Chips -->
+<div class="flex flex-wrap gap-2">
+<button class="h-9 px-4 rounded-full text-label-md font-label-md bg-primary text-surface-container-lowest border border-secondary shadow-sm">
+              All Archives (340)
+            </button>
+<button class="h-9 px-4 rounded-full text-label-md font-label-md bg-parchment text-primary hover:bg-border-hairline transition-colors">
+              Classical Natya (78)
+            </button>
+<button class="h-9 px-4 rounded-full text-label-md font-label-md bg-parchment text-primary hover:bg-border-hairline transition-colors">
+              Vedic &amp; Choral (52)
+            </button>
+<button class="h-9 px-4 rounded-full text-label-md font-label-md bg-parchment text-primary hover:bg-border-hairline transition-colors">
+              Dramaturgy &amp; Skits (94)
+            </button>
+<button class="h-9 px-4 rounded-full text-label-md font-label-md bg-parchment text-primary hover:bg-border-hairline transition-colors">
+              Pan-Indian Folk (66)
+            </button>
+<button class="h-9 px-4 rounded-full text-label-md font-label-md bg-parchment text-primary hover:bg-border-hairline transition-colors">
+              Ceremonial Conclave (50)
+            </button>
+</div>
+</div>
+<!-- 4-Card Bento Grid of Distinct Collections -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 pt-4">
+<!-- Album 1: Classical Natya -->
+<div class="bg-surface-container-lowest border border-border-hairline rounded-lg overflow-hidden group hover:shadow-md transition-shadow">
+<div class="relative aspect-[4/3] bg-surface-dim overflow-hidden">
+<img alt="Classical Natya Portfolio" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Close up of a traditional classical dance performer in ornate temple jewelry, traditional alta red dye hand markings, and jasmine flowers woven in hair, posed against a soft velvet backdrop in golden amber lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAzILHr3ucRIfr_mqyE7wo6YiEmE_FDcO5ak0PQ0ZY4HbFpetpnRu7IgWVtv4Up2gsgoziSTxYZEAvdjSHVeLDDQyei8V6EW2TfE8iQViVGAPPsx-c5nd4_e7ps8C65LoZ40U0jjD7vZqTAE2d7IK2cE-EzbGfIswrUb60RWu5a2DspTu6oYt1c4zJo6t9s3ZfQtSiA2BKhpFAldp97efpfn1ORptiPV4cclogFdaeU"/>
+<span class="absolute top-2 right-2 bg-primary/85 text-surface-bright text-label-sm font-label-sm px-2 py-0.5 rounded">
+                78 Plates
+              </span>
+</div>
+<div class="p-4 space-y-2">
+<span class="font-label-sm text-label-sm text-secondary uppercase">Discipline Series</span>
+<h3 class="font-headline-sm text-headline-sm text-primary group-hover:text-secondary transition-colors">Classical Natya &amp; Mudras</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Solo and duet choreographies honoring Bharatanatyam, Kathak, and Odissi traditions.</p>
+<div class="pt-2 border-t border-border-hairline flex items-center justify-between text-label-md font-label-md text-secondary">
+<span>By A. K. Srivastava</span>
+<span class="material-symbols-outlined text-[18px]">launch</span>
+</div>
+</div>
+</div>
+<!-- Album 2: Vedic Chants & Qawwali -->
+<div class="bg-surface-container-lowest border border-border-hairline rounded-lg overflow-hidden group hover:shadow-md transition-shadow">
+<div class="relative aspect-[4/3] bg-surface-dim overflow-hidden">
+<img alt="Vedic and Choral Recitals Archive" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A choir of young school students in matching formal ethnic attire seated on carpets with harmonium and tabla, singing in unison beneath soft hanging lanterns and brass lamps." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC3RVpn7yY-zYG5FTKGnvPAW9x12V9t3G8wJL82AHYhyWn985T1Zw0JU6wjLjFOc8qr3TMKJQBrp4DFhd5Keok4Cda5mz15MBi31IAy58lqisWVoYWlAYhdDhsViAC2AtyHIRTy7Np6aFHR9tFhwYMQuvWC9OOmWa8AW3nDzn4hFPzxiXXtfHf45LBaVC8VcC4ErUWgxK9fRsT4wTabKSk4edyAtoj5JzWKlnoXu18O"/>
+<span class="absolute top-2 right-2 bg-primary/85 text-surface-bright text-label-sm font-label-sm px-2 py-0.5 rounded">
+                52 Plates
+              </span>
+</div>
+<div class="p-4 space-y-2">
+<span class="font-label-sm text-label-sm text-secondary uppercase">Acoustic Series</span>
+<h3 class="font-headline-sm text-headline-sm text-primary group-hover:text-secondary transition-colors">Vedic &amp; Choral Recitals</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Harmonium accompaniment, polyphonic student choruses, and ceremonial invocations.</p>
+<div class="pt-2 border-t border-border-hairline flex items-center justify-between text-label-md font-label-md text-secondary">
+<span>By Media Cell SRDIC</span>
+<span class="material-symbols-outlined text-[18px]">launch</span>
+</div>
+</div>
+</div>
+<!-- Album 3: Pan-Indian Folk Expressions -->
+<div class="bg-surface-container-lowest border border-border-hairline rounded-lg overflow-hidden group hover:shadow-md transition-shadow">
+<div class="relative aspect-[4/3] bg-surface-dim overflow-hidden">
+<img alt="Folk Heritage Album" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Vibrant group of students executing a Rajasthani folk Ghoomar dance with swirling colorful embroidered skirts and mirror work dupattas against warm theatre stage backdrop." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBLhB6BFYqy4fbOgolqvgjcFoCN808WQAN4v3yL3P-2EuZh2v16rMZit6dbDWrxtrQ0iR65qTVhes-UxfetgRpfAPlQ7yu5ejox19d-HbJhrtke7bd1pg-m3L6KFtG3KJEzJf_0t3kB43VM7saAbuW2TbRkuS9HD2x7h1iHxGldHrvp4stG2oqhY1KGCc0c_ZTG40aiGeo0QvrhNXYmfuX2mxrM94QEvjUGKbXYRkrl"/>
+<span class="absolute top-2 right-2 bg-primary/85 text-surface-bright text-label-sm font-label-sm px-2 py-0.5 rounded">
+                66 Plates
+              </span>
+</div>
+<div class="p-4 space-y-2">
+<span class="font-label-sm text-label-sm text-secondary uppercase">Regional Heritage</span>
+<h3 class="font-headline-sm text-headline-sm text-primary group-hover:text-secondary transition-colors">Pan-Indian Folk Expressions</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Bhangra, Garba, Kajari, and Purvanchali folk ballads celebrating cultural diversity.</p>
+<div class="pt-2 border-t border-border-hairline flex items-center justify-between text-label-md font-label-md text-secondary">
+<span>By P. Maurya</span>
+<span class="material-symbols-outlined text-[18px]">launch</span>
+</div>
+</div>
+</div>
+<!-- Album 4: Ceremonial Conclave & Convocation -->
+<div class="bg-surface-container-lowest border border-border-hairline rounded-lg overflow-hidden group hover:shadow-md transition-shadow">
+<div class="relative aspect-[4/3] bg-surface-dim overflow-hidden">
+<img alt="Ceremonial Conclave Album" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Dignitaries and college administrative patron figures lighting the ceremonial brass Diya lamp with marigold garlands at the inaugural dais, flanked by institutional shields and silk banners." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA1H5nDp11kZ_itKBx3vpAIqGghlblaDUhEINPtGxxjuFGmRgEtQpSpPthMq0qMkB6o5_h-0eSDugtqfvmByd2OytEwXXlhoxSJK8D-sNCx8CLfBgTK57Hl22Pc13iTYVFbjzO9316CrO6w3P_ii8zD_BnTHwbUUq-KISXoGJdo7eBEmzyBHWV1vkeORVXtZuBkSudkpjWKkbti-URGPSKktNBHFDvu7Wl1yncCRTuP"/>
+<span class="absolute top-2 right-2 bg-primary/85 text-surface-bright text-label-sm font-label-sm px-2 py-0.5 rounded">
+                50 Plates
+              </span>
+</div>
+<div class="p-4 space-y-2">
+<span class="font-label-sm text-label-sm text-secondary uppercase">Institutional Dignity</span>
+<h3 class="font-headline-sm text-headline-sm text-primary group-hover:text-secondary transition-colors">Ceremonial Conclave</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Dignitary felicitations, scholastic merit awards, and administrative addresses.</p>
+<div class="pt-2 border-t border-border-hairline flex items-center justify-between text-label-md font-label-md text-secondary">
+<span>By Press Bureau</span>
+<span class="material-symbols-outlined text-[18px]">launch</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION C: YOUTUBE DIGITAL BROADCAST PAVILION -->
+<section class="py-space-xl px-margin md:px-margin-desktop max-w-7xl mx-auto border-b border-border-hairline">
+<div class="bg-primary text-surface-bright rounded-lg p-6 lg:p-10 shadow-lg border border-border-hairline/20">
+<div class="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6 mb-8 pb-6 border-b border-surface-variant/20">
+<div class="space-y-2">
+<div class="flex items-center gap-2">
+<span class="inline-flex items-center justify-center w-7 h-7 rounded-full bg-error text-surface-bright">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</span>
+<p class="font-label-sm text-label-sm text-secondary-fixed uppercase tracking-widest">Digital Broadcast Pavilion</p>
+</div>
+<h2 class="font-display-hero text-display-hero text-surface-bright">Official YouTube Archive Stream</h2>
+<p class="font-body-md text-body-md text-inverse-primary max-w-xl">
+              Broadcast channel <a class="text-secondary-fixed underline hover:text-surface-bright" href="https://www.youtube.com/@SRDICTarang2024" rel="noopener noreferrer" target="_blank">@SRDICTarang2024</a> features full 4K documentary recordings, multi-camera recital cuts, and faculty speeches.
+            </p>
+</div>
+<a class="inline-flex items-center gap-3 bg-[#AD3025] hover:bg-[#8E241B] text-surface-container-lowest font-label-lg text-label-lg px-6 py-3 rounded-lg shadow-md transition-transform active:scale-95" href="https://www.youtube.com/@SRDICTarang2024" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[20px]">smart_display</span>
+<span>Subscribe on YouTube (@SRDICTarang2024)</span>
+</a>
+</div>
+<!-- 16:9 Featured Documentary Mockup + Chapters Breakdown -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+<!-- Video Frame Mockup -->
+<div class="lg:col-span-8 bg-surface-container-lowest/5 border border-surface-variant/20 rounded-lg overflow-hidden relative group">
+<div class="relative aspect-video bg-black/60 flex items-center justify-center">
+<img alt="Grand TARANG 2.0 Retrospective Master Broadcast" class="w-full h-full object-cover opacity-75 group-hover:opacity-85 transition-opacity" data-alt="Cinematic wide-angle view of the illuminated TARANG grand auditorium stage filled with costumed student performers, teachers, and audience holding ceremonial lights during the grand finale." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAo8RP4T-yfxikHepB8Aq5Cn6laMoNptpmFQ9qmvdPrInW2rhCxprK2kbp3UV0DZqaV9aieMVoWLW06rOPKX3jVSToHPHN9bNalPF4oZ9WrAODC3suYBKn3MlvzaAngBj6bVwn367vfIHVZD3VaXz3pVGiomk33paYcGMTBZlgkuzA_GPAikIBz2Dc15aKDaboIPTVVvu58F4jylsgbL7Dj1T1S-jpxH43C1ynItEtT"/>
+<!-- Custom Play Button Overlay -->
+<a class="absolute z-10 w-20 h-20 rounded-full bg-error/90 text-white flex items-center justify-center hover:scale-110 transition-transform shadow-2xl" href="https://www.youtube.com/@SRDICTarang2024" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[40px]" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</a>
+<!-- Bottom Scrub Bar Overlay -->
+<div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-primary/95 via-primary/60 to-transparent p-4 flex items-center justify-between text-surface-bright">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[20px]">volume_up</span>
+<span class="font-label-sm text-label-sm">TARANG 2.0 Official Master Chronicle • 01:42:15</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm bg-surface-variant/30 px-2 py-0.5 rounded">4K UHD</span>
+<span class="material-symbols-outlined text-[20px]">fullscreen</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Video Chapters & Recital Stills -->
+<div class="lg:col-span-4 space-y-4">
+<h3 class="font-headline-sm text-headline-sm text-secondary-fixed border-b border-surface-variant/20 pb-2">
+              Broadcast Chapters &amp; Segments
+            </h3>
+<div class="space-y-3">
+<a class="flex items-center justify-between p-3 rounded-lg bg-surface-container-lowest/10 hover:bg-surface-container-lowest/20 border border-surface-variant/15 transition-colors" href="https://www.youtube.com/@SRDICTarang2024" rel="noopener noreferrer" target="_blank">
+<div class="flex items-center gap-3">
+<span class="font-label-sm text-label-sm text-secondary-fixed">00:04:12</span>
+<span class="font-body-md text-body-md text-surface-bright">Diya Lighting &amp; Principal Welcome</span>
+</div>
+<span class="material-symbols-outlined text-[16px] text-inverse-primary">arrow_outward</span>
+</a>
+<a class="flex items-center justify-between p-3 rounded-lg bg-surface-container-lowest/10 hover:bg-surface-container-lowest/20 border border-surface-variant/15 transition-colors" href="https://www.youtube.com/@SRDICTarang2024" rel="noopener noreferrer" target="_blank">
+<div class="flex items-center gap-3">
+<span class="font-label-sm text-label-sm text-secondary-fixed">00:22:45</span>
+<span class="font-body-md text-body-md text-surface-bright">Kathak Invocation Suite ('Ritu Vasant')</span>
+</div>
+<span class="material-symbols-outlined text-[16px] text-inverse-primary">arrow_outward</span>
+</a>
+<a class="flex items-center justify-between p-3 rounded-lg bg-surface-container-lowest/10 hover:bg-surface-container-lowest/20 border border-surface-variant/15 transition-colors" href="https://www.youtube.com/@SRDICTarang2024" rel="noopener noreferrer" target="_blank">
+<div class="flex items-center gap-3">
+<span class="font-label-sm text-label-sm text-secondary-fixed">00:58:30</span>
+<span class="font-body-md text-body-md text-surface-bright">Student Play: 'Mati Ki Saugandh'</span>
+</div>
+<span class="material-symbols-outlined text-[16px] text-inverse-primary">arrow_outward</span>
+</a>
+<a class="flex items-center justify-between p-3 rounded-lg bg-surface-container-lowest/10 hover:bg-surface-container-lowest/20 border border-surface-variant/15 transition-colors" href="https://www.youtube.com/@SRDICTarang2024" rel="noopener noreferrer" target="_blank">
+<div class="flex items-center gap-3">
+<span class="font-label-sm text-label-sm text-secondary-fixed">01:30:10</span>
+<span class="font-body-md text-body-md text-surface-bright">Grand Finale &amp; Valedictory Anthem</span>
+</div>
+<span class="material-symbols-outlined text-[16px] text-inverse-primary">arrow_outward</span>
+</a>
+</div>
+<p class="font-label-sm text-label-sm text-inverse-primary/80 pt-2">
+              For academic press permissions and broadcast syndication, contact: <span class="text-secondary-fixed">media@srdintercollege.in</span>
+</p>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION D: INSTITUTIONAL SOCIAL STREAM & INSTAGRAM DISPATCH -->
+<section class="py-space-xl px-margin md:px-margin-desktop max-w-7xl mx-auto">
+<div class="space-y-6">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-border-hairline pb-4">
+<div class="space-y-1">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-muted-rose text-[22px]">photo_camera</span>
+<p class="font-label-sm text-label-sm text-muted-rose uppercase tracking-widest">Section D • Real-Time Field Notes</p>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-primary">Instagram Dispatch &amp; Greenroom Chronicles</h2>
+</div>
+<a class="inline-flex items-center gap-2 px-4 py-2 rounded-lg border border-primary text-primary hover:bg-primary hover:text-surface-bright font-label-md text-label-md transition-colors" href="https://www.instagram.com/srdic_mathauli/" rel="noopener noreferrer" target="_blank">
+<span>Follow @srdic_mathauli</span>
+<span class="material-symbols-outlined text-[16px]">open_in_new</span>
+</a>
+</div>
+<!-- Instagram 4-Grid Cards -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Insta Card 1 -->
+<div class="bg-surface-container-lowest border border-border-hairline rounded-lg overflow-hidden shadow-sm flex flex-col justify-between">
+<div class="relative aspect-square overflow-hidden bg-surface-dim">
+<img alt="Greenroom rehearsal moment" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" data-alt="Behind the scenes candid snapshot of students practicing Kathak hand gestures and mirror makeup in the college greenroom lit by backstage bulbs." src="https://lh3.googleusercontent.com/aida-public/AB6AXuATxS504OH-Vcr2QgSCxWFON7C_HN78ySiO_2LTt3x01GOKAAEzNW5rRPbAMM30Q5uJNNM0oEOZahZsZ9hiBIIK2WcouTEjjoVuNzDGtUYSBuXsEvTJMZ_HZnc9tUo73ihO33LlYUWwVD-M1q3go8O3FIcyuS-4NyjF9poNGgAH7_tsMLYptVZQGvZvXtlBOGtTv6RHWNXdKltAk5j8swtguXaqpw0V3POImrxhfX-U"/>
+<span class="absolute top-2 left-2 bg-black/60 text-white font-label-sm text-label-sm px-2 py-0.5 rounded">
+                Reel Preview
+              </span>
+</div>
+<div class="p-4 space-y-2">
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+                "Precision behind the curtain: 6:00 AM dress rehearsals for the opening invocation..."
+              </p>
+<div class="flex items-center justify-between pt-2 border-t border-border-hairline text-label-sm text-label-sm text-text-muted">
+<span>#TARANG2024 #Greenroom</span>
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+</div>
+</div>
+</div>
+<!-- Insta Card 2 -->
+<div class="bg-surface-container-lowest border border-border-hairline rounded-lg overflow-hidden shadow-sm flex flex-col justify-between">
+<div class="relative aspect-square overflow-hidden bg-surface-dim">
+<img alt="Backstage student camaraderie" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" data-alt="Candid photograph of children smiling in colorful folk costumes holding acoustic percussion instruments backstage before their performance." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDIYTXWj5_C-BJC-JE0KmFx0N_ycFZwklm3SDWrZ81Jc50ObeIa4hjIETYxgI24VMpcuaR41jUf7yCy9l-Vffl5ixgctDMzgkdLGWpB3L3AtVziXb-1zimpUeyFYGhiwYdrfxBE_bTPZHwejHDtkHVD_gS9jFpskequU6xQkgha6UCRhsQnzaNS-sz5vK_JTn3wsFVzIS4-T0_0tGWKxflWeNnljnuNBCLDI1uHGh4K"/>
+</div>
+<div class="p-4 space-y-2">
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+                "Smiles, nervous energy, and the rhythm of Kushinagar youth uniting on stage."
+              </p>
+<div class="flex items-center justify-between pt-2 border-t border-border-hairline text-label-sm text-label-sm text-text-muted">
+<span>#SRDICMathauli #YouthArt</span>
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+</div>
+</div>
+</div>
+<!-- Insta Card 3 -->
+<div class="bg-surface-container-lowest border border-border-hairline rounded-lg overflow-hidden shadow-sm flex flex-col justify-between">
+<div class="relative aspect-square overflow-hidden bg-surface-dim">
+<img alt="Official awards and festival trophy" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" data-alt="Close up photograph of the handcrafted brass trophy and illuminated certificate conferred to best student dramatist at TARANG 2024." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDe7_5B1_0HknNTeER0AYXkszWvjEcEsl9okoonvV1zxkuSNSP_UM-QxwvsupvJF1i-6NrGPnSmSWPN0Ovbm0S5gGJbmLnjhyVvIWxbMi5Z1kq-FSvoErCoqWfIHregNgtWnbSGvlMH1iN0JZKigaQiKssvlg9VfkIaLXqnwWOlVLJx4qzk2wXTlOPD7DT0mTnvH-hr7_wFj7AuWFN3EC9_qOub1C7Y7jbhGKP3GcX7"/>
+</div>
+<div class="p-4 space-y-2">
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+                "Honoring discipline: The 2024 Natya Ratna Trophy unveiled ahead of the valedictory session."
+              </p>
+<div class="flex items-center justify-between pt-2 border-t border-border-hairline text-label-sm text-label-sm text-text-muted">
+<span>#AwardCeremony #Excellence</span>
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+</div>
+</div>
+</div>
+<!-- Insta Card 4 -->
+<div class="bg-surface-container-lowest border border-border-hairline rounded-lg overflow-hidden shadow-sm flex flex-col justify-between">
+<div class="relative aspect-square overflow-hidden bg-surface-dim">
+<img alt="Campus illumination at twilight" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" data-alt="Atmospheric dusk shot of the college facade illuminated with string lights and festive marigold arches welcoming local patrons and parents." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBSrhRhe_qSIxuZr52xaH1Btz9F-1xEfIvsLxTZPZ5Y0x8BNX8Xnt4-YSvIrE-RwcndzHIZwmRKChD95GPRl29MR-qLNjXxpMBLfPKsSGJYxjW0A-LSztFNxqqKYW-91pk5cm2djzyWte5injw5IKiTPvXHNDaAsc4O20-N16oqmG6RuP0P1PNNLAOm3W28BojRLGWXCNLdAXM8wjmI5unW2Fn050LFlnMRUHNMM6Q8"/>
+</div>
+<div class="p-4 space-y-2">
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+                "Mathauli Bazar aglow as TARANG 2.0 concludes its historic three-day festival run."
+              </p>
+<div class="flex items-center justify-between pt-2 border-t border-border-hairline text-label-sm text-label-sm text-text-muted">
+<span>#CampusNight #Kushinagar</span>
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- FOOTER (Verbatim from Shared Components JSON: bg-primary, Links, Copyright, Typography) -->
+<footer class="w-full block bg-primary dark:bg-surface-container-lowest border-t border-border-subtle/20 dark:border-border-subtle text-secondary-fixed dark:text-secondary">
+<div class="w-full px-space-xl py-space-xl max-w-7xl mx-auto flex flex-col space-y-gutter-desktop">
+<!-- Top Grid: Institutional Identity & Navigation Links -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
+<!-- Left Brand Anchor -->
+<div class="md:col-span-5 space-y-4">
+<div class="flex items-center gap-3">
+<img alt="College Crest &amp; Institutional Seal of Smt. Radhika Devi Intermediate College and Children Academy" class="h-10 w-10 object-contain brightness-125" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBjC1hNA7iCGZekShvl7-k_ggmk5b05UEOmwo42URr1ToG5MB6to44H1ogfYftHPRIRA5qtthfPexWfqAAU8CAL57prhWxagqDQOHwKh9apePhOZgUBI5Iv0tdrfUCjFpePexZ-PU2sWaSp00gWGyS90GWFeJYA9-GybgrrC4tRLMb6UIbTPfzcIurAtJMo55d0qAmU2gUOYviHCcQtz3oKYwDd1T1vKgxkAhbSxglstvhWLLtihvm41Q"/>
+<img alt="College Crest &amp; Institutional Seal of Smt. Radhika Devi Intermediate College and Children Academy" class="h-10 w-10 object-contain brightness-125" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDyLVN6WoNcju7Go_YssYI7K2rOM7Gx-FAcs7LboY-0rpmZs4wbMmXsNf5tkNyJhZ0xlUosr-QWwatTItCRAtbBuhVoyh1qHnNkd10oZwSJDwYkTsukwFoHpxRGQNwgff9LJyuGpn71727mVD01z14WNNlwmcG5pFXCQZMk_v5MhECgtYneUzEfybsBRM563xenTOUeSwygqcjMqw_3FHeWNaZB9lGnp8r9QPD_4zhbF-s3U_h0f8VO6Q"/>
+<span class="font-headline-lg text-headline-lg text-secondary-fixed tracking-wide">TARANG 2.0</span>
+</div>
+<p class="font-body-md text-body-md text-surface-container-high dark:text-on-surface-variant max-w-md">
+            The Annual Cultural Conclave &amp; Heritage Biennale of Smt. Radhika Devi Intermediate College and Children Academy, Mathauli Bazar, Kushinagar, Uttar Pradesh.
+          </p>
+<div class="flex items-center gap-4 text-label-sm text-label-sm text-surface-container-high">
+<span>UP Board Affiliation #1184</span>
+<span>•</span>
+<span>Since 2011</span>
+</div>
+</div>
+<!-- Middle & Right Navigation Links (Rendered exactly from JSON links array) -->
+<div class="md:col-span-7 grid grid-cols-2 sm:grid-cols-3 gap-6">
+<div class="space-y-3">
+<h4 class="font-headline-sm text-headline-sm text-secondary-fixed">Festival Index</h4>
+<ul class="space-y-2 font-body-md text-body-md">
+<li>
+<a class="text-surface-container-high dark:text-on-surface-variant hover:text-secondary-fixed transition-colors hover:underline" href="#">Programme Schedule</a>
+</li>
+<li>
+<a class="text-surface-container-high dark:text-on-surface-variant hover:text-secondary-fixed transition-colors hover:underline" href="#">Archival Journey</a>
+</li>
+<li>
+<a class="text-secondary-container dark:text-secondary font-medium hover:underline" href="#">Art Gallery</a>
+</li>
+</ul>
+</div>
+<div class="space-y-3">
+<h4 class="font-headline-sm text-headline-sm text-secondary-fixed">Administration</h4>
+<ul class="space-y-2 font-body-md text-body-md">
+<li>
+<a class="text-surface-container-high dark:text-on-surface-variant hover:text-secondary-fixed transition-colors hover:underline" href="#">Campus Administration</a>
+</li>
+<li>
+<a class="text-surface-container-high dark:text-on-surface-variant hover:text-secondary-fixed transition-colors hover:underline" href="#">Contact &amp; Press</a>
+</li>
+</ul>
+</div>
+<div class="space-y-3">
+<h4 class="font-headline-sm text-headline-sm text-secondary-fixed">Broadcast Channels</h4>
+<ul class="space-y-2 font-body-md text-body-md">
+<li>
+<a class="text-surface-container-high dark:text-on-surface-variant hover:text-secondary-fixed transition-colors hover:underline flex items-center gap-1" href="https://www.youtube.com/@SRDICTarang2024" rel="noopener noreferrer" target="_blank">
+                  YouTube Archive
+                </a>
+</li>
+<li>
+<a class="text-surface-container-high dark:text-on-surface-variant hover:text-secondary-fixed transition-colors hover:underline flex items-center gap-1" href="https://www.instagram.com/srdic_mathauli/" rel="noopener noreferrer" target="_blank">
+                  Instagram Stories
+                </a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<!-- Hairline Rule -->
+<div class="w-full h-px bg-border-hairline/20"></div>
+<!-- Bottom Copyright Bar (Exact string from JSON) -->
+<div class="flex flex-col sm:flex-row items-center justify-between gap-4 font-label-sm text-label-sm text-surface-container-high dark:text-on-surface-variant">
+<p>© 2025 TARANG Cultural Festival. Smt. Radhika Devi Intermediate College &amp; Children Academy. All Rights Reserved.</p>
+<div class="flex items-center space-x-6">
+<a class="hover:text-secondary-fixed transition-colors hover:underline" href="#">Privacy Policy</a>
+<a class="hover:text-secondary-fixed transition-colors hover:underline" href="#">Archival Licensing</a>
+<a class="hover:text-secondary-fixed transition-colors hover:underline" href="#">Accessibility</a>
+</div>
+</div>
+</div>
+</footer>
+</body></html>

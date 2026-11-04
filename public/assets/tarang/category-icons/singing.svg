@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" width="160" height="160" fill="none">
+  <defs>
+    <radialGradient id="singGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#925064" stop-opacity="0.15" />
+      <stop offset="100%" stop-color="#925064" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="roseGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#AA687E" />
+      <stop offset="100%" stop-color="#925064" />
+    </linearGradient>
+    <linearGradient id="goldGradS" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D8AB56" />
+      <stop offset="100%" stop-color="#C49A4B" />
+    </linearGradient>
+  </defs>
+
+  <!-- Ambient Glow -->
+  <circle cx="80" cy="80" r="70" fill="url(#singGlow)" />
+
+  <!-- Outer Fine Ornamental Ring -->
+  <circle cx="80" cy="80" r="68" stroke="#C49A4B" stroke-width="1" stroke-dasharray="2 4" opacity="0.4" />
+  <circle cx="80" cy="80" r="64" stroke="#925064" stroke-width="0.75" opacity="0.3" />
+
+  <!-- Classical Tanpura (The Foundation of Indian Vocal Music) -->
+  <g transform="translate(48, 14)">
+    <!-- Tanpura Gourd Resonator (Base) -->
+    <path d="M12 92 C-4 92 -4 130 16 130 C36 130 36 92 20 92 Z" fill="#F7F0E3" stroke="url(#goldGradS)" stroke-width="2.5" />
+    <path d="M16 94 C2 94 2 128 16 128 C30 128 30 94 16 94 Z" fill="#925064" fill-opacity="0.15" stroke="#925064" stroke-width="1" />
+    
+    <!-- Jawari Bridge on Gourd -->
+    <rect x="10" y="112" width="12" height="4" rx="1.5" fill="#17264A" stroke="#D8AB56" stroke-width="0.75" />
+    <!-- Fine Thread (Jiva) under strings -->
+    <line x1="8" y1="113" x2="24" y2="113" stroke="#D8AB56" stroke-width="1" />
+
+    <!-- Long Straight Tanpura Neck (Dandi) -->
+    <rect x="13.5" y="24" width="5" height="70" rx="1" fill="#E5D5B8" stroke="url(#goldGradS)" stroke-width="1.8" />
+    <line x1="16" y1="24" x2="16" y2="94" stroke="#D8AB56" stroke-width="1" />
+
+    <!-- 4 Fine Strings (Pa, Sa, Sa, Sa) -->
+    <line x1="14.5" y1="24" x2="13" y2="112" stroke="#FFFFFF" stroke-width="0.7" opacity="0.9" />
+    <line x1="15.5" y1="24" x2="15" y2="112" stroke="#FFFFFF" stroke-width="0.7" opacity="0.9" />
+    <line x1="16.5" y1="24" x2="17" y2="112" stroke="#FFFFFF" stroke-width="0.7" opacity="0.9" />
+    <line x1="17.5" y1="24" x2="19" y2="112" stroke="#FFFFFF" stroke-width="0.7" opacity="0.9" />
+
+    <!-- Pegbox (Gulu & Khuntis) -->
+    <path d="M12 24 C12 12 20 12 20 24 Z" fill="#17264A" stroke="url(#goldGradS)" stroke-width="1.5" />
+    <!-- Top Decorative Finial -->
+    <circle cx="16" cy="10" r="3" fill="#D8AB56" />
+
+    <!-- Tuning Pegs (Khuntis) -->
+    <circle cx="9" cy="18" r="2" fill="#E98727" />
+    <line x1="9" y1="18" x2="13" y2="18" stroke="#E98727" stroke-width="1.5" />
+    <circle cx="23" cy="18" r="2" fill="#E98727" />
+    <line x1="19" y1="18" x2="23" y2="18" stroke="#E98727" stroke-width="1.5" />
+    <circle cx="9" cy="24" r="2" fill="#E98727" />
+    <line x1="9" y1="24" x2="13" y2="24" stroke="#E98727" stroke-width="1.5" />
+    <circle cx="23" cy="24" r="2" fill="#E98727" />
+    <line x1="19" y1="24" x2="23" y2="24" stroke="#E98727" stroke-width="1.5" />
+  </g>
+
+  <!-- Flowing Melodic Swaras (Musical Ribbon Waves) -->
+  <g transform="translate(76, 26)">
+    <!-- Swara Ribbon 1 -->
+    <path d="M0 64 C20 40 40 76 60 52" stroke="url(#roseGrad)" stroke-width="2.5" stroke-linecap="round" fill="none" />
+    <circle cx="60" cy="52" r="3" fill="#925064" />
+
+    <!-- Swara Ribbon 2 (Gold) -->
+    <path d="M4 76 C24 52 44 88 64 64" stroke="url(#goldGradS)" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.85" />
+    <circle cx="64" cy="64" r="2.5" fill="#D8AB56" />
+
+    <!-- Musical Swara Glyphs (Devanagari Saptak Notes: सा, रे, ग, म) -->
+    <g font-family="serif" font-size="10" font-weight="bold" fill="#17264A">
+      <text x="24" y="44" fill="#925064" opacity="0.9">सा</text>
+      <text x="44" y="36" fill="#C49A4B" opacity="0.9">रे</text>
+      <text x="52" y="58" fill="#E98727" opacity="0.9">ग</text>
+    </g>
+
+    <!-- Classical Microphone Silhouette -->
+    <g transform="translate(38, 76)">
+      <!-- Microphone Head -->
+      <rect x="0" y="0" width="10" height="15" rx="5" fill="#17264A" stroke="#D8AB56" stroke-width="1.5" />
+      <line x1="0" y1="7" x2="10" y2="7" stroke="#D8AB56" stroke-width="1" />
+      <!-- Stand Collar -->
+      <path d="M-3 7 C-3 18 13 18 13 7" stroke="#C49A4B" stroke-width="1.8" stroke-linecap="round" fill="none" />
+      <line x1="5" y1="18" x2="5" y2="28" stroke="#C49A4B" stroke-width="2" />
+      <line x1="0" y1="28" x2="10" y2="28" stroke="#C49A4B" stroke-width="2.5" stroke-linecap="round" />
+    </g>
+  </g>
+</svg>

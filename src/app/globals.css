@@ -1,0 +1,175 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-display: 'EB Garamond', 'Cormorant Garamond', Georgia, serif;
+  --font-sans: 'Manrope', system-ui, -apple-system, sans-serif;
+  --font-hindi: 'Noto Serif Devanagari', Georgia, serif;
+  --font-hindi-sans: 'Noto Sans Devanagari', system-ui, sans-serif;
+
+  /* Official Brand Palette Tokens */
+  --ivory: #F7F0E3;
+  --ivory-light: #FFFDF9;
+  --parchment: #E5D5B8;
+  --parchment-light: #F4EDE0;
+  --navy: #17264A;
+  --navy-deep: #0F1A34;
+  --navy-surface: #1E325E;
+  --gold: #C49A4B;
+  --gold-light: #E2D3B3;
+  --gold-dim: #9C762F;
+  --vermilion: #AD3025;
+  --vermilion-dark: #8E241B;
+  --saffron: #E98727;
+  --emerald: #286B50;
+  --rose: #925064;
+  --border-subtle: #E2D3B3;
+  --text-muted: #56627A;
+
+  /* Tarang Visual Asset Pack Tokens */
+  --tarang-ivory: #F7F0E3;
+  --tarang-parchment: #E5D5B8;
+  --tarang-navy: #17264A;
+  --tarang-gold: #C49A4B;
+  --tarang-vermilion: #AD3025;
+  --tarang-saffron: #E98727;
+  --tarang-emerald: #286B50;
+  --tarang-rose: #925064;
+  --tarang-ink: #342C27;
+  --tarang-muted: #756B61;
+  --tarang-border: rgba(126, 91, 55, 0.19);
+  --tarang-shadow: 0 18px 48px rgba(23, 38, 74, 0.10);
+  --tarang-radius-sm: 8px;
+  --tarang-radius-md: 16px;
+  --tarang-radius-lg: 24px;
+  --tarang-content-width: 1240px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-tap-highlight-color: transparent;
+  background-color: var(--tarang-ivory);
+  color: var(--tarang-navy);
+}
+
+body {
+  margin: 0;
+  background-color: var(--tarang-ivory);
+  color: var(--tarang-navy);
+  font-family: var(--font-sans), system-ui, -apple-system, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F0E7D5;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #C49A4B;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #9C762F;
+}
+
+/* Asset Pack Background Classes */
+.tarang-canvas {
+  background-color: var(--tarang-ivory);
+  background-image: url('/assets/tarang/backgrounds/01-signature-canvas.svg');
+  background-position: center top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.tarang-woven {
+  background-color: var(--tarang-ivory);
+  background-image: url('/assets/tarang/backgrounds/03-woven-canvas.svg');
+  background-size: 280px 280px;
+  background-repeat: repeat;
+}
+
+.tarang-midnight {
+  background-color: var(--tarang-navy);
+  background-image: url('/assets/tarang/backgrounds/04-midnight-celebration.svg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.tarang-footer-border {
+  height: 12px;
+  background-image: url('/assets/tarang/backgrounds/05-footer-border.svg');
+  background-repeat: repeat-x;
+  background-position: center top;
+  background-size: auto 12px;
+}
+
+/* Heritage Patterns & Textures */
+.heritage-gold-pattern {
+  background-image: radial-gradient(rgba(196, 154, 75, 0.22) 1px, transparent 1px);
+  background-size: 16px 16px;
+}
+
+.heritage-gold-pattern-dense {
+  background-image: radial-gradient(rgba(196, 154, 75, 0.18) 0.75px, transparent 0.75px);
+  background-size: 10px 10px;
+}
+
+.bg-parchment-grain {
+  background-color: #F7F0E3;
+  background-image: radial-gradient(rgba(196, 154, 75, 0.08) 1px, transparent 0);
+  background-size: 24px 24px;
+}
+
+/* Arch & Filigree Ornamental Borders */
+.ornamental-frame {
+  position: relative;
+  border: 1px solid var(--border-subtle);
+  border-radius: 8px;
+}
+
+.ornamental-frame::before {
+  content: '';
+  position: absolute;
+  inset: 6px;
+  border: 1px solid rgba(196, 154, 75, 0.35);
+  border-radius: 6px;
+  pointer-events: none;
+}
+
+/* Editorial Serif Utility */
+.font-display {
+  font-family: var(--font-display), Georgia, serif;
+}
+
+.font-hindi {
+  font-family: var(--font-hindi), 'Noto Serif Devanagari', serif;
+}
+
+.font-hindi-sans {
+  font-family: var(--font-hindi-sans), 'Noto Sans Devanagari', sans-serif;
+}
+
+/* Bottom safe spacing for mobile navigation */
+.main-content {
+  min-height: calc(100vh - 120px);
+  padding-bottom: 5.5rem; /* mobile nav clearance */
+}
+
+@media (min-width: 768px) {
+  .main-content {
+    padding-bottom: 0;
+  }
+}
