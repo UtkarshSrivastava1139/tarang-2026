@@ -48,9 +48,12 @@ export function MobileNavigation() {
 
   return (
     <nav
-      className="fixed bottom-0 left-0 right-0 z-50 bg-navy/95 backdrop-blur-lg border-t border-gold/40 shadow-2xl md:hidden px-2 pt-2 pb-[max(0.5rem,env(safe-area-inset-bottom))]"
+      className="fixed bottom-0 left-0 right-0 z-50 bg-[#0E1A35]/95 backdrop-blur-xl border-t border-gold/30 shadow-[0_-8px_30px_rgba(0,0,0,0.35)] md:hidden px-2 pt-2 pb-[calc(0.5rem+env(safe-area-inset-bottom,0px))]"
       aria-label="Mobile Bottom Navigation"
     >
+      {/* Auspicious Gold Hairline Accent */}
+      <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-gold/80 to-transparent" />
+
       <div className="flex items-center justify-around max-w-md mx-auto">
         {navigationItems.map((item) => {
           const isActive = pathname === item.href;
@@ -58,25 +61,27 @@ export function MobileNavigation() {
             <Link
               key={item.id}
               href={item.href}
-              className={`flex flex-col items-center justify-center min-w-[56px] py-1 px-1.5 rounded-lg transition-all duration-200 active:scale-95 ${
-                isActive ? 'text-gold' : 'text-ivory/65 hover:text-ivory'
+              className={`flex flex-col items-center justify-center min-w-[68px] min-h-[50px] py-1 px-2 rounded-xl transition-all duration-200 active:scale-90 ${
+                isActive
+                  ? 'bg-gradient-to-b from-gold/20 via-gold/10 to-transparent text-gold border border-gold/40 shadow-[0_0_12px_rgba(201,162,77,0.2)]'
+                  : 'text-ivory/65 hover:text-ivory hover:bg-white/5 border border-transparent'
               }`}
             >
               <div className="relative">
                 {getIcon(item.id, isActive)}
                 {isActive && (
-                  <span className="absolute -top-0.5 -right-0.5 w-1.5 h-1.5 rounded-full bg-vermilion" />
+                  <span className="absolute -top-0.5 -right-0.5 w-1.5 h-1.5 rounded-full bg-vermilion shadow-[0_0_6px_rgba(217,59,48,0.8)]" />
                 )}
               </div>
               <span
                 className={`text-[10px] tracking-wider mt-1 leading-none ${
                   isActive ? 'font-bold text-gold' : 'font-medium'
-                } ${isHindi ? 'font-hindi-sans' : ''}`}
+                } ${isHindi ? 'font-hindi font-medium' : ''}`}
               >
                 {isHindi ? item.hi : item.en}
               </span>
               {isActive && (
-                <span className="w-3 h-0.5 bg-gold rounded-full mt-1 animate-pulse" />
+                <span className="w-4 h-0.5 bg-gold rounded-full mt-1" />
               )}
             </Link>
           );

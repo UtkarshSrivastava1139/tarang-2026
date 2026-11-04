@@ -14,9 +14,9 @@ export function Hero() {
 
   return (
     <>
-      <section className="relative overflow-hidden bg-ivory pt-9 pb-12 sm:pt-14 sm:pb-16 border-b border-gold/30">
+      <section className="relative overflow-hidden bg-[#FAF6EE] pt-8 pb-12 sm:pt-14 sm:pb-16 border-b border-gold/40">
         {/* Auspicious Marigold & Brass Bells Toran Canopy across the top */}
-        <div className="absolute top-0 inset-x-0 h-10 sm:h-14 pointer-events-none z-20 select-none overflow-hidden opacity-90">
+        <div className="absolute top-0 inset-x-0 h-8 sm:h-12 lg:h-14 pointer-events-none z-20 select-none overflow-hidden opacity-90">
           <Image
             src="/assets/tarang/generated/marigold-brass-bells-toran.png"
             alt=""
@@ -26,10 +26,10 @@ export function Hero() {
           />
         </div>
 
-        {/* Subtle Signature Canvas Texture */}
-        <div className="absolute inset-0 pointer-events-none opacity-25 select-none overflow-hidden">
+        {/* Tactile Royal Silk Woven Pattern across the entire hero */}
+        <div className="absolute inset-0 pointer-events-none opacity-10 mix-blend-multiply select-none overflow-hidden">
           <Image
-            src="/assets/tarang/raster/backgrounds/01_signature-canvas-16x9.webp"
+            src="/assets/tarang/raster/patterns/01_subtle-woven-floral-background.webp"
             alt=""
             fill
             className="object-cover object-center"
@@ -37,13 +37,26 @@ export function Hero() {
           />
         </div>
 
-        {/* Botanical Flourish in corner */}
-        <div className="absolute top-4 right-0 w-44 sm:w-64 h-56 sm:h-80 opacity-20 pointer-events-none">
+        {/* Mobile Cultural Watercolor Heritage Background */}
+        <div className="block sm:hidden absolute inset-0 pointer-events-none select-none overflow-hidden">
           <Image
-            src="/assets/tarang/motifs/botanical-corner.svg"
+            src="/assets/tarang/raster/backgrounds/02_heritage-watercolor-16x9.webp"
             alt=""
             fill
-            className="object-contain object-top-right"
+            className="object-cover object-top opacity-35 mix-blend-multiply"
+            priority
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#FAF6EE]/50 to-[#FAF6EE]" />
+        </div>
+
+        {/* Desktop Signature Canvas Texture */}
+        <div className="hidden sm:block absolute inset-0 pointer-events-none opacity-25 select-none overflow-hidden">
+          <Image
+            src="/assets/tarang/raster/backgrounds/01_signature-canvas-16x9.webp"
+            alt=""
+            fill
+            className="object-cover object-center"
+            priority
           />
         </div>
 
@@ -54,7 +67,7 @@ export function Hero() {
             <div className="lg:col-span-7 flex flex-col items-start text-left space-y-4 sm:space-y-5">
               
               {/* Event Kicker Pill */}
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-parchment/70 border border-gold/50 text-navy text-[11px] sm:text-xs font-semibold shadow-2xs">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-parchment/80 border border-gold/50 text-navy text-[11px] sm:text-xs font-semibold shadow-2xs">
                 <span className="w-2 h-2 rounded-full bg-saffron animate-pulse" />
                 <span>{t('hero.kicker')}</span>
                 <span className="text-gold/60">•</span>
@@ -62,29 +75,29 @@ export function Hero() {
               </div>
 
               {/* Official Tarang Wordmark - Large & Authoritative */}
-              <div className="relative w-full max-w-[460px] sm:max-w-[560px] lg:max-w-[620px] h-28 sm:h-36 lg:h-40">
+              <div className="relative w-full max-w-[340px] sm:max-w-[560px] lg:max-w-[620px] h-24 sm:h-36 lg:h-40">
                 <Image
                   src={siteConfig.art.tarangLogo}
                   alt={siteConfig.edition}
                   fill
-                  sizes="(max-width: 640px) 460px, (max-width: 1024px) 560px, 620px"
+                  sizes="(max-width: 640px) 340px, (max-width: 1024px) 560px, 620px"
                   className="object-contain object-left"
                   priority
                 />
               </div>
 
               {/* Permanent Tagline */}
-              <p className="font-display italic text-lg sm:text-xl font-semibold text-gold tracking-wide -mt-2">
+              <p className="font-display italic text-base sm:text-xl font-semibold text-gold tracking-wide -mt-1 sm:-mt-2">
                 &ldquo;{siteConfig.tagline}&rdquo;
               </p>
 
               {/* Authentic Hindi Theme Artwork */}
-              <div className="relative w-full max-w-[280px] sm:max-w-[360px] h-12 sm:h-14">
+              <div className="relative w-full max-w-[260px] sm:max-w-[360px] h-11 sm:h-14">
                 <Image
                   src={siteConfig.art.themeLogo}
                   alt={siteConfig.theme}
                   fill
-                  sizes="(max-width: 640px) 280px, 360px"
+                  sizes="(max-width: 640px) 260px, 360px"
                   className="object-contain object-left"
                   priority
                 />
@@ -95,51 +108,51 @@ export function Hero() {
                 {t('hero.subtitle')}
               </p>
 
-              {/* Key Logistics Badges - Clean Vector Icons (No Emojis) */}
-              <div className="grid grid-cols-2 sm:grid-cols-3 gap-2.5 w-full max-w-lg pt-1">
-                <div className="p-2.5 rounded-lg bg-white/95 border border-gold/40 shadow-2xs flex items-center gap-2.5">
-                  <div className="w-8 h-8 rounded-full bg-gold/15 border border-gold/40 flex items-center justify-center shrink-0">
-                    <svg className="w-4 h-4 text-gold" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              {/* Key Logistics Badges - Clean Vector Icons (No Emojis), Responsive Grid */}
+              <div className="grid grid-cols-3 gap-2 sm:gap-2.5 w-full max-w-xl pt-1">
+                <div className="p-2 sm:p-2.5 rounded-lg bg-white/95 border border-gold/40 shadow-2xs flex flex-col sm:flex-row items-center sm:items-start text-center sm:text-left gap-1 sm:gap-2.5">
+                  <div className="w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-gold/15 border border-gold/40 flex items-center justify-center shrink-0">
+                    <svg className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-gold" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.8} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                     </svg>
                   </div>
-                  <div className="text-left">
-                    <span className="text-[11px] sm:text-xs font-bold text-navy block leading-tight">18 Nov 2026</span>
-                    <span className="text-[10px] text-text-muted block leading-tight">{isHindi ? 'बुधवार' : 'Wednesday'}</span>
+                  <div className="min-w-0">
+                    <span className="text-[10px] sm:text-xs font-bold text-navy block leading-tight truncate">18 Nov 2026</span>
+                    <span className="text-[9px] sm:text-[10px] text-text-muted block leading-tight">{isHindi ? 'बुधवार' : 'Wednesday'}</span>
                   </div>
                 </div>
 
-                <div className="p-2.5 rounded-lg bg-white/95 border border-gold/40 shadow-2xs flex items-center gap-2.5">
-                  <div className="w-8 h-8 rounded-full bg-gold/15 border border-gold/40 flex items-center justify-center shrink-0">
-                    <svg className="w-4 h-4 text-gold" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <div className="p-2 sm:p-2.5 rounded-lg bg-white/95 border border-gold/40 shadow-2xs flex flex-col sm:flex-row items-center sm:items-start text-center sm:text-left gap-1 sm:gap-2.5">
+                  <div className="w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-gold/15 border border-gold/40 flex items-center justify-center shrink-0">
+                    <svg className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-gold" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.8} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>
                   </div>
-                  <div className="text-left">
-                    <span className="text-[11px] sm:text-xs font-bold text-navy block leading-tight">3:00 PM IST</span>
-                    <span className="text-[10px] text-text-muted block leading-tight">{isHindi ? 'अपराह्न से' : 'Onwards'}</span>
+                  <div className="min-w-0">
+                    <span className="text-[10px] sm:text-xs font-bold text-navy block leading-tight truncate">3:00 PM IST</span>
+                    <span className="text-[9px] sm:text-[10px] text-text-muted block leading-tight">{isHindi ? 'अपराह्न से' : 'Onwards'}</span>
                   </div>
                 </div>
 
-                <div className="col-span-2 sm:col-span-1 p-2.5 rounded-lg bg-white/95 border border-gold/40 shadow-2xs flex items-center gap-2.5">
-                  <div className="w-8 h-8 rounded-full bg-gold/15 border border-gold/40 flex items-center justify-center shrink-0">
-                    <svg className="w-4 h-4 text-gold" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <div className="p-2 sm:p-2.5 rounded-lg bg-white/95 border border-gold/40 shadow-2xs flex flex-col sm:flex-row items-center sm:items-start text-center sm:text-left gap-1 sm:gap-2.5">
+                  <div className="w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-gold/15 border border-gold/40 flex items-center justify-center shrink-0">
+                    <svg className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-gold" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.8} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.8} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                     </svg>
                   </div>
-                  <div className="text-left">
-                    <span className="text-[11px] sm:text-xs font-bold text-navy block leading-tight">School Campus</span>
-                    <span className="text-[10px] text-text-muted block leading-tight truncate">Mathauli Bazar</span>
+                  <div className="min-w-0">
+                    <span className="text-[10px] sm:text-xs font-bold text-navy block leading-tight truncate">School Campus</span>
+                    <span className="text-[9px] sm:text-[10px] text-text-muted block leading-tight truncate">Mathauli Bazar</span>
                   </div>
                 </div>
               </div>
 
-              {/* Action Buttons - Mobile Ergonomic 48px targets */}
-              <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-2.5 sm:gap-3.5 pt-2 w-full">
+              {/* Action Buttons - Mobile Ergonomic 48px touch targets */}
+              <div className="grid grid-cols-2 sm:flex sm:flex-row items-stretch sm:items-center gap-2 sm:gap-3.5 pt-1 w-full max-w-xl">
                 <Link
                   href="/journey"
-                  className="min-h-[48px] px-6 py-3 rounded-lg bg-vermilion hover:bg-vermilion-dark active:scale-[0.98] text-white font-semibold text-xs sm:text-sm tracking-wide transition-all shadow-md flex items-center justify-center gap-2"
+                  className="col-span-2 sm:col-auto min-h-[46px] px-5 py-2.5 rounded-lg bg-vermilion hover:bg-vermilion-dark active:scale-[0.98] text-white font-semibold text-xs sm:text-sm tracking-wide transition-all shadow-md flex items-center justify-center gap-2"
                 >
                   <span>{t('hero.exploreProgramme')}</span>
                   <span className="text-gold text-base font-bold">↗</span>
@@ -148,19 +161,19 @@ export function Hero() {
                 <button
                   type="button"
                   onClick={() => setIsInviteOpen(true)}
-                  className="min-h-[48px] px-5 py-3 rounded-lg bg-navy hover:bg-navy-deep active:scale-[0.98] text-gold hover:text-white border border-gold/60 font-semibold text-xs sm:text-sm tracking-wide transition-all shadow-sm flex items-center justify-center gap-2"
+                  className="min-h-[46px] px-3.5 py-2.5 rounded-lg bg-navy hover:bg-navy-deep active:scale-[0.98] text-gold hover:text-white border border-gold/60 font-semibold text-[11px] sm:text-sm tracking-wide transition-all shadow-xs flex items-center justify-center gap-1.5"
                 >
-                  <svg className="w-4 h-4 text-gold shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <svg className="w-3.5 h-3.5 text-gold shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                   </svg>
-                  <span>{t('hero.viewInvitation')}</span>
+                  <span className="truncate">{t('hero.viewInvitation')}</span>
                 </button>
 
                 <Link
                   href="/gallery"
-                  className="min-h-[48px] px-5 py-3 rounded-lg bg-white/95 hover:bg-parchment/40 active:scale-[0.98] text-navy border border-gold/40 font-semibold text-xs sm:text-sm tracking-wide transition-all shadow-2xs flex items-center justify-center gap-2"
+                  className="min-h-[46px] px-3.5 py-2.5 rounded-lg bg-white/95 hover:bg-parchment/40 active:scale-[0.98] text-navy border border-gold/40 font-semibold text-[11px] sm:text-sm tracking-wide transition-all shadow-2xs flex items-center justify-center gap-1.5"
                 >
-                  <span>{t('hero.relive2024')}</span>
+                  <span className="truncate">{t('hero.relive2024')}</span>
                 </Link>
               </div>
 

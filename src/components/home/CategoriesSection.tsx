@@ -129,7 +129,7 @@ export function CategoriesSection() {
                       return (
                         <div
                           key={category.id}
-                          className={`p-6 sm:p-8 rounded-xl bg-white/95 backdrop-blur-xs border ${styles.border} ${styles.glow} shadow-card hover:shadow-editorial transition-all duration-300 relative overflow-hidden group`}
+                          className={`p-4 sm:p-6 lg:p-8 rounded-xl bg-white/95 backdrop-blur-xs border ${styles.border} ${styles.glow} shadow-card hover:shadow-editorial transition-all duration-300 relative overflow-hidden group`}
                         >
                           {/* Top strip accent */}
                           <div className={`absolute top-0 left-0 right-0 h-1.5 ${styles.indicator}`} />
@@ -205,7 +205,7 @@ export function CategoriesSection() {
                       return (
                         <div
                           key={category.id}
-                          className={`p-6 rounded-xl bg-white/95 backdrop-blur-xs border ${styles.border} ${styles.glow} shadow-card hover:shadow-editorial transition-all duration-300 flex flex-col justify-between group relative overflow-hidden`}
+                          className={`p-4 sm:p-6 rounded-xl bg-white/95 backdrop-blur-xs border ${styles.border} ${styles.glow} shadow-card hover:shadow-editorial transition-all duration-300 flex flex-col justify-between group relative overflow-hidden`}
                         >
                           {/* Top strip accent */}
                           <div className={`absolute top-0 left-0 right-0 h-1.5 ${styles.indicator}`} />

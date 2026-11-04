@@ -101,3 +101,4 @@ npm start
 ## 📜 License & Copyright
 
 © 2024–2026 **Smt. Radhika Devi Intermediate College & Children Academy**. All rights reserved.
+

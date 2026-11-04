@@ -38,13 +38,13 @@ export function Header() {
 
       {/* Main Institutional Header */}
       <header className="sticky top-0 z-40 bg-ivory/95 backdrop-blur-md border-b border-gold/30 shadow-card">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-18 sm:h-20 flex items-center justify-between gap-4">
+        <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 h-16 sm:h-20 flex items-center justify-between gap-2.5 sm:gap-4">
           
           {/* Institutional Lockup */}
-          <Link href="/" className="flex items-center gap-2.5 sm:gap-3 group focus:outline-none">
+          <Link href="/" className="flex items-center gap-2 sm:gap-3 group focus:outline-none min-w-0">
             {/* Dual Logos Container */}
-            <div className="flex items-center gap-1 sm:gap-1.5 p-1 bg-white rounded-md border border-gold/40 shadow-xs group-hover:border-gold transition-colors">
-              <div className="relative w-8 h-8 sm:w-10 sm:h-10">
+            <div className="flex items-center gap-1 sm:gap-1.5 p-1 bg-white rounded-lg border border-gold/40 shadow-xs group-hover:border-gold transition-colors shrink-0">
+              <div className="relative w-7 h-7 sm:w-10 sm:h-10">
                 <Image
                   src={siteConfig.institutions.college.logo}
                   alt={siteConfig.institutions.college.en}
@@ -54,8 +54,8 @@ export function Header() {
                   priority
                 />
               </div>
-              <span className="w-px h-6 bg-gold/30" />
-              <div className="relative w-8 h-8 sm:w-10 sm:h-10">
+              <span className="w-px h-5 sm:h-6 bg-gold/40" />
+              <div className="relative w-7 h-7 sm:w-10 sm:h-10">
                 <Image
                   src={siteConfig.institutions.academy.logo}
                   alt={siteConfig.institutions.academy.en}
@@ -68,20 +68,33 @@ export function Header() {
             </div>
 
             {/* Institutional Titles */}
-            <div className="flex flex-col text-left">
+            <div className="flex flex-col text-left min-w-0">
               <div className="flex items-center gap-1.5">
                 <span className="font-display font-bold text-navy text-sm sm:text-base tracking-wide leading-tight group-hover:text-vermilion transition-colors">
                   {siteConfig.edition}
                 </span>
-                <span className="text-[10px] px-1.5 py-0.2 rounded bg-gold/15 text-gold-dim font-semibold border border-gold/30 uppercase tracking-widest">
+                <span className="text-[9px] sm:text-[10px] px-1.5 py-0.2 rounded bg-gold/15 text-gold-dim font-bold border border-gold/30 uppercase tracking-widest">
                   2026
                 </span>
               </div>
-              <h1 className="text-[10px] sm:text-xs font-semibold text-navy/80 uppercase tracking-wider leading-tight max-w-[220px] sm:max-w-md line-clamp-1">
-                {isHindi ? siteConfig.institutions.college.hi : siteConfig.institutions.college.en}
+              
+              {/* Responsive Subtitle: Clean on Mobile, Detailed on Desktop */}
+              <h1 className="text-[10px] sm:text-xs font-semibold text-navy/85 uppercase tracking-wider leading-tight truncate">
+                <span className="sm:hidden">
+                  {isHindi ? 'श्री राधिका देवी शिक्षण संस्थान' : 'SRD College & Academy'}
+                </span>
+                <span className="hidden sm:inline">
+                  {isHindi ? siteConfig.institutions.college.hi : siteConfig.institutions.college.en}
+                </span>
               </h1>
-              <p className="text-[9px] sm:text-[10px] text-text-muted leading-tight line-clamp-1">
-                &amp; {isHindi ? siteConfig.institutions.academy.hi : siteConfig.institutions.academy.en} • {isHindi ? 'मथौली बाज़ार' : 'Mathauli Bazar'}
+              
+              <p className="text-[9px] sm:text-[10px] text-text-muted leading-tight truncate">
+                <span className="sm:hidden text-gold-dim font-medium">
+                  {isHindi ? 'मथौली बाज़ार, कुशीनगर' : 'Mathauli Bazar, Kushinagar'}
+                </span>
+                <span className="hidden sm:inline">
+                  &amp; {isHindi ? siteConfig.institutions.academy.hi : siteConfig.institutions.academy.en} • {isHindi ? 'मथौली बाज़ार' : 'Mathauli Bazar'}
+                </span>
               </p>
             </div>
           </Link>
@@ -109,21 +122,31 @@ export function Header() {
             })}
           </nav>
 
-          {/* Right Actions: Bilingual Toggle */}
-          <div className="flex items-center gap-2 sm:gap-3">
+          {/* Right Actions: Tactile Bilingual Segmented Pill */}
+          <div className="flex items-center gap-2 sm:gap-3 shrink-0">
             <button
               onClick={toggleLocale}
               type="button"
-              className="group relative flex items-center gap-1.5 px-2.5 sm:px-3 py-1.5 rounded-full border border-gold/50 bg-white/80 hover:bg-white shadow-2xs transition-all active:scale-95"
+              className="group relative flex items-center gap-1 p-1 sm:px-2.5 sm:py-1.5 rounded-full border border-gold/50 bg-white/90 hover:bg-white shadow-2xs transition-all active:scale-95"
               aria-label={`Switch language. Current: ${locale.toUpperCase()}`}
             >
-              <svg className="w-3.5 h-3.5 text-gold group-hover:rotate-12 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129" />
-              </svg>
-              <span className="text-[11px] sm:text-xs font-bold text-navy flex items-center gap-1">
-                <span className={locale === 'en' ? 'text-vermilion font-black' : 'text-navy/60'}>EN</span>
-                <span className="text-gold/50 text-[10px]">/</span>
-                <span className={locale === 'hi' ? 'text-vermilion font-black font-hindi' : 'text-navy/60 font-hindi'}>हिं</span>
+              <span
+                className={`px-2 py-0.5 rounded-full text-[10px] sm:text-xs font-bold transition-all ${
+                  locale === 'en'
+                    ? 'bg-navy text-gold shadow-xs'
+                    : 'text-navy/60 hover:text-navy'
+                }`}
+              >
+                EN
+              </span>
+              <span
+                className={`px-2 py-0.5 rounded-full text-[10px] sm:text-xs font-bold font-hindi transition-all ${
+                  locale === 'hi'
+                    ? 'bg-navy text-gold shadow-xs'
+                    : 'text-navy/60 hover:text-navy'
+                }`}
+              >
+                हिं
               </span>
             </button>
           </div>
