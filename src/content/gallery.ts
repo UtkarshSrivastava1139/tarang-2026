@@ -40,7 +40,7 @@ export interface InstagramReelItem {
 export const galleryPhotos: GalleryPhoto[] = [
   {
     id: 'tarang-24-ganesha',
-    src: '/gallery/tarang-24/_DSC0090.JPG',
+    src: '/gallery/tarang-24/_DSC0090.webp',
     alt: 'Ganesh Vandana Inaugural Stage Presentation',
     titleEn: 'Ganesh Vandana & Mangalacharan',
     titleHi: 'गणेश वंदना एवं मंगलाचरण',
@@ -52,7 +52,7 @@ export const galleryPhotos: GalleryPhoto[] = [
   },
   {
     id: 'tarang-24-folk-troupe',
-    src: '/gallery/tarang-24/_DSC0101.JPG',
+    src: '/gallery/tarang-24/_DSC0101.webp',
     alt: 'Folk Rhythm and Choral Dance Performance',
     titleEn: 'Folk Rhythm & Synchronized Choral Dance',
     titleHi: 'समूह नृत्य एवं लोक ताल प्रस्तुति',
@@ -64,7 +64,7 @@ export const galleryPhotos: GalleryPhoto[] = [
   },
   {
     id: 'tarang-24-classical-nauvari',
-    src: '/gallery/tarang-24/_DSC0107.JPG',
+    src: '/gallery/tarang-24/_DSC0107.webp',
     alt: 'Classical Nauvari Attire Circle Formation Dance',
     titleEn: 'Classical Silk Attire Circle Choreography',
     titleHi: 'पारंपरिक रेशमी वेशभूषा मंडल नृत्य',
@@ -76,7 +76,7 @@ export const galleryPhotos: GalleryPhoto[] = [
   },
   {
     id: 'tarang-24-student-merit-honors',
-    src: '/gallery/tarang-24/_DSC0137.JPG',
+    src: '/gallery/tarang-24/_DSC0137.webp',
     alt: 'Principal and Dignitary Presenting Academic Awards',
     titleEn: 'Academic Merit & Distinction Honors',
     titleHi: 'मेधावी विद्यार्थी सम्मान समारोह',
@@ -88,7 +88,7 @@ export const galleryPhotos: GalleryPhoto[] = [
   },
   {
     id: 'tarang-24-acrobatic-pyramid',
-    src: '/gallery/tarang-24/_DSC0162.JPG',
+    src: '/gallery/tarang-24/_DSC0162.webp',
     alt: 'Student Acrobatic Human Pyramid Dance Formation',
     titleEn: 'Human Pyramid Acrobatic Choreography',
     titleHi: 'मानव पिरामिड एवं साहसिक नृत्य मंचन',
@@ -100,7 +100,7 @@ export const galleryPhotos: GalleryPhoto[] = [
   },
   {
     id: 'tarang-24-children-academy-fairies',
-    src: '/gallery/tarang-24/_DSC0172.JPG',
+    src: '/gallery/tarang-24/_DSC0172.webp',
     alt: 'Children Academy Little Stars Dance',
     titleEn: 'Children Academy Little Stars Troupe',
     titleHi: 'चिल्ड्रेन्स एकेडमी बाल नृत्य प्रस्तुति',
@@ -112,7 +112,7 @@ export const galleryPhotos: GalleryPhoto[] = [
   },
   {
     id: 'tarang-24-night-stage-formation',
-    src: '/gallery/tarang-24/_DSC0199.JPG',
+    src: '/gallery/tarang-24/_DSC0199.webp',
     alt: 'Dynamic Theatrical Stage Lighting and Formation',
     titleEn: 'Dynamic Night Stage Formation Dance',
     titleHi: 'रात्रि मंचन एवं प्रकाश संयोजन नृत्य',
@@ -124,7 +124,7 @@ export const galleryPhotos: GalleryPhoto[] = [
   },
   {
     id: 'tarang-24-chhalla-folk',
-    src: '/gallery/tarang-24/_DSC0202.JPG',
+    src: '/gallery/tarang-24/_DSC0202.webp',
     alt: 'Chhalla Dance Performance in Yellow Kurtas',
     titleEn: 'Chhalla Folk Dance Celebration',
     titleHi: 'छल्ला लोक नृत्य प्रस्तुति',
@@ -136,7 +136,7 @@ export const galleryPhotos: GalleryPhoto[] = [
   },
   {
     id: 'tarang-24-up-board-topper-award',
-    src: '/gallery/tarang-24/_DSC0214.JPG',
+    src: '/gallery/tarang-24/_DSC0214.webp',
     alt: 'UP Board School Topper Award Ceremony on 18 November 2024',
     titleEn: 'UP Board School Topper Felicitation',
     titleHi: 'यूपी बोर्ड विद्यालय टॉपर सम्मान (१८ नवम्बर २०२४)',
@@ -148,7 +148,7 @@ export const galleryPhotos: GalleryPhoto[] = [
   },
   {
     id: 'tarang-24-board-merit-scholarship',
-    src: '/gallery/tarang-24/_DSC0218.JPG',
+    src: '/gallery/tarang-24/_DSC0218.webp',
     alt: 'Board Exam Distinction Award Cheque Presentation',
     titleEn: 'Board Exam Distinction Award Ceremony',
     titleHi: 'बोर्ड परीक्षा मेधावी छात्रवृत्ति अलंकरण',
@@ -160,7 +160,7 @@ export const galleryPhotos: GalleryPhoto[] = [
   },
   {
     id: 'tarang-24-patrons-dignitaries',
-    src: '/gallery/tarang-24/_DSC0225.JPG',
+    src: '/gallery/tarang-24/_DSC0225.webp',
     alt: 'Institution Management and Leadership Assembly',
     titleEn: 'Institution Management & Leadership on Stage',
     titleHi: 'विद्यालय प्रबंध तंत्र एवं विशिष्ट अतिथि मंच',
@@ -172,7 +172,7 @@ export const galleryPhotos: GalleryPhoto[] = [
   },
   {
     id: 'tarang-24-laxmi-bai-drama',
-    src: '/gallery/tarang-24/_DSC0255.JPG',
+    src: '/gallery/tarang-24/_DSC0255.webp',
     alt: 'Rani Laxmi Bai Theatrical Drama Presentation',
     titleEn: 'Rani Laxmi Bai Historical Theatrical Play',
     titleHi: 'रानी लक्ष्मीबाई ऐतिहासिक नाट्य मंचन',
@@ -184,7 +184,7 @@ export const galleryPhotos: GalleryPhoto[] = [
   },
   {
     id: 'tarang-24-aakal-mrityu',
-    src: '/gallery/tarang-24/_DSC0273.JPG',
+    src: '/gallery/tarang-24/_DSC0273.webp',
     alt: 'Aakal Mrityu Dramatic Dance Ensemble',
     titleEn: 'Aakal Mrityu Theatrical Dance Ensemble',
     titleHi: 'अकाल मृत्यु भावपूर्ण नाट्य-नृत्य मंचन',
@@ -196,7 +196,7 @@ export const galleryPhotos: GalleryPhoto[] = [
   },
   {
     id: 'tarang-24-shiva-tandava',
-    src: '/gallery/tarang-24/_DSC0287.JPG',
+    src: '/gallery/tarang-24/_DSC0287.webp',
     alt: 'Shiva Tandava Theatrical Presentation under Blue Lights',
     titleEn: 'Shiva Tandava Theatrical Presentation',
     titleHi: 'शिव तांडव एवं गण नाट्य मंचन',
@@ -208,7 +208,7 @@ export const galleryPhotos: GalleryPhoto[] = [
   },
   {
     id: 'tarang-24-ramayan-ensemble',
-    src: '/gallery/tarang-24/_DSC0328.JPG',
+    src: '/gallery/tarang-24/_DSC0328.webp',
     alt: 'Ramayan Act Moral Story Play on Stage',
     titleEn: 'Ramayan Stage Play: Moral Values & Heritage',
     titleHi: 'रामायण प्रसंग: आदर्श जीवन मूल्य मंचन',
@@ -220,7 +220,7 @@ export const galleryPhotos: GalleryPhoto[] = [
   },
   {
     id: 'tarang-24-hanuman-sita-ashok-vatika',
-    src: '/gallery/tarang-24/_DSC0338.JPG',
+    src: '/gallery/tarang-24/_DSC0338.webp',
     alt: 'Ramayan Act: Hanuman and Mata Sita in Ashok Vatika',
     titleEn: 'Ramayan Act: Hanuman & Mata Sita',
     titleHi: 'रामायण मंचन: अशोक वाटिका में श्री हनुमान एवं माता सीता',
@@ -232,7 +232,7 @@ export const galleryPhotos: GalleryPhoto[] = [
   },
   {
     id: 'tarang-24-radha-krishna-leela',
-    src: '/gallery/tarang-24/_DSC0351.JPG',
+    src: '/gallery/tarang-24/_DSC0351.webp',
     alt: 'Radha Krishna Divine Leela Dance',
     titleEn: 'Radha Krishna Divine Leela Dance',
     titleHi: 'राधा-कृष्ण दिव्य युगल नृत्य',
@@ -244,7 +244,7 @@ export const galleryPhotos: GalleryPhoto[] = [
   },
   {
     id: 'photo-1',
-    src: '/gallery/tarang_2024_1.png',
+    src: '/gallery/tarang_2024_1.webp',
     alt: 'TARANG 2024 Stage Inauguration and Classical Welcome',
     titleEn: 'Ceremonial Stage Inauguration',
     titleHi: 'भव्य मंच उद्घाटन एवं मंगलाचरण',
@@ -256,7 +256,7 @@ export const galleryPhotos: GalleryPhoto[] = [
   },
   {
     id: 'photo-2',
-    src: '/gallery/tarang_2024_2.png',
+    src: '/gallery/tarang_2024_2.webp',
     alt: 'TARANG 2024 Classical Dance Fusion',
     titleEn: 'Folk Rhythm & Choral Harmony',
     titleHi: 'लोक धुन एवं समवेत गायन',
@@ -268,7 +268,7 @@ export const galleryPhotos: GalleryPhoto[] = [
   },
   {
     id: 'photo-3',
-    src: '/gallery/tarang_2024_3.png',
+    src: '/gallery/tarang_2024_3.webp',
     alt: 'TARANG 2024 Celebrations and Student Pride',
     titleEn: 'Audience Applause & Dignitary Honors',
     titleHi: 'अतिथि सम्मान एवं दर्शक दीर्घा',
@@ -280,7 +280,7 @@ export const galleryPhotos: GalleryPhoto[] = [
   },
   {
     id: 'photo-4',
-    src: '/gallery/tarang_2024_4.png',
+    src: '/gallery/tarang_2024_4.webp',
     alt: 'TARANG 2024 Grand Finale Assembly',
     titleEn: 'Grand Finale Ensemble',
     titleHi: 'महा-समापन एवं समवेत प्रस्तुति',

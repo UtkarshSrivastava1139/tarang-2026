@@ -70,7 +70,7 @@ export function FeaturedVideo() {
               >
                 {/* Poster Background */}
                 <Image
-                  src="/gallery/tarang_2024_1.png"
+                  src="/gallery/tarang_2024_1.webp"
                   alt="TARANG Festival Video Poster"
                   fill
                   sizes="(max-width: 1024px) 100vw, 900px"

@@ -5,7 +5,7 @@ export function Footer() {
   return (
     <footer className="site-footer">
       <div className="footer-brand">
-        <img src="/branding/tarang_logo.png" alt="TARANG 2.0" />
+        <img src="/branding/tarang_logo.webp" alt="TARANG 2.0" />
         <p>{site.tagline}</p>
       </div>
       <div className="footer-institutions">

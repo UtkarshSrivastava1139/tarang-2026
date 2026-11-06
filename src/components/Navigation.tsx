@@ -11,8 +11,8 @@ export function Header() {
       <header className="site-header">
         <Link className="brand-lockup" href="/" aria-label="TARANG home">
           <span className="institution-logos">
-            <img src="/branding/college_logo.png" alt="" />
-            <img src="/branding/academy_logo.png" alt="" />
+            <img src="/branding/college_logo.webp" alt="" />
+            <img src="/branding/academy_logo.webp" alt="" />
           </span>
           <span>
             <b>{site.edition}</b>

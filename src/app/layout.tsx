@@ -38,8 +38,8 @@ export default function RootLayout({
     <html lang="en" className="scroll-smooth">
       <head>
         <link rel="manifest" href="/manifest.json" />
-        <link rel="icon" href="/branding/tarang_logo.png" />
-        <link rel="apple-touch-icon" href="/branding/tarang_logo.png" />
+        <link rel="icon" href="/branding/tarang_logo.webp" />
+        <link rel="apple-touch-icon" href="/branding/tarang_logo.webp" />
         <meta name="application-name" content="TARANG 2.0" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />

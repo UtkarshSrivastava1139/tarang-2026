@@ -18,7 +18,7 @@ export function Hero() {
         {/* Auspicious Marigold & Brass Bells Toran Canopy (Desktop, mobile uses native artwork bells) */}
         <div className="hidden sm:block absolute top-0 inset-x-0 h-10 sm:h-12 lg:h-14 pointer-events-none z-20 select-none overflow-hidden opacity-90">
           <Image
-            src="/assets/tarang/generated/marigold-brass-bells-toran.png"
+            src="/assets/tarang/generated/marigold-brass-bells-toran.webp"
             alt=""
             fill
             className="object-cover object-top"
@@ -232,7 +232,7 @@ export function Hero() {
               {/* Authentic Historic TARANG 2024 Photograph Frame */}
               <div className="relative aspect-[16/10] sm:aspect-[16/10] lg:aspect-[4/3] w-full rounded-xl overflow-hidden border-2 border-gold/40 shadow-editorial bg-parchment/30 group">
                 <Image
-                  src="/gallery/tarang_2024_1.png"
+                  src="/gallery/tarang_2024_1.webp"
                   alt="TARANG 2024 Stage Inauguration Celebration"
                   fill
                   sizes="(max-width: 768px) 100vw, 520px"

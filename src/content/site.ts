@@ -52,15 +52,15 @@ export const siteConfig = {
       en: 'Smt. Radhika Devi Intermediate College',
       hi: 'श्रीमती राधिका देवी इण्टर कॉलेज',
       shortEn: 'SRD Intermediate College',
-      logo: '/branding/college_logo.png',
-      image: '/campus/srd_intermediate_college_campus.jpg'
+      logo: '/branding/college_logo.webp',
+      image: '/campus/srd_intermediate_college_campus.webp'
     },
     academy: {
       en: 'Smt. Radhika Devi Children Academy',
       hi: 'श्रीमती राधिका देवी चिल्ड्रेन्स एकेडमी',
       shortEn: 'SRD Children Academy',
-      logo: '/branding/academy_logo.png',
-      image: '/campus/srd_children_academy_campus.jpg'
+      logo: '/branding/academy_logo.webp',
+      image: '/campus/srd_children_academy_campus.webp'
     }
   },
   event: {
@@ -103,16 +103,16 @@ export const siteConfig = {
     descHi: 'तरंग के भव्य मंचन, शास्त्रीय धुनों, मनोहारी लोक नृत्यों और सहभाव के सजीव पलों का अनुभव करें।'
   },
   invitation: {
-    image: '/invitation/final_invitation.png',
+    image: '/invitation/final_invitation.webp',
     titleEn: 'Official Ceremonial Invitation',
     titleHi: 'आधिकारिक निमंत्रण पत्र'
   },
   art: {
-    panorama: '/art/watercolor_indian_heritage_panorama.png',
-    watercolorHeritage: '/art/indian_heritage_in_watercolour.png',
-    identityBoard: '/art/tarang_2026_cultural_identity_board.png',
-    tarangLogo: '/branding/tarang_logo.png',
-    themeLogo: '/branding/theme_logo.png'
+    panorama: '/art/watercolor_indian_heritage_panorama.webp',
+    watercolorHeritage: '/art/indian_heritage_in_watercolour.webp',
+    identityBoard: '/art/tarang_2026_cultural_identity_board.webp',
+    tarangLogo: '/branding/tarang_logo.webp',
+    themeLogo: '/branding/theme_logo.webp'
   }
 } as const;
 
@@ -156,7 +156,7 @@ export const culturalCategories: CulturalCategory[] = [
     color: 'emerald',
     descriptionEn: 'Solo and group dance performances celebrating movement, expression and rhythm.',
     descriptionHi: 'गति, भाव और लय का उत्सव मनाती एकल एवं सामूहिक नृत्य प्रस्तुतियाँ।',
-    icon: '/assets/tarang/generated/dance-ghungroo.png'
+    icon: '/assets/tarang/generated/dance-ghungroo.webp'
   },
   {
     id: 'singing',
@@ -166,7 +166,7 @@ export const culturalCategories: CulturalCategory[] = [
     color: 'rose',
     descriptionEn: "Individual and group vocal performances showcasing students' musical talent.",
     descriptionHi: 'विद्यार्थियों की संगीत प्रतिभा को दर्शाती व्यक्तिगत और समवेत गायन प्रस्तुतियाँ।',
-    icon: '/assets/tarang/generated/singing-indian-classical.png'
+    icon: '/assets/tarang/generated/singing-indian-classical.webp'
   },
   {
     id: 'drama',
@@ -176,7 +176,7 @@ export const culturalCategories: CulturalCategory[] = [
     color: 'vermilion',
     descriptionEn: 'Stories brought to life through individual and group dramatic performances.',
     descriptionHi: 'व्यक्तिगत और सामूहिक नाटकीय प्रस्तुतियों के माध्यम से सजीव होती कहानियाँ।',
-    icon: '/assets/tarang/generated/drama-natyashastra.png'
+    icon: '/assets/tarang/generated/drama-natyashastra.webp'
   },
   {
     id: 'speeches',
@@ -186,7 +186,7 @@ export const culturalCategories: CulturalCategory[] = [
     color: 'navy',
     descriptionEn: 'Thoughtful speeches and addresses by students and distinguished dignitaries.',
     descriptionHi: 'विद्यार्थियों एवं विशिष्ट अतिथियों द्वारा विचारोत्तेजक और प्रेरक वक्तव्य।',
-    icon: '/assets/tarang/generated/speeches-addresses.png'
+    icon: '/assets/tarang/generated/speeches-addresses.webp'
   },
   {
     id: 'anchoring',
@@ -196,7 +196,7 @@ export const culturalCategories: CulturalCategory[] = [
     color: 'gold',
     descriptionEn: 'Lively stage hosting that connects performances and keeps the celebration flowing.',
     descriptionHi: 'प्रस्तुतियों को एक सूत्र में पिरोने और उत्सव की ऊर्जा बनाए रखने वाला जीवंत मंच संचालन।',
-    icon: '/assets/tarang/generated/anchoring-hosting.png'
+    icon: '/assets/tarang/generated/anchoring-hosting.webp'
   },
   {
     id: 'interactive',
@@ -206,7 +206,7 @@ export const culturalCategories: CulturalCategory[] = [
     color: 'saffron',
     descriptionEn: 'Fun audience-engagement activities and entertaining moments throughout the event.',
     descriptionHi: 'समारोह के दौरान दर्शकों को जोड़ने वाली मनोरंजक और उत्साहवर्धक गतिविधियाँ।',
-    icon: '/assets/tarang/generated/interactive-activities.png'
+    icon: '/assets/tarang/generated/interactive-activities.webp'
   },
   {
     id: 'art-craft',
@@ -216,7 +216,7 @@ export const culturalCategories: CulturalCategory[] = [
     color: 'gold',
     descriptionEn: 'A showcase of creativity through artwork and craft made by our students.',
     descriptionHi: 'हमारे विद्यार्थियों द्वारा निर्मित कलाकृतियों और हस्तशिल्प के माध्यम से सृजनात्मकता का प्रदर्शन।',
-    icon: '/assets/tarang/generated/art-craft-heritage.png'
+    icon: '/assets/tarang/generated/art-craft-heritage.webp'
   }
 ];
 

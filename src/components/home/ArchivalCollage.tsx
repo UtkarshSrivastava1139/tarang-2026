@@ -10,35 +10,35 @@ export function ArchivalCollage() {
 
   const photos = [
     {
-      src: '/gallery/tarang-24/_DSC0101.JPG',
+      src: '/gallery/tarang-24/_DSC0101.webp',
       alt: 'TARANG 2024 Group Dance Troupe',
       captionEn: 'Folk Rhythm & Synchronized Troupe Dance',
       captionHi: 'समूह नृत्य एवं लोक ताल प्रस्तुति',
       span: 'md:col-span-8 md:row-span-2 aspect-[16/10] sm:aspect-[16/9]'
     },
     {
-      src: '/gallery/tarang-24/_DSC0214.JPG',
+      src: '/gallery/tarang-24/_DSC0214.webp',
       alt: 'UP Board School Topper Award Ceremony on 18 November 2024',
       captionEn: 'UP Board Topper Felicitation (18 Nov 2024)',
       captionHi: 'यूपी बोर्ड टॉपर सम्मान (१८ नवम्बर २०२४)',
       span: 'md:col-span-4 aspect-[4/3]'
     },
     {
-      src: '/gallery/tarang-24/_DSC0162.JPG',
+      src: '/gallery/tarang-24/_DSC0162.webp',
       alt: 'Student Human Pyramid Acrobatic Dance',
       captionEn: 'Human Pyramid Acrobatic Choreography',
       captionHi: 'मानव पिरामिड एवं साहसिक नृत्य मंचन',
       span: 'md:col-span-4 aspect-[4/3]'
     },
     {
-      src: '/gallery/tarang-24/_DSC0255.JPG',
+      src: '/gallery/tarang-24/_DSC0255.webp',
       alt: 'Rani Laxmibai Historical Theatrical Play',
       captionEn: 'Rani Laxmibai Historical Theatrical Play',
       captionHi: 'रानी लक्ष्मीबाई ऐतिहासिक नाट्य मंचन',
       span: 'md:col-span-6 aspect-[16/10] sm:aspect-[16/9]'
     },
     {
-      src: '/gallery/tarang-24/_DSC0338.JPG',
+      src: '/gallery/tarang-24/_DSC0338.webp',
       alt: 'Ramayan Act: Hanuman and Mata Sita in Ashok Vatika',
       captionEn: 'Ramayan Act: Devotional Stage Play',
       captionHi: 'रामायण प्रसंग: अशोक वाटिका नाट्य मंचन',
